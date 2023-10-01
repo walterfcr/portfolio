@@ -10,18 +10,6 @@
     
 }
 
-@media  (min-width: 300px) and (max-width: 576px){
-    #proyectos p{
-        font-size: 0.8rem;
-    }
-
-    #proyectos h3{
-        font-size: 1.3rem;
-    }
-}
-
-
-
 @media  (min-width: 300px) and (max-width: 768px){
     .columnaImagenes{
         width:80%;
@@ -30,5 +18,37 @@
 
     .herramientas {
         margin:0 0 100px; 
+    }
+
+    #headerIzq{
+        padding:0;
+        float:right;
+        width:100%;
+    }
+    
+    #headerIzq img{
+        width:40%;
+        margin:30px auto 0;
+        display: block;
+    }
+    
+    #headerDer{
+        float:left;
+        width:100%;
+        
+    }
+
+    #lenguaje ul{
+        display:none;
+    }
+}
+
+@media  (min-width: 300px) and (max-width: 576px){
+    #proyectos p{
+        font-size: 0.8rem;
+    }
+
+    #proyectos h3{
+        font-size: 1.3rem;
     }
 }
