@@ -97,7 +97,7 @@ h4{
 
 .inicio{
     position:relative;
-	padding:250px 0 170px;
+	padding:250px 0 260px;
 }
 
 .inicio img{
@@ -187,6 +187,16 @@ h4{
     width:5% !important;
     float:right;
 }
+
+.montana{
+    position: absolute;
+    margin:675px 0 0;
+}
+
+.montana img{ 
+    min-width: 100%;
+}
+
 
 
 #navbar{
