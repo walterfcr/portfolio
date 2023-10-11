@@ -194,8 +194,9 @@ h4{
 }
 
 .montana img{ 
-    min-width: 100%;
+    width: 100vw;
 }
+
 
 
 
@@ -231,9 +232,15 @@ h4{
 
 /* PERSONALIZACION MENU HAMBURGUESA */
 
-.navbar-toggler {
-    background-color: #111733;
-
+nav, .navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.equis{
+  background-color:#fff;
 }
 
 .navbar-toggler:hover {

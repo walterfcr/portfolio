@@ -10,6 +10,15 @@
     
 }
 
+@media (max-width: 768px) {
+    .offcanvas {
+    background-color: #020a13;
+  }
+    .navbar-nav > li:hover {
+      background-color: #0f3b44;
+    }
+}
+
 @media  (min-width: 300px) and (max-width: 768px){
     .columnaImagenes{
         width:80%;
