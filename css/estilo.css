@@ -36,8 +36,21 @@ h3{
 }
 
 h4{
-    color:#4ebe97;
+    color:#5e5aa8;
 }
+
+.idiomaEs, .idiomaEn, .estiloBoton{
+    color:#7cacdc !important;
+    border-color: #7cacdc !important;
+}
+
+.idiomaEs:hover, .idiomaEn:hover, .estiloBoton:hover{
+    color:#fff !important;
+    border-color: #fff !important;
+    background-color: #1b193e;
+}
+
+
  
 .wrap{
 	margin: 0 auto;
@@ -293,7 +306,7 @@ nav, .navbar-toggler {
     padding:30px;
     background-color: #f7eded;
     border-radius: 50%;
-    border:8px solid #88d4b9;
+    border:8px solid #5e5aa8;
 }
 
 .herramientas p{
