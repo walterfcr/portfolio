@@ -50,6 +50,26 @@
     #lenguaje ul{
         display:none;
     }
+
+    .efectoImagenes{
+        display:none;
+    }
+
+    .proyectoMovil{
+        display:block;
+    }
+
+    .proyectoMovil p{
+        font-size: 1.2rem;
+    }
+
+    .proyectoMovil h3{
+        font-size: 2rem;
+    }
+
+    #proyectos .btn{
+        margin:0 10px;
+    }
 }
 
 @media  (min-width: 300px) and (max-width: 576px){

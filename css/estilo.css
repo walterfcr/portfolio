@@ -299,6 +299,10 @@ nav, .navbar-toggler {
     margin:0 20px;
 }
 
+.proyectoMovil{
+    display:none;
+}
+
 .ilustracion{
     width:60%;
     text-align: center;
