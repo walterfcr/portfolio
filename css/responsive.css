@@ -180,11 +180,13 @@
 @media  (max-width: 480px){
     h1{
         font-size: 3rem;
+        padding:0 0 30px;
     }
 
     .inicio p{
         font-size: 1.2rem; 
         text-align: center;
+       
     }
 
     .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
@@ -196,7 +198,7 @@
     }
 
     .inicio{
-        padding:250px 0 110px;
+        padding:190px 0 110px;
     }
 }
 
