@@ -177,7 +177,7 @@
   }
 }
 
-@media  (max-width: 480px){
+@media   (max-width: 480px){
     h1{
         font-size: 3rem;
         padding:0 0 30px;
@@ -202,14 +202,16 @@
     }
 }
 
-
-@media  (max-width: 360px){
+@media  (max-width: 479px){
 
     .montana{
         margin:750px 0 0;
     }
 
 }
+
+
+
 
 
 
