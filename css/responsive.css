@@ -32,15 +32,19 @@
   }
       .avatar3{
         right:10px;
+       
   }
       .avatar4{
         right:320px;
+       
   }
       .avatar5{
         right:260px;
+        
   }
       .avatar6{
         right: 350px;
+        
   }
 
   h1{
@@ -68,6 +72,18 @@
 }
 
 @media  (min-width: 300px) and (max-width: 768px){
+
+    .avatar img{
+        margin:70px 0 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .botonInicio{
+        text-align: center;
+    }
     .columnaImagenes{
         width:80%;
         margin:20px 5%;
@@ -120,7 +136,7 @@
     }
 }
 
-@media  (min-width: 300px) and (max-width: 576px){
+@media  (min-width: 450px) and (max-width: 576px){
     #proyectos p{
         font-size: 0.8rem;
     }
@@ -128,4 +144,62 @@
     #proyectos h3{
         font-size: 1.3rem;
     }
+
+    
+    .montana {
+        margin:975px 0 0;
+    }
+
+    .inicio{
+        padding:250px 0 160px;
+    }
+
+
+    .avatar2{
+        right:2px;
+        top:600px;
+  }
+      .avatar3{
+        right:10px;
+        top:820px;
+  }
+      .avatar4{
+        right:320px;
+        top:760px;
+  }
+      .avatar5{
+        right:340px;
+        top:600px;
+  }
+      .avatar6{
+        right: 350px;
+        top:890px;
+  }
 }
+
+@media  (max-width: 360px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .inicio p{
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+
+    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+        display:none;
+   }
+    
+    .montana{
+        margin:750px 0 0;
+    }
+
+    .inicio{
+        padding:250px 0 110px;
+    }
+}
+
+
+
+
