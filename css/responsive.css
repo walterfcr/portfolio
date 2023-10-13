@@ -1,5 +1,24 @@
 
-@media  (min-width: 769px) and (max-width: 992px){
+@media  (min-width: 999px) and (max-width: 1200px){
+    .avatar2{
+          right:10px;
+    }
+        .avatar3{
+          right:50px;
+    }
+        .avatar4{
+          right:430px;
+    }
+        .avatar5{
+          right:320px;
+    }
+        .avatar6{
+          right: 420px;
+    }
+
+}
+
+@media  (min-width: 769px) and (max-width: 998px){
     #proyectos p{
         font-size: 0.8rem;
     }
@@ -7,6 +26,35 @@
     #proyectos h3{
         font-size: 1.3rem;
     }
+
+    .avatar2{
+        right:2px;
+  }
+      .avatar3{
+        right:10px;
+  }
+      .avatar4{
+        right:320px;
+  }
+      .avatar5{
+        right:260px;
+  }
+      .avatar6{
+        right: 350px;
+  }
+
+  h1{
+    font-size:3rem;
+  }
+
+  .inicio{
+	padding:200px 0 200px;
+}
+
+.montana{
+    margin:575px 0 0;
+}
+
     
 }
 
