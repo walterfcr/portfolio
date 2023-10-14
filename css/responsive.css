@@ -210,6 +210,18 @@
 
 }
 
+@media  (min-width: 320px){
+
+    .montana{
+        margin:750px 0 0;
+    }
+
+    .inicio{
+        padding:190px 0 90px;
+    }
+
+}
+
 
 
 
