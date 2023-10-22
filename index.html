@@ -92,7 +92,7 @@
         <p class="desarrolladorWeb">Soy un desarrollador Front End</p>
         <p class="desarrolladorWeb2">de San José, Costa Rica.</p>
         <div class="botonInicio">
-          <a href="#" class="estiloBoton btn btn-outline-secondary rounded-0 btn-lg" role="button" aria-pressed="true">Contácteme</a>
+          <a href="#contacto" class="estiloBoton btn btn-outline-secondary rounded-0 btn-lg" role="button" aria-pressed="true">Contácto</a>
         </div>
       </div>
 
@@ -133,7 +133,7 @@
         <p class="acercaDeMiFront">Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los estándares tanto de usabilidad como de diseño.</p>
         <h4 class="herramienta1">Lenguajes y herramientas</h4>
         <div class="herramientas">
-          <p>Bootstrap<br>HTML <br>CSS<br>Javascript</p>
+          <p>HTML <br>CSS<br>Javascript<br>Git</p>
         </div>
       </div>
       <div class="col-md-4 col-lg-4">
@@ -287,13 +287,61 @@
 
   <section id="contacto">
     <div class="wrap text-center">
-      <h2>c</h2>
+      <h2>Contácto</h2>
         <p>Tienes alguna pregunta o propuesta?</p>
         <p>No dudes en contactarme</p>
         <p>walterdfallssdb@gmail.com</p>
 
   </div>
+
+  <div class="contactoWrap sectionForm d-flex justify-content-center align-items-center py-4">
+    <div class="containerForm">
+        <form id="form2">
+            <div class="formRow">
+                <div class="colForm">
+                    <div class="inputBox">
+                        <input id="nombreTxt" type="text" name="name" required="required">
+                        <span class="text">Nombre</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="colForm">
+                  <div class="inputBox">
+                      <input id="emailTxt" type="text" name="email" required="required">
+                      <span class="text">Email</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+            </div>
+
+            
+
+            <div class="formRow">
+                <div class="colForm">
+                    <div class="inputBox textarea">
+                        <textarea id="mensajeTxt" name="message" required="required"></textarea>
+                        <span class="text">Mensaje</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="formRow">
+                <div class="colForm">
+                    <p id="mensajeAlert"></p>
+                    <input id="btnSend" type="button" class="estiloBoton btn btn-outline-secondary rounded-0 btn-lg mt-1 mb-5" value="Enviar">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
   </section>
+
+
 
   <a data-scroll id="flechabtn" class="goto-top efectoHover" href="#inicio" title="ir al inicio" onclick="topFunction()">
     <img src="imagenes/flecha.png" class="img-fluid" alt="tiraflecha">    
