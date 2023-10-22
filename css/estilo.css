@@ -473,6 +473,27 @@ footer li{
     width:70%;
 }
 
+.containerForm p, h2{
+    text-align: center;
+    
+}
+
+.formP{
+    padding:30px 0;
+}
+
+.containerForm hr{
+    
+    padding:0;
+    width:95%;
+    display:block;
+    margin:0 auto;
+    border: none;
+    height: 3px;
+    background: #fff;
+
+}
+
 .sectionForm .containerForm {
     width: 80%;
     padding: 20px;
@@ -509,7 +530,7 @@ footer li{
     font-size: 18px;
     padding: 0px 10px;
     z-index: 1;
-    color: #000;
+    color: #fff;
 }
 .sectionForm .containerForm .formRow .colForm .inputBox .text {
     position: absolute;
@@ -532,11 +553,11 @@ footer li{
     bottom: 0;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 3px;
     transition: 0.5s;
     border-radius: 2px;
     pointer-events: none;
-    background-color: #fff;
+    background-color: #44505d;
 }
 .sectionForm .containerForm .formRow .colForm .inputBox input:focus ~ .line,
 .sectionForm .containerForm .formRow .colForm .inputBox input:valid ~ .line {
