@@ -60,7 +60,7 @@ h4{
 .header-top{
     height: auto;
     width: 100%;
-    background-image: url('../imagenes/fondo.jpg');
+    background-image: url('../imagenes/fondo.webp');
     background-repeat: repeat;
     animation: animatedBackground 90s linear infinite;
 }
