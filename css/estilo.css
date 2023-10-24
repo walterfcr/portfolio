@@ -293,6 +293,10 @@ nav, .navbar-toggler {
     padding:0 0 80px;
 }
 
+.iconos i{
+    padding:0 10px;
+}
+
 #proyectos{
     padding:100px 0 ;
 
