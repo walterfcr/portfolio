@@ -11,11 +11,13 @@ const idiomaEs = document.querySelector('.idiomaEs');
 const idiomaEn = document.querySelector('.idiomaEn');
 const desarrolladorWeb = document.querySelector('.desarrolladorWeb');
 const desarrolladorWeb2 = document.querySelector('.desarrolladorWeb2');
+const saludo = document.querySelector('.saludo');
 const acercaDeMi = document.querySelector('.acercaDeMi');
 const herramienta1 = document.querySelector('.herramienta1');
 const herramienta2 = document.querySelector('.herramienta2');
 const herramienta3 = document.querySelector('.herramienta3');
 const acercaDeMiFront = document.querySelector('.acercaDeMiFront');
+const acercaDiseno = document.querySelector('.acercaDiseno');
 const acercaDeMiDrawing = document.querySelector('.acercaDeMiDrawing');
 const proyectosTitulo = document.querySelector('.proyectosTitulo');
 const proyecto1 = document.querySelector('.proyecto1');
@@ -26,6 +28,12 @@ const proyecto5 = document.querySelector('.proyecto5');
 const proyecto6 = document.querySelector('.proyecto6');
 const diseno = document.querySelector('.diseno');
 const dibujo = document.querySelector('.dibujo');
+const contacto = document.querySelector('.contacto');
+const contactoP1 = document.querySelector('.contactoP1');
+const contactoP2 = document.querySelector('.contactoP2');
+const nombre = document.querySelector('.nombre');
+const mensaje = document.querySelector('.mensaje');
+
 
 //recorrido del ciclo for-Each 
 //link: es la variable constante del selector 'a' HTML
@@ -43,11 +51,13 @@ link.forEach(r => {
         idiomaEn.textContent = changeLanguage[attr].idiomaEn;
         desarrolladorWeb.textContent = changeLanguage[attr].desarrolladorWeb;
         desarrolladorWeb2.textContent = changeLanguage[attr].desarrolladorWeb2;
+        saludo.textContent = changeLanguage[attr].saludo;
         acercaDeMi.textContent = changeLanguage[attr].acercaDeMi;
         herramienta1.textContent = changeLanguage[attr].herramienta1;
         herramienta2.textContent = changeLanguage[attr].herramienta2;
         herramienta3.textContent = changeLanguage[attr].herramienta3;
         acercaDeMiFront.textContent = changeLanguage[attr].acercaDeMiFront;
+        acercaDiseno.textContent = changeLanguage[attr].acercaDiseno;
         acercaDeMiDrawing.textContent = changeLanguage[attr].acercaDeMiDrawing;
         proyectosTitulo.textContent = changeLanguage[attr].proyectosTitulo;
         proyecto1.textContent = changeLanguage[attr].proyecto1;
@@ -58,6 +68,12 @@ link.forEach(r => {
         proyecto6.textContent = changeLanguage[attr].proyecto6;
         diseno.textContent = changeLanguage[attr].diseno;
         dibujo.textContent = changeLanguage[attr].dibujo;
+        contacto.textContent = changeLanguage[attr].contacto;
+        contactoP1.textContent = changeLanguage[attr].contactoP1;
+        contactoP2.textContent = changeLanguage[attr].contactoP2;
+        nombre.textContent = changeLanguage[attr].nombre;
+        mensaje.textContent = changeLanguage[attr].mensaje;
+        
     });
 });
 
@@ -76,11 +92,13 @@ let changeLanguage = {
         "idiomaEn": "Inglés",
         "desarrolladorWeb": "Soy un desarrollador Front End",
         "desarrolladorWeb2": "de San José, Costa Rica.",
+        "saludo": "Salúdame!!",
         "acercaDeMi": "Acerca de mi",
         "herramienta1": "Lenguajes y herramientas",
         "herramienta2": "Herramientas",
         "herramienta3": "Herramientas",
         "acercaDeMiFront": "Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los estándares tanto de usabilidad como de diseño.",
+        "acercaDiseno": "La parte visual de un sitio web es muy importante así que me gusta crear diseños que coincidan con la usabilidad del mismo.",
         "acercaDeMiDrawing": "Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lápiz de diferentes estilos o también de forma digital.",
         "proyectosTitulo": "Proyectos",
         "proyecto1": "Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.",
@@ -91,6 +109,12 @@ let changeLanguage = {
         "proyecto6": "One Page de un festival ficticio (buenísimo) con buenos efectos y una navegación muy precisa entre secciones. HTML, CSS y Javascript.",
         "diseno": "Diseño",
         "dibujo": "Dibujo",
+        "contacto": "Contácto",
+        "contactoP1": "Tienes alguna pregunta o propuesta? Te gustaría iniciar un proyecto conmigo?",
+        "contactoP2": "No dudes en contactarme!",
+        "nombre": "Nombre",
+        "mensaje": "Mensaje",
+        
 
     },
 
@@ -106,11 +130,13 @@ let changeLanguage = {
         "idiomaEn": "English",
         "desarrolladorWeb": "I am a Front End Developer",
         "desarrolladorWeb2": "from San José, Costa Rica",
+        "saludo": "Say hi!!",
         "acercaDeMi": "About me",
         "herramienta1": "Languages and tools",
         "herramienta2": "Tools",
         "herramienta3": "Tools",
         "acercaDeMiFront": "I love creating responsive websites that look good and meet both usability and design standards.",
+        "acercaDiseno": "The visual part of a website is very important so I like creating designs that matches with usage.",
         "acercaDeMiDrawing": "I am passionate about drawing! In my free time I can make drawings of different styles using a pencil or digitally.",
         "proyectosTitulo": "Projects",
         "proyecto1": "Fullpage website of a swimsuit store with a very summery and striking color palette. Created with HTML, CSS, Javascript using Bootstrap.",
@@ -121,6 +147,11 @@ let changeLanguage = {
         "proyecto6": "One Page of a fictional festival (a good one) with good effects and very precise navigation between sections. HTML, CSS and Javascript.",
         "diseno": "Design",
         "dibujo": "Drawing",
+        "contacto": "Contact",
+        "contactoP1": "Do you have any question or proposal? Would you like to start a new project with me?",
+        "contactoP2": "Do not hesitate to contact me!!",
+        "nombre": "Name",
+        "mensaje": "Message",
 
     }
 }
