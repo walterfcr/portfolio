@@ -297,6 +297,36 @@ nav, .navbar-toggler {
     padding:0 10px;
 }
 
+#pestanas{
+    padding:100px 0 0;
+    cursor: pointer;
+}
+
+#pestanas a{
+    color:#fff;
+    border: 1px solid rgb(166, 163, 163);
+}
+
+#pestanas a:hover{
+    color:#fff;
+    background-color: #061527;
+    
+}
+
+.wrapDisenos{
+    width:50%;
+    margin:0 auto;
+}
+
+.activo{
+    background-color: #061527;
+}
+
+.activo a{
+    color:#fff !important;
+}
+
+
 #proyectos{
     padding:100px 0 ;
 
@@ -313,6 +343,32 @@ nav, .navbar-toggler {
 .proyectoMovil{
     display:none;
 }
+
+.diseno img{
+    width:40%;
+}
+
+.disenoTexto{
+    padding:0 0 0 100px;
+}
+
+.disenoTexto hr{
+    padding:20px 0;
+}
+
+.adobe{
+    padding:30px 0;
+}
+
+.adobe img{
+    padding:0 30px 0 0;
+}
+
+.disenoMargin{
+    margin-top:150px;
+}
+
+
 
 .ilustracion{
     width:60%;

@@ -1,414 +1,556 @@
 <!doctype html>
-<html lang="es"> 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Portfolio Walter Fallas</title>
-    <link rel="icon" href="favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b6eafbf987.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="css/estilo.css" type="text/css">
-    <link rel="stylesheet" href="css/responsive.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
-  </head>
+<html lang="es">
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Portfolio Walter Fallas</title>
+  <link rel="icon" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b6eafbf987.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/lightbox2.css" type="text/css">
+  <link rel="stylesheet" href="css/responsive.css" type="text/css">
+  <link rel="stylesheet" href="css/animacion.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
+</head>
+
+<body>
 
   <div class="header-top">
-  <header class="wrap fixed-top">
+    <header class="wrap fixed-top">
 
-    <div id="headerIzq">
-      <div id="logo">
-      <img src="imagenes/logo.webp" alt="" class="img-fluid">
-      </div>
-    </div>
-    <div id="headerDer">
-      <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
-        <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
-          <span class="navbar-toggler-icon">
-            <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-          </span>
-        </button>
-        <div
-        class="offcanvas offcanvas-start"
-        id="menuLateral"
-        tabindex="-1">
-        <div class="offcanvas-header" data-bs-theme="dark">
-          <button
-            class="btn-close equis"
-            type="button"
-            aria-label="Close"
-            data-bs-dismiss="offcanvas"
-          ></button>
+      <div id="headerIzq">
+        <div id="logo">
+          <img src="imagenes/logo.webp" alt="" class="img-fluid">
         </div>
-        <div class="offcanvas-body d-flex flex-column justify-content-between px-0" id="menu">
-          <ul class="navbar-nav nav-fill w-100">
-            <li class="nav-item">
-              <a class="nav-link menuHome" aria-current="page" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menuNosotros" href="#acerca">Acerca</a>
-            </li>
+      </div>
+      <div id="headerDer">
+        <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+              </span>
+            </button>
+            <div class="offcanvas offcanvas-start" id="menuLateral" tabindex="-1">
+              <div class="offcanvas-header" data-bs-theme="dark">
+                <button class="btn-close equis" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between px-0" id="menu">
+                <ul class="navbar-nav nav-fill w-100">
+                  <li class="nav-item">
+                    <a class="nav-link menuHome" aria-current="page" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuNosotros" href="#acerca">Acerca</a>
+                  </li>
 
-            <li class="nav-item">
-              <a class="nav-link menuProyectos" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link menuContacto" href="#contacto">Contácto</a>
-            </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuProyectos" href="#pestanas">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuContacto" href="#contacto">Contácto</a>
+                  </li>
 
-          </ul>    
-          
-        </div>
-      </div>
-     
-        </div>  
-      </nav>
-      
-      <div id="lenguaje">
-      <ul class="lenguaje">
-        <li class="nav-item">
-        <a href="#" data-name='spanish' class="idiomaEs btn btn-outline-secondary rounded-0 btn-sm" role="button" aria-pressed="true">Español</a>
-        </li>
-        <li class="nav-item">
-        <a href="#" data-name='english' class="idiomaEn btn btn-outline-secondary rounded-0 btn-sm" role="button" aria-pressed="true">Inglés</a>
-        </li>
-      </ul>
-      </div>
-    </div>
+                </ul>
 
-  </header>
-  <div class="montana">
-    <img src="imagenes/montana.webp" alt="" class="img-fluid" >
-  </div>
- 
-  <section class="inicio wrap" id="inicio">
-    <div class="row ">
-      <div class="col-md-6 col-lg-6">
-        <h1>Walter Fallas</h1>
-        <p class="desarrolladorWeb">Soy un desarrollador Front End</p>
-        <p class="desarrolladorWeb2">de San José, Costa Rica.</p>
-        <div class="botonInicio">
-          <a href="#contacto" class="saludo estiloBoton btn btn-outline-secondary rounded-0 btn-lg" role="button" aria-pressed="true">Salúdame!!</a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-6 text-center avatar">
-        <img src="imagenes/programador.webp" alt="" class="img-fluid">
-      </div>
-      <div class=" avatar2">
-        <img src="imagenes/logo2.webp" alt="" >
-      </div>
-      <div class=" avatar3">
-        <img src="imagenes/logo3.webp" alt="" >
-      </div>
-      <div class=" avatar4">
-        <img src="imagenes/logo4.webp" alt="" >
-      </div>
-      <div class=" avatar5">
-        <img src="imagenes/logo5.webp" alt="" >
-      </div>
-      <div class=" avatar6">
-        <img src="imagenes/logo6.webp" alt="" >
-      </div>
-    </div>  
-
-  </section>
-  
-</div> 
-  
-  <section id="acerca">
-    <div class="wrap">
-    <h2 class="text-center acercaDeMi">Acerca de mi</h2>
-    
-    <div class="row">
-      <div class="col-md-4 col-lg-4">
-        <div class="text-center ilustracion">
-          <lottie-player src="https://lottie.host/3311b223-388b-4e10-bd57-e0af1dc83050/vnPVwu7f1S.json" loop autoplay></lottie-player>
-        </div>
-        <h3 class="pt-4 pb-3">Front End</h3>
-        <p class="acercaDeMiFront">Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los estándares tanto de usabilidad como de diseño.</p>
-        <h4 class="herramienta1">Lenguajes y herramientas</h4>
-        <div class="herramientas">
-          <p>HTML <br>CSS<br>Javascript<br>Git</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <div class="text-center ilustracion">
-          <lottie-player src="https://lottie.host/61271118-a6e9-4e7a-9802-ac969b5f5aac/PU0tzqoMwq.json"  loop autoplay ></lottie-player>
-        </div>
-        <h3 class="pt-4 pb-3 diseno">Diseño</h3>
-        <p class="acercaDiseno">La parte visual de un sitio web es muy importante así que me gusta crear diseños que coincidan con la usabilidad del mismo.</p>
-        <h4 class="herramienta2">Herramientas</h4>
-        <div class="herramientas">
-          <p>Adobe Photoshop<br>Adobe Illustrator <br>Figma</p>
-        </div>
-      </div>  
-      <div class="col-md-4 col-lg-4">
-        <div class="text-center ilustracion">
-          <lottie-player src="https://lottie.host/447b6939-2791-4963-99cd-c1138529f5ca/dlMh8jViCe.json" loop autoplay ></lottie-player>
-        </div>
-        <h3 class="pt-4 pb-3 dibujo">Dibujo</h3>
-        <p class="acercaDeMiDrawing">Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lápiz de diferentes estilos o también de forma digital.</p>
-        <h4 class="herramienta3">Herramientas</h4>
-        <div class="herramientas">
-          <p>Papel y lápiz <br>Adobe Illustrator</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="proyectos">
-  <div class="wrap">
-  <h2 class="text-center proyectosTitulo">Proyectos</h2>  
-  
-
-  <div class="contenedor">
-    <div class="columnaImagenes">
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto1.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Trops Swimwear</h3>
-          <p class="parrafo proyecto1"> Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto1.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Trops Swimwear</h3>
-        <p>Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/trops/" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/trops.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-    <div class="columnaImagenes">
-      <div class="proyectoMovil">
-        
-      </div>
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto2.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Cinema Classic</h3>
-          <p class="parrafo proyecto2">Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un sitio web simple en algo muy dinámico.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto2.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Cinema Classic</h3>
-        <p>Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un sitio web simple en algo muy dinámico.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/cinemaclassic/" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/cinemaclassic.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-    <div class="columnaImagenes">
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto3.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Reino Mágico</h3>
-          <p class="parrafo proyecto3">Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto3.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Reino Mágico</h3>
-        <p>Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/reinomagico/" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/reinomagico.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-    <div class="columnaImagenes">
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto4.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Instituto Avila</h3>
-          <p class="parrafo proyecto4">One Page de un instituto privado que demuestra que se puede minimizar contenido y navegación sin perder la calidad y usando un diseño plano y moderno.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto4.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Instituto Avila</h3>
-        <p>One Page de un instituto privado que demuestra que se puede minimizar contenido y navegación sin perder la calidad y usando un diseño plano y moderno.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/avila/#inicio" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/avila.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-    <div class="columnaImagenes">
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto5.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Jugueticos</h3>
-          <p class="parrafo proyecto5">Fullpage muy alegre de una juguetería con muchos efectos y técnicas que el propio Bootstrap tiene y por supuesto mucho Javascript.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto5.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Jugueticos</h3>
-        <p>Fullpage muy alegre de una juguetería con muchos efectos y técnicas que el propio Bootstrap tiene y por supuesto mucho Javascript.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/jugueticos/" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/jugueticos.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-    <div class="columnaImagenes">
-      <div class="efectoImagenes">
-        <img src="imagenes/proyecto6.webp" alt="" class="img-fluid img-thumbnail">
-        <div class="texto">
-          <h3 class="titulo">Alternative Fest</h3>
-          <p class="parrafo proyecto6">One Page de un festival ficticio (buenísimo) con buenos efectos y una navegación muy precisa entre secciones. HTML, CSS y Javascript.</p>
-          <div class="titulo iconos">
-            <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
-            <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
-            <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span class="sr-only">Javascript</span></i>
-            <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span class="sr-only">Bootstrap</span></i>
-          </div>
-        </div>
-      </div>
-      <div class="proyectoMovil">
-        <img src="imagenes/proyecto6.webp" alt="" class="img-fluid img-thumbnail">
-        <h3 class="text-center pt-3">Alternative Fest</h3>
-        <p>One Page de un festival ficticio (buenísimo) con buenos efectos y una navegación muy precisa entre secciones. HTML, CSS y Javascript.</p>
-      </div>
-      <div class="text-center">
-        <a href="https://walterfcr.github.io/alternativeRockFest/"  target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Website</a>
-        <a href="https://github.com/walterfcr/alternativeRockFest.git" target="blank" class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button" aria-pressed="true">Github</a>
-      </div>
-    </div>
-
-  </div>
-
-  </div>  
-  </section>
-
-  <section id="contacto">
-    
-
-  
-
-  <div class="contactoWrap sectionForm d-flex justify-content-center align-items-center py-4">
-
-    <div class="containerForm">
-      <h2 class="pb-3 contacto">Contácto</h2>
-      <hr>
-        <div class="formP">
-        <p class="contactoP1">Tienes alguna pregunta o propuesta? Te gustaría iniciar un proyecto conmigo?</p>
-        <p class="contactoP2">No dudes en contactarme!</p>
-        </div>
-        <form id="form2">
-            <div class="formRow">
-                <div class="colForm">
-                    <div class="inputBox">
-                        <input id="nombreTxt" type="text" name="name" required="required">
-                        <span class="text nombre">Nombre</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-
-                <div class="colForm">
-                  <div class="inputBox">
-                      <input id="emailTxt" type="text" name="email" required="required">
-                      <span class="text">Email</span>
-                      <span class="line"></span>
-                  </div>
               </div>
             </div>
 
-            
+          </div>
+        </nav>
 
-            <div class="formRow">
-                <div class="colForm">
-                    <div class="inputBox textarea">
-                        <textarea id="mensajeTxt" name="message" required="required"></textarea>
-                        <span class="text mensaje">Mensaje</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
+        <div id="lenguaje">
+          <ul class="lenguaje">
+            <li class="nav-item">
+              <a href="#" data-name='spanish' class="idiomaEs btn btn-outline-secondary rounded-0 btn-sm" role="button"
+                aria-pressed="true">Español</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-name='english' class="idiomaEn btn btn-outline-secondary rounded-0 btn-sm" role="button"
+                aria-pressed="true">Inglés</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-
-
-            <div class="formRow">
-                <div class="colForm">
-                    <p id="mensajeAlert"></p>
-                    <input id="btnSend" type="button" class=" estiloBoton btn btn-outline-secondary rounded-0 btn-lg mt-1 mb-5" value="Enviar">              
-                </div>
-            </div>
-        </form>
+    </header>
+    <div class="montana">
+      <img src="imagenes/montana.webp" alt="" class="img-fluid">
     </div>
+
+    <section class="inicio wrap" id="inicio">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6">
+          <h1>Walter Fallas</h1>
+          <p class="desarrolladorWeb">Soy un desarrollador Front End</p>
+          <p class="desarrolladorWeb2">de San José, Costa Rica.</p>
+          <div class="botonInicio">
+            <a href="#contacto" class="saludo estiloBoton btn btn-outline-secondary rounded-0 btn-lg" role="button"
+              aria-pressed="true">Salúdame!!</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 text-center avatar">
+          <img src="imagenes/programador.webp" alt="" class="img-fluid">
+        </div>
+        <div class=" avatar2">
+          <img src="imagenes/logo2.webp" alt="">
+        </div>
+        <div class=" avatar3">
+          <img src="imagenes/logo3.webp" alt="">
+        </div>
+        <div class=" avatar4">
+          <img src="imagenes/logo4.webp" alt="">
+        </div>
+        <div class=" avatar5">
+          <img src="imagenes/logo5.webp" alt="">
+        </div>
+        <div class=" avatar6">
+          <img src="imagenes/logo6.webp" alt="">
+        </div>
+      </div>
+
+    </section>
+
   </div>
+
+  <section id="acerca">
+    <div class="wrap">
+      <h2 class="text-center acercaDeMi">Acerca de mi</h2>
+
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="text-center ilustracion">
+            <lottie-player src="https://lottie.host/3311b223-388b-4e10-bd57-e0af1dc83050/vnPVwu7f1S.json" loop
+              autoplay></lottie-player>
+          </div>
+          <h3 class="pt-4 pb-3">Front End</h3>
+          <p class="acercaDeMiFront">Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los
+            estándares tanto de usabilidad como de diseño.</p>
+          <h4 class="herramienta1">Lenguajes y herramientas</h4>
+          <div class="herramientas">
+            <p>HTML <br>CSS<br>Javascript<br>Git</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="text-center ilustracion">
+            <lottie-player src="https://lottie.host/61271118-a6e9-4e7a-9802-ac969b5f5aac/PU0tzqoMwq.json" loop
+              autoplay></lottie-player>
+          </div>
+          <h3 class="pt-4 pb-3 diseno">Diseño</h3>
+          <p class="acercaDiseno">La parte visual de un sitio web es muy importante así que me gusta crear diseños que
+            coincidan con la usabilidad del mismo.</p>
+          <h4 class="herramienta2">Herramientas</h4>
+          <div class="herramientas">
+            <p>Adobe Photoshop<br>Adobe Illustrator <br>Figma</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <div class="text-center ilustracion">
+            <lottie-player src="https://lottie.host/447b6939-2791-4963-99cd-c1138529f5ca/dlMh8jViCe.json" loop
+              autoplay></lottie-player>
+          </div>
+          <h3 class="pt-4 pb-3 dibujo">Dibujo</h3>
+          <p class="acercaDeMiDrawing">Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lápiz de
+            diferentes estilos o también de forma digital.</p>
+          <h4 class="herramienta3">Herramientas</h4>
+          <div class="herramientas">
+            <p>Papel y lápiz <br>Adobe Illustrator</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <div id="pestanas" class="wrapDisenos container text-center">
+    <h2 class="proyectosTitulo ">Proyectos</h2>
+    <div class="pb-5 pt-5"> </div>
+    <ul class="nav nav-pills nav-fill nav-tabs">
+      <li id="proyectoPestana1" class=" activo q-content-item nav-item">
+        <a onclick="proyectos()" class="text-center rounded-0 q-item nav-link">
+          <span>Sitios Web</span>
+        </a>
+      </li>
+      <li id="proyectoPestana2" class=" q-content-item nav-item">
+        <a onclick="disenos()" class="text-center rounded-0 q-item nav-link">
+          <span>Diseño Gráfico</span>
+        </a>
+      </li>
+      <!--
+      <li id="proyectoPestana3" class="q-content-item nav-item">
+        <a onclick="ilustracion()" class="text-center rounded-0 q-item nav-link">
+          <span>Ilustración</span>
+        </a>
+      </li>
+      -->
+    </ul>
+  </div>
 
 
-  <a data-scroll id="flechabtn" class="goto-top efectoHover" href="#inicio" title="ir al inicio" onclick="topFunction()">
-    <img src="imagenes/flecha.webp" class="img-fluid" alt="tiraflecha">    
-  </a>
 
-  <footer class="container-fluid fondo4 mt-5 " style="color:#fff">
-  <ul>
-    <li><a href="https://www.linkedin.com/in/walter-david-fallas-barrantes-13696020b/" target="blank"><i class="fa-brands fa-linkedin fa-4x efectoHover" aria-hidden="true" style="color:#fff"></i><span class="sr-only">Whatsapp</span></a></li>
-    <li><a href="https://www.github.com/walterfcr/" target="blank"><i class="fa-brands fa-github fa-4x efectoHover" aria-hidden="true" style="color:#fff"></i><span class="sr-only">Facebook</span></a></li>
-    <li><a href="https://www.behance.net/walterfallas/" target="blank"><i class="fa-brands fa-square-behance fa-4x efectoHover" aria-hidden="true" style="color:#fff"></i><span class="sr-only">Instagram</span></a></li>
-  </ul>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://code.jquery.com/jquery-5.2.3.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script src="js/lenguaje.js"></script>
-  <script src="js/magia-scroll.js"></script>
-  <script src="js/smooth-scroll.min.js"></script> 
-  <script>
-   smoothScroll.init({
-   selector: '[data-scroll]', 
-   selectorHeader: null, 
-   speed:2000, 
-   easing: 'easeInOutCubic', 
-   offset: 0, 
-   callback: function ( anchor, toggle ) {} 
-   });
- </script>
+    <section id="proyectos" style="display:block">
+      <div class="wrap">
+        <div class="contenedor">
+          <div class="columnaImagenes">
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto1.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Trops Swimwear</h3>
+                <p class="parrafo proyecto1"> Sitio web Fullpage de una tienda de trajes de baño con una paleta de
+                  colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.
+                </p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto1.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Trops Swimwear</h3>
+              <p>Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa.
+                Creado con HTML, CSS, Javascript y usando el framework bootstrap.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/trops/" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/trops.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+          <div class="columnaImagenes">
+            <div class="proyectoMovil">
 
-  </body>
-</html>  
+            </div>
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto2.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Cinema Classic</h3>
+                <p class="parrafo proyecto2">Fullpage creado con Bootstrap y que demuestra el gran poder que tiene
+                  Javascript para convertir un sitio web simple en algo muy dinámico.</p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto2.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Cinema Classic</h3>
+              <p>Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un
+                sitio web simple en algo muy dinámico.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/cinemaclassic/" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/cinemaclassic.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+          <div class="columnaImagenes">
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto3.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Reino Mágico</h3>
+                <p class="parrafo proyecto3">Landing page de un evento ficticio de fiesta de disfraces con estilo Story
+                  Telling y un efecto parallax muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.</p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto3.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Reino Mágico</h3>
+              <p>Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax
+                muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/reinomagico/" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/reinomagico.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+          <div class="columnaImagenes">
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto4.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Instituto Avila</h3>
+                <p class="parrafo proyecto4">One Page de un instituto privado que demuestra que se puede minimizar
+                  contenido y navegación sin perder la calidad y usando un diseño plano y moderno.</p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto4.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Instituto Avila</h3>
+              <p>One Page de un instituto privado que demuestra que se puede minimizar contenido y navegación sin perder
+                la calidad y usando un diseño plano y moderno.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/avila/#inicio" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/avila.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+          <div class="columnaImagenes">
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto5.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Jugueticos</h3>
+                <p class="parrafo proyecto5">Fullpage muy alegre de una juguetería con muchos efectos y técnicas que el
+                  propio Bootstrap tiene y por supuesto mucho Javascript.</p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto5.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Jugueticos</h3>
+              <p>Fullpage muy alegre de una juguetería con muchos efectos y técnicas que el propio Bootstrap tiene y por
+                supuesto mucho Javascript.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/jugueticos/" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/jugueticos.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+          <div class="columnaImagenes">
+            <div class="efectoImagenes">
+              <img src="imagenes/proyecto6.webp" alt="" class="img-fluid img-thumbnail">
+              <div class="texto">
+                <h3 class="titulo">Alternative Fest</h3>
+                <p class="parrafo proyecto6">One Page de un festival ficticio (buenísimo) con buenos efectos y una
+                  navegación muy precisa entre secciones. HTML, CSS y Javascript.</p>
+                <div class="titulo iconos">
+                  <i class="fa-brands fa-html5 fa-2x" style="color:#41c8f9"><span class="sr-only">HTML5</span></i>
+                  <i class="fa-brands fa-css3-alt fa-2x" style="color:#41c8f9"><span class="sr-only">CSS3</span></i>
+                  <i class="fa-brands fa-square-js fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Javascript</span></i>
+                  <i class="fa-brands fa-bootstrap fa-2x" style="color:#41c8f9"><span
+                      class="sr-only">Bootstrap</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="proyectoMovil">
+              <img src="imagenes/proyecto6.webp" alt="" class="img-fluid img-thumbnail">
+              <h3 class="text-center pt-3">Alternative Fest</h3>
+              <p>One Page de un festival ficticio (buenísimo) con buenos efectos y una navegación muy precisa entre
+                secciones. HTML, CSS y Javascript.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://walterfcr.github.io/alternativeRockFest/" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Website</a>
+              <a href="https://github.com/walterfcr/alternativeRockFest.git" target="blank"
+                class="estiloBoton btn btn-outline-secondary rounded-0 btn-md mt-3 mb-5" role="button"
+                aria-pressed="true">Github</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+    diseño grafico
+  -->
+
+    <section id="disenos" style="display:none" class="wrap">
+      <div class="row">
+        <!--primer diseño-->
+        <div class="disenoMargin disenoTexto col-lg-6 col-md-6">
+          <h3>Jason & Gerling</h3>
+          <hr>
+          <p>Campaña publicitaria de un proyecto de Universidad en el que se alienta a reciclar y así ganar entradas
+            para un concierto internacional.</p>
+          <div class="adobe">
+            <img src="imagenes/adobe1.jpg" alt="">
+            <img src="imagenes/adobe2.jpg" alt="">
+          </div>
+        </div>
+        <div id="item1" class="disenoMargin text-center diseno col-lg-6 col-md-6">
+          <img id="myImg" src="imagenes/diseno2.jpg" alt="" class="img-fluid img-thumbnail">
+        </div>
+        <div id="modal1" class="modal">
+          <div class="close">&times;</div>
+          <img class="modal-content" id="img01" src="imagenes/diseno2.jpg" alt="">
+        <div id="caption"></div>
+        </div>
+        <!--primer diseño-->
+        <!--segundo diseño-->
+        <div class="disenoMargin disenoTexto col-lg-6 col-md-6">
+          <h3>Pensá en Verde</h3>
+          <hr>
+          <p>Campaña publicitaria de un proyecto de Universidad en el que se alienta a reciclar y así ganar entradas
+            para un concierto internacional.</p>
+          <div class="adobe">
+            <img src="imagenes/adobe1.jpg" alt="">
+            <img src="imagenes/adobe2.jpg" alt="">
+          </div>
+        </div>
+        <div id="item2" class="disenoMargin text-center diseno col-lg-6 col-md-6">
+          <img id="myImg2" src="imagenes/diseno1.jpg" alt="" class="img-fluid img-thumbnail">
+        </div>
+        <div id="modal2" class="modal">
+          <div class="close2">&times;</div>
+          <img class="modal-content" id="img02" src="imagenes/diseno1.jpg" alt="">
+        <div id="caption2"></div>
+        </div>
+        <!--segundo diseño-->
+
+      </div>
+    </section>
+
+    <section id="contacto">
+
+
+
+
+      <div class="contactoWrap sectionForm d-flex justify-content-center align-items-center py-4">
+
+        <div class="containerForm">
+          <h2 class="pb-3 contacto">Contácto</h2>
+          <hr>
+          <div class="formP">
+            <p class="contactoP1">Tienes alguna pregunta o propuesta? Te gustaría iniciar un proyecto conmigo?</p>
+            <p class="contactoP2">No dudes en contactarme!</p>
+          </div>
+          <form id="form2">
+            <div class="formRow">
+              <div class="colForm">
+                <div class="inputBox">
+                  <input id="nombreTxt" type="text" name="name" required="required">
+                  <span class="text nombre">Nombre</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+
+              <div class="colForm">
+                <div class="inputBox">
+                  <input id="emailTxt" type="text" name="email" required="required">
+                  <span class="text">Email</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="formRow">
+              <div class="colForm">
+                <div class="inputBox textarea">
+                  <textarea id="mensajeTxt" name="message" required="required"></textarea>
+                  <span class="text mensaje">Mensaje</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="formRow">
+              <div class="colForm">
+                <p id="mensajeAlert"></p>
+                <input id="btnSend" type="button"
+                  class=" estiloBoton btn btn-outline-secondary rounded-0 btn-lg mt-1 mb-5" value="Enviar">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+    <a data-scroll id="flechabtn" class="goto-top efectoHover" href="#inicio" title="ir al inicio"
+      onclick="topFunction()">
+      <img src="imagenes/flecha.webp" class="img-fluid" alt="tiraflecha">
+    </a>
+
+    <footer class="container-fluid fondo4 mt-5 " style="color:#fff">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/walter-david-fallas-barrantes-13696020b/" target="blank"><i
+              class="fa-brands fa-linkedin fa-4x efectoHover" aria-hidden="true" style="color:#fff"></i><span
+              class="sr-only">Whatsapp</span></a></li>
+        <li><a href="https://www.github.com/walterfcr/" target="blank"><i class="fa-brands fa-github fa-4x efectoHover"
+              aria-hidden="true" style="color:#fff"></i><span class="sr-only">Facebook</span></a></li>
+        <li><a href="https://www.behance.net/walterfallas/" target="blank"><i
+              class="fa-brands fa-square-behance fa-4x efectoHover" aria-hidden="true" style="color:#fff"></i><span
+              class="sr-only">Instagram</span></a></li>
+      </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script src="js/lenguaje.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/lightbox2.js"></script>
+    <script src="js/pestanas.js"></script>
+    <script src="js/magia-scroll.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+        selector: '[data-scroll]',
+        selectorHeader: null,
+        speed: 2000,
+        easing: 'easeInOutCubic',
+        offset: 0,
+        callback: function (anchor, toggle) { }
+      });
+    </script>
+
+</body>
+
+</html>
