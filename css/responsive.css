@@ -143,19 +143,19 @@
     }
 
     .proyectoMovil{
-        display:block !important;
+        display:block;
     }
 
     .proyectoMovil p{
-        font-size: 1.2rem !important;
+        font-size: 1.2rem;
     }
 
     .proyectoMovil h3{
-        font-size: 2rem !important;
+        font-size: 2rem ;
     }
 
     #proyectos .btn{
-        margin:0 10px !important;
+        margin:0 10px;
     }
 
     .columnaImagenes{

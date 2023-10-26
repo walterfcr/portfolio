@@ -368,7 +368,33 @@ nav, .navbar-toggler {
     margin-top:150px;
 }
 
+.galeriaDiseno button{
+    width:80px;
+    margin:15px 20px 0 0;
+}
 
+.galeriaDiseno button{
+    opacity:2;
+    filter:alpha(opacity=20);
+    -ms-transition:all 0.5s ease-in;
+    -moz-transition:all 0.5s ease-in;
+    -o-transition:all 0.5s ease-in;
+    -webkit-transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
+}
+.galeriaDiseno button:hover{
+    opacity:0.4;
+    filter:alpha(opacity=4);
+    -ms-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    -webkit-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+}
+
+.galeriaFotosGrande img{
+    width:90%;
+}
 
 .ilustracion{
     width:60%;
