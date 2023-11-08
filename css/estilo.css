@@ -15,6 +15,7 @@ body{
 	font-family: 'Roboto';
 }
 
+
 h1, h2, h3, h4{
 	font-family: 'Kanit';
 }
@@ -55,6 +56,7 @@ h4{
 .wrap{
 	margin: 0 auto;
 	width:80%;
+  
 }
 
 .header-top{
@@ -293,10 +295,6 @@ nav, .navbar-toggler {
     padding:0 0 80px;
 }
 
-.iconos i{
-    padding:0 10px;
-}
-
 #pestanas{
     padding:100px 0 0;
     cursor: pointer;
@@ -438,9 +436,14 @@ nav, .navbar-toggler {
 .efectoImagenes:hover img{
     filter:blur(1.5px);
     transform:scale(1.5);
-    transition: all .3s;
-    
+    transition: all .3s; 
    
+}
+
+.icono img{
+    margin:0 10px;
+    filter:blur(0) !important;
+    width:20px;
 }
 
 .efectoImagenes::before{
