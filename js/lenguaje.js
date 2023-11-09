@@ -7,8 +7,6 @@ const menuHome = document.querySelector('.menuHome');
 const menuNosotros = document.querySelector('.menuNosotros');
 const menuProyectos = document.querySelector('.menuProyectos');
 const menuContacto = document.querySelector('.menuContacto');
-const idiomaEs = document.querySelector('.idiomaEs');
-const idiomaEn = document.querySelector('.idiomaEn');
 const desarrolladorWeb = document.querySelector('.desarrolladorWeb');
 const desarrolladorWeb2 = document.querySelector('.desarrolladorWeb2');
 const saludo = document.querySelector('.saludo');
@@ -47,8 +45,6 @@ link.forEach(r => {
         menuNosotros.textContent = changeLanguage[attr].menuNosotros;
         menuProyectos.textContent = changeLanguage[attr].menuProyectos;
         menuContacto.textContent = changeLanguage[attr].menuContacto;
-        idiomaEs.textContent = changeLanguage[attr].idiomaEs;
-        idiomaEn.textContent = changeLanguage[attr].idiomaEn;
         desarrolladorWeb.textContent = changeLanguage[attr].desarrolladorWeb;
         desarrolladorWeb2.textContent = changeLanguage[attr].desarrolladorWeb2;
         saludo.textContent = changeLanguage[attr].saludo;
@@ -88,8 +84,6 @@ let changeLanguage = {
         "menuNosotros": "Acerca",
         "menuProyectos": "Proyectos",
         "menuContacto": "Contácto",
-        "idiomaEs": "Español",
-        "idiomaEn": "Inglés",
         "desarrolladorWeb": "Soy un desarrollador Front End",
         "desarrolladorWeb2": "de San José, Costa Rica.",
         "saludo": "Ver Trabajos",
@@ -126,8 +120,6 @@ let changeLanguage = {
         "menuNosotros": "About",
         "menuProyectos": "Projects",
         "menuContacto": "Contact",
-        "idiomaEs": "Spanish",
-        "idiomaEn": "English",
         "desarrolladorWeb": "I am a Front End Developer",
         "desarrolladorWeb2": "from San José, Costa Rica",
         "saludo": "Check my work",
