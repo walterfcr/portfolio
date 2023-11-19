@@ -1,4 +1,129 @@
 
+/*Menu*/
+
+@media(min-width:320px) and (max-width:330px){
+	#inicio{
+		height:116px;
+	}
+}
+
+@media(min-width:331px) and (max-width:360px){
+	#inicio{
+		height:124px;
+	}
+}
+
+@media(min-width:361px) and (max-width:378px){
+	#inicio{
+		height:128px;
+	}
+}
+
+@media(min-width:379px) and (max-width:400px){
+	#inicio{
+		height:134px;
+	}
+}	
+
+@media(min-width:401px) and (max-width:419px){
+	#inicio{
+		height:138px;
+	}
+}
+
+@media(min-width:420px) and (max-width:768px){
+	#inicio{
+		height:142px;
+	}
+}
+
+@media(max-width:768px){
+	.menu{
+		padding: 30px;
+		
+	}
+
+	.menu label{
+		display:initial;
+	}
+	.back{
+		padding:71px 0;
+
+	}
+
+	.menu .navbar{
+		position: absolute;
+		top:100%;
+		left:0;
+		right:0;
+		background-color: #242222;
+		display:none;
+	}
+	.menu .navbar ul li{
+		width:100%;
+	}
+
+	.menu .navbar ul li a{
+		color:#fff;
+	
+	}
+
+	#menu:checked ~ .navbar{
+		display:initial;
+	}
+
+}
+
+@media(min-width:991px) and (max-width:1024px){
+	#listaMenu a{
+		font-size: 0.8rem;
+		padding:0 20px;
+	}
+}
+
+@media(min-width:769px) and (max-width:990px){
+	#listaMenu a{
+		font-size: 0.7rem;
+		padding:0 10px;
+	}
+
+}
+
+/*Inicio*/
+@media   (max-width: 480px){
+    h1{
+        font-size: 3rem;
+        padding:0 0 30px;
+    }
+
+    .inicio p{
+        font-size: 1.2rem; 
+        text-align: center;
+       
+    }
+
+
+    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+        display:none;
+   }
+    
+    .montana{
+        margin:800px 0 0;
+    }
+
+    .inicio{
+        padding:190px 0 110px;
+    }
+}
+
+@media   (max-width:480px){
+
+    .montana{
+       display: none;
+    }
+
+}
+
 @media  (min-width: 999px) and (max-width: 1200px){
 
     h1{
@@ -41,13 +166,6 @@
 }
 
 @media  (min-width: 769px) and (max-width: 998px){
-    #proyectos p{
-        font-size: 0.8rem;
-    }
-
-    #proyectos h3{
-        font-size: 1.3rem;
-    }
 
     .avatar2{
         right:2px;
@@ -84,15 +202,7 @@
     
 }
 
-@media (max-width: 768px) {
-    .offcanvas {
-    background-color: #020a13;
-  }
-    .navbar-nav > li:hover {
-      background-color: #0f3b44;
-    }
 
-}
 
 @media  (min-width: 300px) and (max-width: 768px){
 
@@ -107,32 +217,12 @@
     .botonInicio{
         text-align: center;
     }
-    .columnaImagenes{
-        width:80%;
-        margin:20px 5%;
-    }
 
     .herramientas {
         margin:0 0 100px; 
     }
 
-    #headerIzq{
-        padding:0;
-        float:right;
-        width:100%;
-    }
-    
-    #headerIzq img{
-        width:40%;
-        margin:30px auto 0;
-        display: block;
-    }
-    
-    #headerDer{
-        float:left;
-        width:100%;
-        
-    }
+
 
     #lenguaje ul{
         display:none;
@@ -142,36 +232,9 @@
         display:none;
     }
 
-    .proyectoMovil{
-        display:block;
-    }
-
-    .proyectoMovil p{
-        font-size: 1.2rem;
-    }
-
-    .proyectoMovil h3{
-        font-size: 2rem ;
-    }
-
-    #proyectos .btn{
-        margin:0 10px;
-    }
-
-    .columnaImagenes{
-        width:100% !important;
-   
-    }
 }
 
 @media  (min-width: 481px) and (max-width: 576px){
-    #proyectos p{
-        font-size: 0.8rem;
-    }
-
-    #proyectos h3{
-        font-size: 1.3rem;
-    }
 
     .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
         display:none;
@@ -188,39 +251,55 @@
 
 }
 
-@media   (max-width: 480px){
-    h1{
-        font-size: 3rem;
-        padding:0 0 30px;
+/*Proyectos*/
+
+@media  (min-width: 769px) and (max-width: 998px){
+    #proyectos p{
+        font-size: 0.8rem;
     }
 
-    .inicio p{
-        font-size: 1.2rem; 
-        text-align: center;
-       
+    #proyectos h3{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media  (min-width: 300px) and (max-width: 480px){
+    #proyectos h3{
+        font-size: 2.5rem ;
     }
 
+    #proyectos p{
+        font-size: 1rem ;
+        padding:20px 0 0;
+    }
+}
 
-    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+@media  (min-width: 300px) and (max-width: 768px){
+
+    .herramientas {
+        margin:0 0 100px; 
+    }
+
+    .efectoImagenes{
         display:none;
-   }
-    
-    .montana{
-        margin:800px 0 0;
     }
 
-    .inicio{
-        padding:190px 0 110px;
+    .proyectoMovil{
+        display:block;
+    }
+
+    #proyectos .btn{
+        margin:0 10px;
+    }
+
+    .columnaImagenes{
+        width:100% !important;
+   
     }
 }
 
-@media   (max-width:480px){
-
-    .montana{
-       display: none;
-    }
-
-}
+/*Contacto*/
 
 @media (min-width: 321px) and (max-width: 767px) {
     .contactoWrap{

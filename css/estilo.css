@@ -3,6 +3,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box ;
+    text-decoration: none;
+	list-style: none;
 }
 
 html{
@@ -41,14 +43,15 @@ h4{
 }
 
 .idiomaEs, .idiomaEn, .estiloBoton{
-    color:#7cacdc !important;
-    border-color: #7cacdc !important;
+    color:#fff !important;
+    border-color: #fff !important;
+    background-color: #214161;
 }
 
 .idiomaEs:hover, .idiomaEn:hover, .estiloBoton:hover{
     color:#fff !important;
     border-color: #fff !important;
-    background-color: #214161;
+    background-color: #335576;
 }
 
 
@@ -56,6 +59,7 @@ h4{
 .wrap{
 	margin: 0 auto;
 	width:80%;
+    max-width: 1400px;
   
 }
 
@@ -68,36 +72,82 @@ h4{
 }
 
 
-#headerIzq{
-    padding:60px 0 0;
+#container{
+	position: fixed;
+	margin:0 auto;
+	width:80%;
+	max-width: 1400px;
+    
+}
+
+
+#logo img{
+	width:50%;
+    margin:50px 0 0 30%;
+}
+
+#logo2 img{
+    width:20%;
+}
+
+.menu{
+	top:0;
+	left:0;
+	right:0;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	z-index: 5;
+}  
+
+.menu .navbar  li{
 	float:left;
-	width:20%;
 }
 
-#headerIzq img{
-    width:60%;
+.menu .navbar  li a{
+	padding:15px;
 }
 
-#headerDer{
-	float:right;
-	width:70%;
+.menu .navbar ul li a{
+	font-family: 'Kanit';
+	font-size: 18px;
+	padding:0 30px !important;
+	color:#665e5e;
+	display:block;
 }
 
-#headerDer img{
-    width:30px !important;
+.menu .navbar ul li a:hover{
+	color:#1caed0;
 }
 
+#menu{
+	display:none;
+}
+
+.menu-icono{
+	width:25px;
+}
+
+.menu label{
+	cursor: pointer;
+	display:none;
+}
 
 @keyframes animatedBackground {
     from { background-position: 0px 0; }
     to { background-position: -562px 0; }
   }
 
-.lenguaje{
-    position:fixed;
-    top:60px;
+  .lenguaje{
+    position:absolute;
+    top:50px;
     right:10%;
-    
+    z-index: 20; 
+}
+
+.lenguaje img{
+    width:40px;
+    height: auto;
 }
 
 .lenguaje ul{
@@ -219,8 +269,17 @@ h4{
     width: 100vw;
 }
 
+.offcanvas {
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	}
 
-
+    #menuLateral{
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        }
 
 #navbar{
     padding:15px 0 0 !important;
@@ -250,7 +309,6 @@ h4{
 .dropdown-menu{
     background-color: #191d5d !important;   
 }
-
 
 /* PERSONALIZACION MENU HAMBURGUESA */
 
@@ -419,7 +477,12 @@ nav, .navbar-toggler {
 .columnaImagenes{
     width:40%;
     height:auto;
-    margin:20px 5%;
+    margin:20px 5% 50px;
+}
+
+.columnaImagenes h3{
+    text-align: center;
+    padding:0 0 10px;
 }
 
 .efectoImagenes{

@@ -1,4 +1,4 @@
-
+//Elasticidad botones menu
 $(document).ready(function() {
     smoothScroll.init({
         selector: '[data-scroll]',
@@ -6,7 +6,7 @@ $(document).ready(function() {
         // 2 seg equivale a 2000)  
         speed: 300,
         //aceleraciones
-        easing:'easeInQuintQuad',
+        easing: 'easeInQuart',
         //easing: 'easyInCubic'
         //easing: 'easyInOutQuad',
         //easing:'easeInQuart',
@@ -15,13 +15,9 @@ $(document).ready(function() {
 
 });
 
+
 //desaparece el boton ScrollTop al cargar la pagina web
 document.getElementById("flechabtn").style.display = "none";
-document.getElementById("headerIzq").style.display = "block";
-document.getElementById("headerDer").style.width = "80%";
-document.getElementById("navbar").style.border = "none";
-document.getElementById("navbar").style.padding = "50px 0 0";
-document.getElementById("lenguaje").style.display = "block";
 
 
 
@@ -34,31 +30,34 @@ window.onscroll = function() {
 function scrollFunction() {
     if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
         document.getElementById("flechabtn").style.display = "block";
-        document.getElementById("headerIzq").style.display = "none";
-        document.getElementById("headerDer").style.width = "100%";
-        document.getElementById("navbar").style.borderBottom = "solid #fff";
-        document.getElementById("navbar").style.background = "#020a13";
-        document.getElementById("navbar").style.borderLeft = "solid #fff";
-        document.getElementById("navbar").style.borderRight = "solid #fff";
-        document.getElementById("navbar").style.margin = "0 auto";
-        document.getElementById("navbar").style.width = "100%";
-        document.getElementById("lenguaje").style.display = "none";
-        
-        
-       
+        document.getElementById("logo").style.display = "none";
+        document.getElementById("logo2").style.display = "block";
+        document.getElementById("logo2").style.paddingLeft = "5%";
+        document.getElementById("container").style.height = "65px";
+        document.getElementById("container").style.backgroundColor = "#020a13";
+        document.getElementById("container").style.width = "100%";
+        document.getElementById("container").style.borderBottom = "solid #44505d";
+        document.getElementById("container").style.borderLeft = "solid #44505d";
+        document.getElementById("container").style.borderRight = "solid #44505d";
+
+
 
     } else {
         document.getElementById("flechabtn").style.display = "none";
-        document.getElementById("headerIzq").style.display = "block";
-        document.getElementById("headerDer").style.width = "80%";
-        document.getElementById("navbar").style.border = "none";
-        document.getElementById("navbar").style.background = "none";
-        document.getElementById("navbar").style.width = "60%";
-        document.getElementById("navbar").style.margin = "30px auto 0";
-        document.getElementById("lenguaje").style.display = "block";
-        
+        document.getElementById("logo").style.display = "block";
+        document.getElementById("logo2").style.display = "none";
+        document.getElementById("container").style.height = "initial";
+        document.getElementById("container").style.backgroundColor = "initial";
+        document.getElementById("container").style.borderBottom = "none";
+        document.getElementById("container").style.borderLeft = "none";
+        document.getElementById("container").style.borderRight = "none";
+        document.getElementById("container").style.width = "90%";
+   
     }
 }
+
+
+
 
 //Funcián Scrolltop (Jquery)
 function topFunction() {
