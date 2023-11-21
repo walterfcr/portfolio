@@ -42,13 +42,13 @@ h4{
     color:#5e5aa8;
 }
 
-.idiomaEs, .idiomaEn, .estiloBoton{
+.estiloBoton{
     color:#fff !important;
     border-color: #fff !important;
     background-color: #214161;
 }
 
-.idiomaEs:hover, .idiomaEn:hover, .estiloBoton:hover{
+.estiloBoton:hover{
     color:#fff !important;
     border-color: #fff !important;
     background-color: #335576;
@@ -82,8 +82,12 @@ h4{
 
 
 #logo img{
-	width:50%;
-    margin:50px 0 0 30%;
+	width:40%;
+    margin:50px 0 0 ;
+}
+
+#logo2{
+    display:none;
 }
 
 #logo2 img{
@@ -111,7 +115,7 @@ h4{
 .menu .navbar ul li a{
 	font-family: 'Kanit';
 	font-size: 18px;
-	padding:0 30px !important;
+	padding:0 30px 0 !important;
 	color:#665e5e;
 	display:block;
 }
@@ -163,6 +167,10 @@ h4{
 .inicio{
     position:relative;
 	padding:250px 0 260px;
+}
+
+.botonInicio2{
+    display: none;
 }
 
 .inicio img{
@@ -355,6 +363,13 @@ nav, .navbar-toggler {
 
 #pestanas{
     padding:100px 0 0;
+}
+
+#pestanas h2{
+    padding:0 0 50px;
+}
+
+#proyectoPestana1, #proyectoPestana2{
     cursor: pointer;
 }
 

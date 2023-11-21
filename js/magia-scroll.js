@@ -44,14 +44,15 @@ function scrollFunction() {
 
     } else {
         document.getElementById("flechabtn").style.display = "none";
-        document.getElementById("logo").style.display = "block";
+        document.getElementById("logo").style.display = "initial";
         document.getElementById("logo2").style.display = "none";
+        document.getElementById("logo2").style.paddingLeft = "initial";
         document.getElementById("container").style.height = "initial";
         document.getElementById("container").style.backgroundColor = "initial";
         document.getElementById("container").style.borderBottom = "none";
         document.getElementById("container").style.borderLeft = "none";
         document.getElementById("container").style.borderRight = "none";
-        document.getElementById("container").style.width = "90%";
+        document.getElementById("container").style.width = "80%";
    
     }
 }
