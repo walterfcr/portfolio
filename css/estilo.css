@@ -54,6 +54,18 @@ h4{
     background-color: #335576;
 }
 
+.estiloBotonInicio{
+    color:#fff !important;
+    border-color: #fff !important;
+    background-color: #214161;
+}
+
+.estiloBotonInicio:hover{
+    color:#fff !important;
+    border-color: #fff !important;
+    background-color: #335576;
+}
+
 
  
 .wrap{

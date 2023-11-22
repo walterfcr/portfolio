@@ -92,6 +92,14 @@
 
 }
 
+@media(min-width:1281px) and (max-width:1366px){
+	#listaMenu a{
+		font-size: 0.9rem;
+		padding:0 10px;
+	}
+
+}
+
 @media(min-width:1025px) and (max-width:1280px){
 	#listaMenu a{
 		font-size: 0.8rem;
@@ -258,6 +266,153 @@
     }
 }
 
+@media   (min-width: 801px) and (max-width: 1101px){
+
+
+    .inicio p{
+        font-size:1.3rem;
+    }
+
+    h1{
+        padding:0 0 30px;
+        font-size:3rem;
+    }
+
+    .avatar2{
+        right:30px;
+    }
+
+    .avatar2 img{
+        width:50%;
+    }
+
+    .avatar3{
+        right:50px;
+    }
+
+    .avatar3 img{
+        width:50%;
+    }
+
+    .avatar4{
+        right:240px;
+    }
+
+    .avatar4 img{
+        width:50%;
+    }
+
+    .avatar5{
+        right:325px;
+    }
+
+    .avatar5 img{
+        width:50%;
+    }
+
+    .avatar6{
+        right:275px;
+    }
+
+    .avatar6 img{
+        width:50%;
+    }
+}
+
+
+@media   (min-width: 1000px) and (max-width: 1024px){
+
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    #inicio p{
+        font-size: 1.5rem;
+    }
+
+    .inicio{
+        padding:200px 0 ;
+    }
+
+    .header-top{
+        height: 650px;
+    }
+    
+    .avatar2{
+        right:30px;
+    }
+
+    .avatar2 img{
+        width:50%;
+    }
+
+    .avatar3{
+        right:50px;
+    }
+
+    .avatar3 img{
+        width:50%;
+    }
+
+    .avatar4{
+        right:240px;
+    }
+
+    .avatar4 img{
+        width:50%;
+    }
+
+    .avatar5{
+        right:355px;
+    }
+
+    .avatar5 img{
+        width:50%;
+    }
+
+    .avatar6{
+        right:275px;
+    }
+
+    .avatar6 img{
+        width:50%;
+    }
+
+    .montana{
+        margin:575px 0 0;
+    }
+}
+
+@media   (min-width: 1025px) and (max-width: 1280px){
+    .header-top{
+        height: 800px;
+    }
+
+    .montana{
+        margin:650px 0 0;
+    }
+
+    .avatar2{
+        right:40px;
+    }
+
+    .avatar3{
+        right:50px;
+    }
+
+    .avatar4{
+        right:340px;
+    }
+
+    .avatar5{
+        right:400px;
+    }
+
+    .avatar6{
+        right:275px;
+    }
+}
 
 
 /*acerca*/
