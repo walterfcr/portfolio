@@ -44,26 +44,22 @@ h4{
 
 .estiloBoton{
     color:#fff !important;
-    border-color: #fff !important;
-    background-color: #214161;
+    background-color: #480e49;
 }
 
 .estiloBoton:hover{
     color:#fff !important;
-    border-color: #fff !important;
-    background-color: #335576;
+    background-color: #531154;
 }
 
 .estiloBotonInicio{
     color:#fff !important;
-    border-color: #fff !important;
-    background-color: #214161;
+    background-color: #480e49;
 }
 
 .estiloBotonInicio:hover{
     color:#fff !important;
-    border-color: #fff !important;
-    background-color: #335576;
+    background-color: #531154;
 }
 
 
@@ -655,6 +651,10 @@ footer li{
 .containerForm p, h2{
     text-align: center;
     
+}
+
+.botonForm{
+    padding:10px 50px;
 }
 
 .formP{
