@@ -249,16 +249,16 @@
     }
 
     .inicio p{
-        font-size:1.3rem;
+        font-size:1rem;
     }
 
     h1{
         padding:0;
-        font-size:3rem;
+        font-size:1.8rem;
     }
 
     .avatar{
-        padding:50px 0;
+        padding:0 0 50px;
     }
 
     .header-top{

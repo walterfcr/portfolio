@@ -23,8 +23,8 @@ h1, h2, h3, h4{
 }
 
 h1{
-    color:#6086AB;
-	font-size: 5rem;
+    color:#5e5aa8;
+	font-size: 2.3rem;
 }
 
 
@@ -186,8 +186,12 @@ h4{
 }
 
 .inicio p{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color:#fff;
+}
+
+.ParrafoInicial{
+    padding:50px 0;
 }
 
 
