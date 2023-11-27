@@ -16,6 +16,6 @@ function toggleOnClass(event) {
 }
 
 // close hamburger menu after click a
-$( '.menuEfecto li a' ).on("click", function(){
+$( '.listaMenu li a' ).on("click", function(){
   $('#hamburger-menu').click();
 });
