@@ -23,43 +23,43 @@ h1, h2, h3, h4{
 }
 
 h1{
-    color:#5e5aa8;
+    color:#195cd6;
 	font-size: 2.3rem;
 }
 
 
 
 h2{
-    color:#6086AB;
+    color:#195cd6;
 	font-size: 3rem;
 }
 
 h3{
-    color:#6086AB;
+    color:#195cd6;
 }
 
 h4{
-    color:#5e5aa8;
+    color:#1b3d53;
 }
 
 .estiloBoton{
     color:#fff !important;
-    background-color: #480e49;
+    background-color: #a9061e;
 }
 
 .estiloBoton:hover{
     color:#fff !important;
-    background-color: #531154;
+    background-color: #8c1527;
 }
 
 .estiloBotonInicio{
     color:#fff !important;
-    background-color: #480e49;
+    background-color: #a9061e;
 }
 
 .estiloBotonInicio:hover{
     color:#fff !important;
-    background-color: #531154;
+    background-color: #cd1e38;
 }
 
 
@@ -129,7 +129,7 @@ h4{
 }
 
 .menu .navbar ul li a:hover{
-	color:#1caed0;
+	color:#03a5d3;
 }
 
 #menu{
@@ -220,7 +220,7 @@ h4{
 }
 
 .avatar2 img{
-   
+    width:25%;
     float:right;
 }
 
@@ -235,6 +235,7 @@ h4{
 }
 
 .avatar3 img{
+    width:50%;
     float:right;
 }
 
@@ -249,6 +250,7 @@ h4{
 }
 
 .avatar4 img{
+    width:30%;
     float:right;
 }
 
@@ -263,6 +265,7 @@ h4{
 }
 
 .avatar5 img{
+    width:45%;
     float:right;
 }
 
@@ -277,6 +280,7 @@ h4{
 }
 
 .avatar6 img{
+    width:20%;
     float:right;
 }
 
@@ -317,7 +321,7 @@ h4{
 }
 
 .navbar a:hover{
-    color:#aaa7e7 !important;
+    color:#03a5d3 !important;
 }
 
 .dropdown-menu a:hover{
@@ -357,7 +361,7 @@ nav, .navbar-toggler {
 
 #acerca{
     padding:100px 0 ;
-	background-color: #061527;
+	background-color: #656e80;
     text-align: center;
 }
 
@@ -371,6 +375,11 @@ nav, .navbar-toggler {
 
 #acerca h2{
     padding:0 0 80px;
+    color:#1b3d53;
+}
+
+#acerca h3{
+    color:#4a2d34;
 }
 
 #pestanas{
@@ -486,7 +495,9 @@ nav, .navbar-toggler {
     padding:30px;
     background-color: #f7eded;
     border-radius: 50%;
-    border:8px solid #5e5aa8;
+    border:8px solid #563840;
+
+
 }
 
 .herramientas p{
