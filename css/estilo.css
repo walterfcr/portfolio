@@ -23,43 +23,40 @@ h1, h2, h3, h4{
 }
 
 h1{
-    color:#195cd6;
+    color:#38a2c5;
 	font-size: 2.3rem;
 }
 
 
 
 h2{
-    color:#195cd6;
+    color:#38a2c5;
 	font-size: 3rem;
 }
 
 h3{
-    color:#195cd6;
+    color:#58ccf2;
 }
 
-h4{
-    color:#1b3d53;
-}
 
 .estiloBoton{
     color:#fff !important;
-    background-color: #a9061e;
+    background-color: #ba2005;
 }
 
 .estiloBoton:hover{
     color:#fff !important;
-    background-color: #8c1527;
+    background-color: #ba2e16;
 }
 
 .estiloBotonInicio{
     color:#fff !important;
-    background-color: #a9061e;
+    background-color: #ba2005;
 }
 
 .estiloBotonInicio:hover{
     color:#fff !important;
-    background-color: #cd1e38;
+    background-color: #ba2e16;
 }
 
 
@@ -174,7 +171,7 @@ h4{
 
 .inicio{
     position:relative;
-	padding:250px 0 260px;
+	padding:200px 0 220px;
 }
 
 .botonInicio2{
@@ -286,7 +283,7 @@ h4{
 
 .montana{
     position: absolute;
-    margin:675px 0 0;
+    margin:600px 0 0;
 }
 
 .montana img{ 
@@ -361,7 +358,7 @@ nav, .navbar-toggler {
 
 #acerca{
     padding:100px 0 ;
-	background-color: #656e80;
+	background-color: #4d5262;
     text-align: center;
 }
 
@@ -375,12 +372,29 @@ nav, .navbar-toggler {
 
 #acerca h2{
     padding:0 0 80px;
-    color:#1b3d53;
+    color:#282d3b;
 }
 
 #acerca h3{
-    color:#4a2d34;
+    color:#38a2c5;
 }
+
+h4{
+    color:#282d3b;
+}
+
+.ilustracion{
+    width:60%;
+    text-align: center;
+    margin:0 auto;
+    padding:30px;
+    background-color: #f7eded;
+    border-radius: 50%;
+    border:8px solid #38a2c5;
+
+
+}
+
 
 #pestanas{
     padding:100px 0 0;
@@ -486,18 +500,6 @@ nav, .navbar-toggler {
 
 .galeriaFotosGrande img{
     width:90%;
-}
-
-.ilustracion{
-    width:60%;
-    text-align: center;
-    margin:0 auto;
-    padding:30px;
-    background-color: #f7eded;
-    border-radius: 50%;
-    border:8px solid #563840;
-
-
 }
 
 .herramientas p{
