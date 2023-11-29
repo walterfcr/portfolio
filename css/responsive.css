@@ -464,6 +464,7 @@
 
     .proyectoMovil{
         display:block;
+        padding:0 0 75px;
     }
 
     #proyectos .btn{
