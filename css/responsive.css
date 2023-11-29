@@ -40,19 +40,26 @@
 
 @media(min-width:320px) and (max-width:768px){
 
-    #logo img{
-        width:40%;
-        margin:0 ;
+    #logo{
+        display: none !important;
+    }
+
+    #logo2{
+        display: block !important;
+        padding:0 0 0 5% !important;
+    }
+
+    #container{
+        border:2px solid #03a5d3 !important;
+        height:65px !important;
+        width:100% !important;
+        background-color: #020a13 !important;
     }
 
 }
 
 @media(max-width:768px){
 
-    #container{
-        width:100% !important;
-        
-    }
 
 	.menu{
 		padding: 30px;

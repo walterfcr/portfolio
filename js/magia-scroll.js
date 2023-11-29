@@ -4,7 +4,7 @@ $(document).ready(function() {
         selector: '[data-scroll]',
         //selector: 'a.nav-link', 
         // 2 seg equivale a 2000)  
-        speed: 300,
+        speed: 100,
         //aceleraciones
         easing: 'easeInQuart',
         //easing: 'easyInCubic'
