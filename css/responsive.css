@@ -337,11 +337,15 @@
     }
 
     .inicio{
-        padding:200px 0 ;
+        padding:170px 0 ;
     }
 
     .header-top{
-        height: 650px;
+        height: 600px !important;
+    }
+
+    .montana{
+        margin:520px 0 0 !important;
     }
     
     .avatar2{
@@ -434,6 +438,18 @@
 @media  (min-width: 320px) and (max-width: 768px){
     .herramientas{
         padding:0 0 50px;
+    }
+
+    #acerca{
+        background-color: #061527; 
+    }
+
+    #acerca h2{
+        color:#38a2c5; 
+    }
+
+    #acerca h4{
+        color:#ba0520; 
     }
 }
 

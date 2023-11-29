@@ -41,22 +41,22 @@ h3{
 
 .estiloBoton{
     color:#fff !important;
-    background-color: #ba2005;
+    background-color: #ba0520;
 }
 
 .estiloBoton:hover{
     color:#fff !important;
-    background-color: #ba2e16;
+    background-color: #c5112c;
 }
 
 .estiloBotonInicio{
     color:#fff !important;
-    background-color: #ba2005;
+    background-color: #ba0520;
 }
 
 .estiloBotonInicio:hover{
     color:#fff !important;
-    background-color: #ba2e16;
+    background-color: #c5112c;
 }
 
 
@@ -358,7 +358,7 @@ nav, .navbar-toggler {
 
 #acerca{
     padding:100px 0 ;
-	background-color: #4d5262;
+	background-color: #454a5a; 
     text-align: center;
 }
 
