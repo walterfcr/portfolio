@@ -370,8 +370,8 @@ nav, .navbar-toggler {
 }
 
 #acerca{
-    padding:100px 0 ;
-	background-color: #454a5a; 
+    padding:150px 0 ;
+	background-color: #061527; 
     text-align: center;
 }
 
@@ -385,15 +385,15 @@ nav, .navbar-toggler {
 
 #acerca h2{
     padding:0 0 80px;
-    color:#282d3b;
-}
-
-#acerca h3{
     color:#38a2c5;
 }
 
+#acerca h3{
+    color:#3e7cbd;
+}
+
 h4{
-    color:#282d3b;
+    color:#38a2c5;
 }
 
 .ilustracion{
@@ -403,14 +403,14 @@ h4{
     padding:30px;
     background-color: #f7eded;
     border-radius: 50%;
-    border:8px solid #38a2c5;
+    border:8px solid #3e7cbd;
 
 
 }
 
 
 #pestanas{
-    padding:100px 0 0;
+    padding:150px 0 0;
 }
 
 #pestanas h2{
