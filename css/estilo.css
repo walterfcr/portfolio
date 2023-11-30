@@ -76,6 +76,19 @@ h3{
     animation: animatedBackground 90s linear infinite;
 }
 
+.social ul{
+    padding:0 0 30px !important;
+}
+
+
+.social li{
+    margin:0 25px 0 0!important;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+
 
 #container{
 	position: fixed;
@@ -149,13 +162,13 @@ h3{
 
   .lenguaje{
     position:absolute;
-    top:50px;
+    top:53px;
     right:10%;
     z-index: 20; 
 }
 
 .lenguaje img{
-    width:40px;
+    width:30px;
     height: auto;
 }
 
@@ -188,7 +201,7 @@ h3{
 }
 
 .ParrafoInicial{
-    padding:50px 0;
+    padding:30px 0 0;
 }
 
 
@@ -623,22 +636,6 @@ h4{
     position:relative;
 }
 
-
-
-footer{
-    padding:0 0 20px;
-}
-
-footer ul{
-    text-align: center;
-}
-
-footer li{
-    list-style: none;
-    display: inline-block;
-    padding:0 30px;
-}
-
 .efectoHover {
     opacity:2;
     filter:alpha(opacity=20);
@@ -807,6 +804,19 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+footer{
+    padding:0 0 20px;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    padding:0 30px;
+}
 
 
 

@@ -203,6 +203,15 @@
     .montana{
         display:none;
     }
+
+    .social ul{
+        padding:20px 0 20px !important;
+    }
+    
+    
+    .social li{
+        margin:0 12px !important;
+    }
 }
 
 @media   (min-width: 320px) and (max-width: 360px){
