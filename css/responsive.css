@@ -1,44 +1,42 @@
 
-/*Menu*/
-
-@media(min-width:320px) and (max-width:330px){
+/*Menu*/ @media(min-width:320px) and (max-width:330px){
 	#inicio{
 		height:116px;
 	}
 }
 
-@media(min-width:331px) and (max-width:360px){
+/*Menu*/ @media(min-width:331px) and (max-width:360px){
 	#inicio{
 		height:124px;
 	}
 }
 
-@media(min-width:361px) and (max-width:378px){
+/*Menu*/ @media(min-width:361px) and (max-width:378px){
 	#inicio{
 		height:128px;
 	}
 }
 
-@media(min-width:379px) and (max-width:400px){
+/*Menu*/ @media(min-width:379px) and (max-width:400px){
 	#inicio{
 		height:134px;
 	}
 }	
 
-@media(min-width:401px) and (max-width:419px){
+/*Menu*/@media(min-width:401px) and (max-width:419px){
 	#inicio{
 		height:138px;
 	}
 }
 
-@media(min-width:420px) and (max-width:768px){
+/*Menu*/@media(min-width:420px) and (max-width:768px){
 	#inicio{
 		height:180px;
 	}
 
 }
 
-@media(min-width:320px) and (max-width:768px){
+/*Menu*/@media(min-width:320px) and (max-width:768px){
 
     #logo{
         display: none !important;
@@ -107,7 +105,7 @@
 }
 
 
-@media(min-width:1281px) and (max-width:1366px){
+/*Menu*/ @media(min-width:1281px) and (max-width:1366px){
 	#listaMenu a{
 		font-size: 0.9rem;
 		padding:0 10px;
@@ -115,7 +113,7 @@
 
 }
 
-@media(min-width:1025px) and (max-width:1280px){
+/*Menu*/ @media(min-width:1025px) and (max-width:1280px){
 	#listaMenu a{
 		font-size: 0.8rem;
 		padding:0 10px;
@@ -126,7 +124,7 @@
     }
 }
 
-@media(min-width:993px) and (max-width:1024px){
+/*Menu*/ @media(min-width:993px) and (max-width:1024px){
 
     .menu .navbar ul li a{
         font-size: 0.8rem;
@@ -146,7 +144,7 @@
 
 }
 
-@media(min-width:801px) and (max-width:992px){
+/*Menu*/ @media(min-width:801px) and (max-width:992px){
     .menu .navbar ul li a{
         font-size: 0.9rem;
         padding:0 10px !important;
@@ -163,7 +161,7 @@
 
 }
 
-@media(min-width:769px) and (max-width:800px){
+/*Menu*/ @media(min-width:769px) and (max-width:800px){
     .menu .navbar ul li a{
         font-size: 0.6rem;
         padding:0 8px !important;
@@ -180,9 +178,7 @@
 
 }
 
-/*Inicio*/
-
-@media   (min-width: 320px) and (max-width: 768px){
+/*Inicio*/ @media   (min-width: 320px) and (max-width: 768px){
     .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
         display:none;
     }
@@ -214,7 +210,7 @@
     }
 }
 
-@media   (min-width: 320px) and (max-width: 360px){
+/*Inicio*/ @media   (min-width: 320px) and (max-width: 360px){
 
 
     .inicio{
@@ -239,7 +235,7 @@
     }
 }
 
-@media   (min-width: 361px) and (max-width: 375px){
+/*Inicio*/ @media   (min-width: 361px) and (max-width: 375px){
 
 
     .inicio{
@@ -264,7 +260,7 @@
     }
 }
 
-@media   (min-width: 376px) and (max-width: 480px){
+/*Inicio*/ @media   (min-width: 376px) and (max-width: 480px){
 
 
     .inicio{
@@ -290,61 +286,76 @@
     }
 }
 
-@media   (min-width: 801px) and (max-width: 1101px){
-
-
-    .inicio p{
-        font-size:1.3rem;
+/*Inicio*/ @media   (min-width: 481px) and (max-width: 768px){
+    .hola{
+        width:100% !important;
+        margin:0 !important;
+        padding:0 !important;
+    }
+    .avatar{
+        width:100% !important;
     }
 
     h1{
-        padding:0 0 30px;
-        font-size:3rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
-    .avatar2{
-        right:30px;
+    .inicio p{
+        text-align: center;
     }
 
-    .avatar2 img{
-        width:50%;
+    .inicio{
+        padding:20px 0 100px;
     }
 
-    .avatar3{
-        right:50px;
+    .social{
+        text-align: center;
     }
 
-    .avatar3 img{
-        width:50%;
+    .botonInicio2 a{
+        text-align: center !important;
     }
 
-    .avatar4{
-        right:240px;
+
+
+}
+
+/*Inicio*/ @media   (min-width: 769px) and (max-width: 999px){
+
+    h1{
+        font-size: 1.5rem;
     }
 
-    .avatar4 img{
-        width:50%;
+    .ParrafoInicial{
+        padding:10px 0;
     }
 
-    .avatar5{
-        right:325px;
+    .ParrafoInicial p{
+        font-size: 0.8rem !important;
+
     }
 
-    .avatar5 img{
-        width:50%;
+    .inicio{
+        padding:170px 0 ;
     }
 
-    .avatar6{
-        right:275px;
+    .header-top{
+        height: 600px !important;
     }
 
-    .avatar6 img{
-        width:50%;
+    .montana{
+        margin:520px 0 0 !important;
     }
+    
+    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+        display:none;
+    }
+
 }
 
 
-@media   (min-width: 1000px) and (max-width: 1024px){
+/*Inicio*/ @media   (min-width: 1000px) and (max-width: 1024px){
 
 
     h1{
@@ -352,7 +363,7 @@
     }
 
     .ParrafoInicial{
-        padding:30px 0;
+        padding: 0;
     }
 
     .ParrafoInicial p{
@@ -412,12 +423,9 @@
         width:20%;
     }
 
-    .montana{
-        margin:575px 0 0;
-    }
 }
 
-@media   (min-width: 1025px) and (max-width: 1280px){
+/*Inicio*/ @media   (min-width: 1025px) and (max-width: 1280px){
     .header-top{
         height: 800px;
     }
