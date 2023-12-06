@@ -124,7 +124,7 @@
     }
 }
 
-/*Menu*/ @media(min-width:993px) and (max-width:1024px){
+/*Menu*/ @media(min-width:992px) and (max-width:1024px){
 
     .menu .navbar ul li a{
         font-size: 0.8rem;
@@ -132,19 +132,42 @@
 
     }
 
+    .titulo a{
+        font-size: 0.9rem !important;
+        padding:3px 5px !important;
+    }
+
     .lenguaje img{
-        width:20px;
+        width:16px;
     }
 
     .lenguaje{
-        top:45px;
+        top:51px;
         right:9%;
+    }
+
+    h4{
+        font-size: 1.3rem;
+        padding:20px 0 15px;
+    }
+
+    #acerca, #pestanas{
+        padding:100px 0 ;
+    }
+
+    #proyectos{
+        padding:10px 0 100px;
+    
+    }
+
+    #contacto{
+        padding:50px 0 ;
     }
 
 
 }
 
-/*Menu*/ @media(min-width:801px) and (max-width:992px){
+/*Menu*/ @media(min-width:801px) and (max-width:991px){
     .menu .navbar ul li a{
         font-size: 0.9rem;
         padding:0 10px !important;
@@ -155,7 +178,7 @@
     }
 
     .lenguaje{
-        top:45px;
+        top:51px;
         right:8%;
     }
 
@@ -231,7 +254,7 @@
     }
 
     .header-top{
-        height: 568px;
+        height: 850px;
     }
 }
 
@@ -256,7 +279,7 @@
     }
 
     .header-top{
-        height: 700px;
+        height: 850px;
     }
 }
 
@@ -312,11 +335,6 @@
     .social{
         text-align: center;
     }
-
-    .botonInicio2 a{
-        text-align: center !important;
-    }
-
 
 
 }
@@ -473,6 +491,51 @@
     }
 
 }
+
+@media  (min-width: 601px) and (max-width: 768px){
+    .columnaAcerca{
+        width:100% !important;
+        padding:30px 0;
+    }
+    
+    .ilustracion{
+        float:left !important;
+        width:30%;
+        margin:0 40px 0 0;
+    }
+
+    #acerca h3{
+        padding:0 !important;
+    }
+
+    #acerca p{
+        margin:0 !important;
+        font-size: 0.8rem;
+    }
+
+    #acerca h4{
+        padding:20px 0 0;
+    }
+
+    .herramientas{
+        overflow: hidden;
+    }
+
+    .estiloBotonInicio{
+        margin:30px auto;
+        display: block;
+    }
+
+}
+
+@media  (min-width: 481px) and (max-width: 600px){
+    .estiloBotonInicio{
+        margin:30px auto;
+        display: block;
+    }
+}
+
+
 
 /*Proyectos*/
 
