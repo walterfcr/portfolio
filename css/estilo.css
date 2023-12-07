@@ -289,6 +289,18 @@ h3{
     float:right;
 }
 
+/*
+.img {
+    width:30px !important;
+    height:30px !important;
+}
+
+.info {
+    width:30px !important;
+    height:30px !important;
+}
+*/
+
 .montana{
     position: absolute;
     margin:600px 0 0;
