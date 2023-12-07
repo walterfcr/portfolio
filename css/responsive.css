@@ -202,7 +202,7 @@
 }
 
 /*Inicio*/ @media   (min-width: 320px) and (max-width: 768px){
-    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+    .planeta1, .planeta2, .planeta3, .planeta4, .planeta5, .satelite1, .satelite2{
         display:none;
     }
 
@@ -366,7 +366,7 @@
         margin:520px 0 0 !important;
     }
     
-    .avatar2, .avatar3, .avatar4, .avatar5, .avatar6{
+    .planeta1, .planeta2, .planeta3, .planeta4, .planeta5, .satelite1, .satelite2{
         display:none;
     }
 
@@ -400,46 +400,58 @@
     .montana{
         margin:520px 0 0 !important;
     }
+
+    .ih-item.circle {
+        width: 50px;
+        height: 50px;
+        
+      }
+      .ih-item.circle .img {
+        
+        width: 50px;
+        height: 50px;
+        
+      }
     
-    .avatar2{
-        right:30px;
-    }
-
-    .avatar2 img{
-        width:25%;
-    }
-
-    .avatar3{
-        right:50px;
-    }
-
-    .avatar3 img{
-        width:20%;
-    }
-
-    .avatar4{
-        right:240px;
-    }
-
-    .avatar4 img{
-        width:25%;
-    }
-
-    .avatar5{
+    .planeta1{
         right:320px;
     }
 
-    .avatar5 img{
-        width:25%;
+    .planeta2{
+        right:20px;
     }
 
-    .avatar6{
-        right:275px;
+    .planeta3{
+        right:390px;
+        top:400px;
     }
 
-    .avatar6 img{
-        width:20%;
+    .planeta5{
+        right:200px;
+        top:450px;
     }
+
+    .satelite1{
+        right:70px;
+        top:230px;
+    }
+
+    .satelite1 img{
+        width: 60px;
+
+    }
+
+    .satelite2{
+        right:250px;
+        top:330px;
+    }
+
+    .satelite2 img{
+        width: 60px;
+
+    }
+
+
 
 }
 

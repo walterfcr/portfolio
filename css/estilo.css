@@ -232,7 +232,7 @@ h3{
     width: auto;
     height: 100px;
 	position:absolute;
-    right:30px;
+    right:50px;
     top:150px;
 }
 
@@ -243,6 +243,25 @@ h3{
     right:500px;
     top:460px;
 }
+
+.planeta4{
+    width: auto;
+    height: 100px;
+	position:absolute;
+    right:1px;
+    top:350px;
+}
+
+.planeta5{
+    width: auto;
+    height: 100px;
+    position:absolute;
+    right:100px;
+    top:550px;
+}
+
+
+
 
 
 .satelite1{
