@@ -219,21 +219,33 @@ h3{
 }
 
 
+.planeta1{
+	position:absolute;
+    width: auto;
+    height: 100px;
+    right:450px;
+    top:190px;
+}
 
-.avatar2{
+.planeta2{
 
     width: auto;
     height: 100px;
 	position:absolute;
-    right:60px;
+    right:30px;
+    top:150px;
 }
 
-.avatar2 img{
-    width:25%;
-    float:right;
+.planeta3{
+    width: auto;
+    height: 100px;
+	position:absolute;
+    right:500px;
+    top:460px;
 }
 
-.avatar3{
+
+.satelite1{
 	transform: translatey(20px);
 	animation: float 10s ease-in-out infinite;
 	position:absolute;
@@ -243,25 +255,12 @@ h3{
     top:420px;
 }
 
-.avatar3 img{
+.satelite1 img{
     width:50%;
     float:right;
 }
 
-.avatar4{
-    width: auto;
-    height: 100px;
-	position:absolute;
-    right:480px;
-    top:460px;
-}
-
-.avatar4 img{
-    width:30%;
-    float:right;
-}
-
-.avatar5{
+.satelite2{
 	transform: translatey(20px);
 	animation: float 8s ease-in-out infinite;
 	position:absolute;
@@ -271,35 +270,10 @@ h3{
     top:320px;
 }
 
-.avatar5 img{
+.satelite2 img{
     width:45%;
     float:right;
 }
-
-.avatar6{
-	position:absolute;
-    width: auto;
-    height: 100px;
-    right:540px;
-    top:220px;
-}
-
-.avatar6 img{
-    width:20%;
-    float:right;
-}
-
-/*
-.img {
-    width:30px !important;
-    height:30px !important;
-}
-
-.info {
-    width:30px !important;
-    height:30px !important;
-}
-*/
 
 .montana{
     position: absolute;
