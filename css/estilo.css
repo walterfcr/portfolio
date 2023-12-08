@@ -260,10 +260,6 @@ h3{
     top:550px;
 }
 
-
-
-
-
 .satelite1{
 	transform: translatey(20px);
 	animation: float 10s ease-in-out infinite;
@@ -368,6 +364,135 @@ nav, .navbar-toggler {
 .custom-toggler .navbar-toggler-icon:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(230, 177, 91, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+/*efecto planetas*/
+
+.planetas {
+    position: relative;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .planetas,
+  .planetas * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .planetas a {
+    color: #333;
+  }
+  .planetas a:hover {
+    text-decoration: none;
+  }
+  .planetas img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .planetas.circulo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .planetas.circulo .img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .planetas.circulo .img:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .planetas.circulo .img img {
+    border-radius: 50%;
+  }
+  .planetas.circulo .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .planetas.circulo.efectoPlanetas .img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  .planetas.circulo.efectoPlanetas .info {
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .planetas.circulo.efectoPlanetas .info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 55px 0 0 0;
+    height: 110px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .planetas.circulo.efectoPlanetas .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .planetas.circulo.efectoPlanetas.scale_down_up .info {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.35s ease-in-out 0.2s;
+    -moz-transition: all 0.35s ease-in-out 0.2s;
+    transition: all 0.35s ease-in-out 0.2s;
+  }
+  .planetas.circulo.efectoPlanetas.scale_down_up a:hover .img {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  .planetas.circulo.efectoPlanetas.scale_down_up a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
 
 #acerca{
     padding:150px 0 ;
