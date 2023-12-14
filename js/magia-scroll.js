@@ -30,6 +30,7 @@ window.onscroll = function() {
 function scrollFunction() {
     if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
         document.getElementById("flechabtn").style.display = "block";
+        document.getElementById("navbar").style.marginTop = "7px";
         document.getElementById("logo").style.display = "none";
         document.getElementById("logo2").style.display = "block";
         document.getElementById("logo2").style.paddingLeft = "5%";
@@ -45,6 +46,7 @@ function scrollFunction() {
     } else {
         document.getElementById("flechabtn").style.display = "none";
         document.getElementById("logo").style.display = "initial";
+        document.getElementById("navbar").style.marginTop = "30px";
         document.getElementById("logo2").style.display = "none";
         document.getElementById("logo2").style.paddingLeft = "initial";
         document.getElementById("container").style.height = "initial";
