@@ -19,6 +19,9 @@ const acercaDeMiFront = document.querySelector('.acercaDeMiFront');
 const acercaDiseno = document.querySelector('.acercaDiseno');
 const acercaDeMiDrawing = document.querySelector('.acercaDeMiDrawing');
 const proyectosTitulo = document.querySelector('.proyectosTitulo');
+const proyectosIntro = document.querySelector('.proyectosIntro');
+const proyectoWebsites = document.querySelector('.proyectoWebsites');
+const proyectoDesign = document.querySelector('.proyectoDesign');
 const proyecto1 = document.querySelector('.proyecto1');
 const proyecto2 = document.querySelector('.proyecto2');
 const proyecto3 = document.querySelector('.proyecto3');
@@ -58,6 +61,9 @@ link.forEach(r => {
         acercaDiseno.textContent = changeLanguage[attr].acercaDiseno;
         acercaDeMiDrawing.textContent = changeLanguage[attr].acercaDeMiDrawing;
         proyectosTitulo.textContent = changeLanguage[attr].proyectosTitulo;
+        proyectosIntro.textContent = changeLanguage[attr].proyectosIntro;
+        proyectoWebsites.textContent = changeLanguage[attr].proyectoWebsites;
+        proyectoDesign.textContent = changeLanguage[attr].proyectoDesign;
         proyecto1.textContent = changeLanguage[attr].proyecto1;
         proyecto2.textContent = changeLanguage[attr].proyecto2;
         proyecto3.textContent = changeLanguage[attr].proyecto3;
@@ -98,6 +104,9 @@ let changeLanguage = {
         "acercaDiseno": "La parte visual de un sitio web es muy importante así que me gusta crear diseños que coincidan con la usabilidad del mismo.",
         "acercaDeMiDrawing": "Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lápiz de diferentes estilos o también de forma digital.",
         "proyectosTitulo": "Proyectos",
+        "proyectosIntro": "Les presento algunos de mis trabajos que son varios sitios web responsive, la mayoría creados con el framework Bootstrap y también algunos trabajos de diseño gráfico.",
+        "proyectoWebsites": "Sitios Web",
+        "proyectoDesign": "Diseño Gráfico",
         "proyecto1": "Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.",
         "proyecto2": "Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un sitio web simple en algo muy dinámico.",
         "proyecto3": "Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.",
@@ -129,18 +138,21 @@ let changeLanguage = {
         "saludo": "Check my work",
         "acercaDeMi": "About me",
         "herramienta1": "Languages and tools",
-        "herramienta2": "Tools",
+        "herramienta2": "Tools", 
         "herramienta3": "Tools",
         "acercaDeMiFront": "I love creating responsive websites that look good and meet both usability and design standards.",
         "acercaDiseno": "The visual part of a website is very important so I like creating designs that matches with usage.",
         "acercaDeMiDrawing": "I am passionate about drawing! In my free time I can make drawings of different styles using a pencil or digitally.",
         "proyectosTitulo": "Projects",
+        "proyectosIntro": "There are some of my works, which are responsive websites, most created with the framework Bootstrap and also some graphic design work.",
+        "proyectoWebsites": "Websites",
+        "proyectoDesign": "Graphic Design",
         "proyecto1": "Fullpage website of a swimsuit store with a very summery and striking color palette. Created with HTML, CSS, Javascript using Bootstrap.",
         "proyecto2": "Fullpage created with Bootstrap  which demonstrates the great power that Javascript has to turn a simple website into something very dynamic.",
         "proyecto3": "Landing page about a fictional costume party event with Story Telling style and a very magical parallax effect. Bootstrap, HTML, CSS and Javascript.",
         "proyecto4": "One Page from a private institute which demonstrates that content and navigation can be minimized without losing quality and using a flat and modern design.",
         "proyecto5": "Very colorful fullpage of a toy store with many effects and techniques that Bootstrap has and of course a lot of Javascript.",
-        "proyecto6": ".",
+        "proyecto6": "Website about a company of duplicationg machines and photocopy equipment with colors representing printing inks. HTML, CSS and Javascript.",
         "diseno": "Design",
         "dibujo": "Drawing",
         "contacto": "Contact",
