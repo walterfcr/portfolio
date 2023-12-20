@@ -17,66 +17,30 @@ function init() {
         mensaje = mensajeTxt.value;
 
         if (nombre === '' && email === '' && mensaje === '') {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'Debes llenar todos los campos' +
-                '<iframe src="https://embed.lottiefiles.com/animation/75320"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                }
-            })
-                        return false;
+            alerta.textContent = 'Debe llenar todos los campos';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
         } else if (nombre === '') {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'El campo Nombre está vacio' +
-                '<iframe src="https://embed.lottiefiles.com/animation/75320"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                }
-            })
-                        return false;
+            alerta.textContent = 'El campo nombre esta vacío';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
         } else if (email === '') {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'El campo email está vacio' +
-                '<iframe src="https://embed.lottiefiles.com/animation/75320"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                }
-            })
-                        return false;
+            alerta.textContent = 'El campo email esta vacío';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
         } else if (expressionEmail.test(email) === false) {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'El email ingresado es inválido' +
-                '<iframe src="https://embed.lottiefiles.com/animation/75320"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                }
-            })
-                        return false;
+            alerta.textContent = 'Email inválido';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
         } else if (mensaje === '') {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'El campo mensaje está vacio' +
-                '<iframe src="https://embed.lottiefiles.com/animation/75320"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                }
-            })
-                        return false;
+            alerta.textContent = 'El campo mensaje esta vacío';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
         } else {
-            Swal.fire({
-                title: 'Atención usuario',
-                html:'El Mensaje se ha enviado ' +
-                '<iframe src="https://embed.lottiefiles.com/animation/93865"></iframe>',
-                timer: 5000,
-                onOpen: function() {
-                    
-                }
-            })
-                        
+            alerta.textContent = 'Mensaje enviado';
+            alerta.classList.add('alertaVerde');
+            alerta.classList.remove('alertaRoja');
+            //el id del formulario es #form2
             emailjs.sendForm('service_f2ovo0j', 'template_iitspxm', '#form2', '5ZmYdav0fSxQ77Eav');
             //limpia campos
             cleanInputs();
