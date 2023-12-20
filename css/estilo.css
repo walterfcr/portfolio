@@ -527,6 +527,7 @@ nav, .navbar-toggler {
     padding:30px 5px;
 }
 
+
 h4{
     color:#38a2c5;
 }
@@ -928,14 +929,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 .alertaRoja{
-    color: #ff0000;
+    color: #f9f3f3;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 .alertaVerde{
-    color: #2d572c;
+    color: #66bcf9;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 
