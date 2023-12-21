@@ -544,6 +544,15 @@ h4{
 
 }
 
+.tooltip {
+    background-color: #ba0520 !important;
+    font-size: 16px !important;  
+}  
+
+.tooltip > .tooltip-inner {
+    background-color: #020a13;
+}
+
 
 #pestanas{
     padding:150px 0 0;
@@ -628,7 +637,7 @@ h4{
 }
 
 .disenoMargin{
-    margin-top:150px;
+    margin:150px 0 100px;
 }
 
 .galeriaDiseno button{

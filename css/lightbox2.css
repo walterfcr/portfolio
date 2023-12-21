@@ -72,7 +72,7 @@
   margin:0 auto;
   /*width: 40%;*/
   /*tamaño de la foto ancho*/
-  height: 95vh !important;
+  max-width: 1000px !important;
 }
 
 
