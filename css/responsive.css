@@ -967,6 +967,62 @@
 }
 
 
+/*footer*/
+
+@media (min-width: 801px) and (max-width: 1024px) {
+.socialF i{
+    font-size: 2rem;
+}
+
+#flechabtn img{
+    width:60%;
+}
+
+.goto-top{
+    bottom:53px;
+    right:5px;
+}
+
+
+}
+
+@media (min-width:769px) and (max-width: 800px) {
+    .socialF i{
+        font-size: 1.5rem !important;
+    }
+
+    .socialF li{
+        margin:0 20px 0 0!important;
+    }
+
+    footer p{
+        font-size: 0.8rem !important;
+    }
+
+    #flechabtn img{
+        width:40%;
+    }
+
+    .goto-top{
+        bottom:40px;
+        right:5px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width: 480px) {
+    .socialF {
+    text-align: center;    
+    }
+
+    footer hr{
+        display:block;
+        margin:30px 0;
+    }
+
+}
+
+
 
 
 
