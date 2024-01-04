@@ -5,7 +5,7 @@ let proyectoPestana3 = document.querySelector('#proyectoPestana3');
 
 
 function proyectos() {
-    document.getElementById("proyectos").style.display = 'block';
+    document.getElementById("websites").style.display = 'block';
     proyectoPestana1.classList.add("activo");
     document.getElementById("disenos").style.display = 'none';
     proyectoPestana2.classList.remove("activo");
@@ -15,7 +15,7 @@ function proyectos() {
 }
 
 function disenos(){
-    document.getElementById("proyectos").style.display = 'none';
+    document.getElementById("websites").style.display = 'none';
     proyectoPestana1.classList.remove("activo");
     document.getElementById("disenos").style.display = 'block';
     proyectoPestana2.classList.add("activo");
@@ -25,7 +25,7 @@ function disenos(){
 }
 
 function ilustracion(){
-    document.getElementById("proyectos").style.display = 'none';
+    document.getElementById("websites").style.display = 'none';
     proyectoPestana1.classList.remove("activo");
     document.getElementById("disenos").style.display = 'none';
     proyectoPestana2.classList.remove("activo");
