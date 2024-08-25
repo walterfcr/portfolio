@@ -1,71 +1,56 @@
-//Elasticidad botones menu
 $(document).ready(function() {
+    // Initialize smooth scrolling
     smoothScroll.init({
         selector: '[data-scroll]',
-        //selector: 'a.nav-link', 
-        // 2 seg equivale a 2000)  
-        speed: 100,
-        //aceleraciones
-        easing: 'easeInQuart',
-        //easing: 'easyInCubic'
-        //easing: 'easyInOutQuad',
-        //easing:'easeInQuart',
-        //easing: 'easeInOutCubic',
+        speed: 100, // 0.1 seconds scroll speed
+        easing: 'easeInQuart' // Easing function
     });
 
+    // Hide the ScrollTop button on page load
+    $('#flechabtn').hide(); 
+
+    // Scroll event to show/hide the ScrollTop button and modify the navbar
+    $(window).scroll(function() {
+        scrollFunction();
+    });
+
+    // Smooth scroll to top functionality
+    $('#flechabtn').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 600); // 600ms scroll to top
+    });
 });
 
-
-//desaparece el boton ScrollTop al cargar la pagina web
-document.getElementById("flechabtn").style.display = "none";
-
-
-
-//esconder botón ScrollTop (parte superior)
-window.onscroll = function() {
-    scrollFunction()
-};
-
-//funcion scroll
+// Function to handle scroll-related UI changes
 function scrollFunction() {
-    if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-        document.getElementById("flechabtn").style.display = "block";
-        document.getElementById("navbar").style.marginTop = "7px";
-        document.getElementById("logo").style.display = "none";
-        document.getElementById("logo2").style.display = "block";
-        document.getElementById("logo2").style.paddingLeft = "5%";
-        document.getElementById("container").style.height = "65px";
-        document.getElementById("container").style.backgroundColor = "#020a13";
-        document.getElementById("container").style.width = "100%";
-        document.getElementById("container").style.borderBottom = "solid #44505d";
-        document.getElementById("container").style.borderLeft = "solid #44505d";
-        document.getElementById("container").style.borderRight = "solid #44505d";
+    if ($(document).scrollTop() > 180) {
+        $('#flechabtn').fadeIn(); // Show the button with fade effect
 
-
+        $('#navbar').css('marginTop', '7px');
+        $('#logo').hide();
+        $('#logo2').show().css('paddingLeft', '5%');
+        $('#container').css({
+            height: '65px',
+            backgroundColor: '#020a13',
+            width: '100%',
+            borderBottom: 'solid #44505d',
+            borderLeft: 'solid #44505d',
+            borderRight: 'solid #44505d'
+        });
 
     } else {
-        document.getElementById("flechabtn").style.display = "none";
-        document.getElementById("logo").style.display = "initial";
-        document.getElementById("navbar").style.marginTop = "30px";
-        document.getElementById("logo2").style.display = "none";
-        document.getElementById("logo2").style.paddingLeft = "initial";
-        document.getElementById("container").style.height = "initial";
-        document.getElementById("container").style.backgroundColor = "initial";
-        document.getElementById("container").style.borderBottom = "none";
-        document.getElementById("container").style.borderLeft = "none";
-        document.getElementById("container").style.borderRight = "none";
-        document.getElementById("container").style.width = "80%";
-   
+        $('#flechabtn').fadeOut(); // Hide the button with fade effect
+
+        $('#logo').show();
+        $('#navbar').css('marginTop', '30px');
+        $('#logo2').hide().css('paddingLeft', 'initial');
+        $('#container').css({
+            height: 'initial',
+            backgroundColor: 'initial',
+            borderBottom: 'none',
+            borderLeft: 'none',
+            borderRight: 'none',
+            width: '80%'
+        });
     }
-}
-
-
-
-
-//Funcián Scrolltop (Jquery)
-function topFunction() {
-    $('a.scroll-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({ scrollTop: 0 });
-    });
 }
