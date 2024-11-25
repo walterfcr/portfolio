@@ -45,7 +45,7 @@ const mensaje = document.querySelector('.mensaje');
 //recorrido del ciclo for-Each 
 //link: es la variable constante del selector 'a' HTML
 //r: es una variable declarada para apuntar al evento CLICK y obtener el atributo language
-//getAttribute: devuelve el valor del atributo especificado en el elemento language HTML (BOTONES ESPAÑOL-INGLES)
+//getAttribute: devuelve el valor del atributo especificado en el elemento language HTML (BOTONES ESPAÃ‘OL-INGLES)
 link.forEach(r => {
     r.addEventListener('click', () => {
         const attr = r.getAttribute('data-name');
@@ -92,7 +92,7 @@ link.forEach(r => {
 });
 
 
-//objeto de json que asigna los valores a cada clase en español
+//objeto de json que asigna los valores a cada clase en espaÃ±ol
 let changeLanguage = {
 
     "spanish":
@@ -101,37 +101,37 @@ let changeLanguage = {
         "menuHome": "Inicio",
         "menuNosotros": "Acerca",
         "menuProyectos": "Proyectos",
-        "menuContacto": "Contácto",
+        "menuContacto": "ContÃ¡cto",
         "TituloPrincipal": "Mi nombre es Walter Fallas",
-        "desarrolladorWeb": "Soy un desarrollador web de San José, Costa Rica.",
+        "desarrolladorWeb": "Soy un desarrollador web de San JosÃ©, Costa Rica.",
         "desarrolladorWeb2": "Me gusta crear sitios web modernos y brindar buenas experiencias al usuario. Trabajemos juntos!!",
         "saludo": "Ver Trabajos",
         "acercaDeMi": "Acerca de mi",
-        "acercaIntro": "Me gusta mucho todo lo que tenga que ver con tecnología y diseño así que me gusta poder crear artes visuales y además un gran apasionado al dibujo tradicional o digital.",
+        "acercaIntro": "Me gusta mucho todo lo que tenga que ver con tecnologÃ­a y diseÃ±o asÃ­ que me gusta poder crear artes visuales y ademÃ¡s un gran apasionado al dibujo tradicional o digital.",
         "herramienta1": "Lenguajes y herramientas",
         "herramienta2": "Herramientas",
         "herramienta3": "Herramientas",
-        "acercaDeMiFront": "Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los estándares tanto de usabilidad como de diseño.",
-        "acercaDiseno": "La parte visual de un sitio web es muy importante así que me gusta crear diseños que coincidan con la usabilidad del mismo.",
-        "acercaDeMiDrawing": "Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lápiz de diferentes estilos o también de forma digital.",
+        "acercaDeMiFront": "Me gusta crear sitios web responsivos, con buena apariencia y que cumpla los estÃ¡ndares tanto de usabilidad como de diseÃ±o.",
+        "acercaDiseno": "La parte visual de un sitio web es muy importante asÃ­ que me gusta crear diseÃ±os que coincidan con la usabilidad del mismo.",
+        "acercaDeMiDrawing": "Me apasiona el dibujo! En mi tiempo libre puedo hacer dibujos a lÃ¡piz de diferentes estilos o tambiÃ©n de forma digital.",
         "proyectosTitulo": "Proyectos",
-        "proyectosIntro": "Les presento algunos de mis trabajos que son varios sitios web responsive, la mayoría creados con el framework Bootstrap y también algunos trabajos de diseño gráfico.",
+        "proyectosIntro": "Les presento algunos de mis trabajos que son varios sitios web responsive, la mayorÃ­a creados con el framework Bootstrap y tambiÃ©n algunos trabajos de diseÃ±o grÃ¡fico.",
         "proyectoWebsites": "Sitios Web",
-        "proyectoDesign": "Diseño Gráfico",
-        "proyecto1": "Sitio web Fullpage de una tienda de trajes de baño con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.",
-        "proyecto2": "Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un sitio web simple en algo muy dinámico.",
-        "proyecto3": "Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax muy mágico. Creado con Bootstrap, HTML, CSS y Javascript.",
-        "proyecto4": "One Page de un instituto privado que demuestra que se puede minimizar contenido y navegación sin perder la calidad y usando un diseño plano y moderno.",
-        "proyecto5": "Fullpage muy alegre de una juguetería con muchos efectos y técnicas que el propio Bootstrap tiene y por supuesto mucho Javascript.",
-        "proyecto6": "One Page de un sitio web de equipos de duplicación y fotocopiado con los colores que representan las tintas de impresión. HTML, CSS y Javascript.",
-        "diseno": "Diseño",
-        "disenoL1": "Menú para restaurante de comida rápida con un estilo distinto pero acorde a la temática del lugar.",
-        "disenoL2": "Invitaciones para boda con temática de Harry potter con un estilo muy acorde al tema y una fuente muy acertada.",
-        "disenoL3": "Campaña publicitaria de un proyecto de Universidad en el que se alienta a reciclar y así ganar entradas para un concierto internacional.",
-        "disenoL4": "Banner publicitario para bolsas reciclables. Diseño fresco y colores que representan el medio ambiente.",
+        "proyectoDesign": "DiseÃ±o GrÃ¡fico",
+        "proyecto1": "Sitio web Fullpage de una tienda de trajes de baÃ±o con una paleta de colores muy veraniega y llamativa. Creado con HTML, CSS, Javascript y usando el framework bootstrap.",
+        "proyecto2": "Fullpage creado con Bootstrap y que demuestra el gran poder que tiene Javascript para convertir un sitio web simple en algo muy dinÃ¡mico.",
+        "proyecto3": "Landing page de un evento ficticio de fiesta de disfraces con estilo Story Telling y un efecto parallax muy mÃ¡gico. Creado con Bootstrap, HTML, CSS y Javascript.",
+        "proyecto4": "One Page de un instituto privado que demuestra que se puede minimizar contenido y navegaciÃ³n sin perder la calidad y usando un diseÃ±o plano y moderno.",
+        "proyecto5": "Fullpage muy alegre de una jugueterÃ­a con muchos efectos y tÃ©cnicas que el propio Bootstrap tiene y por supuesto mucho Javascript.",
+        "proyecto6": "One Page de un sitio web de equipos de duplicaciÃ³n y fotocopiado con los colores que representan las tintas de impresiÃ³n. HTML, CSS y Javascript.",
+        "diseno": "DiseÃ±o",
+        "disenoL1": "MenÃº para restaurante de comida rÃ¡pida con un estilo distinto pero acorde a la temÃ¡tica del lugar.",
+        "disenoL2": "Invitaciones para boda con temÃ¡tica de Harry potter con un estilo muy acorde al tema y una fuente muy acertada.",
+        "disenoL3": "CampaÃ±a publicitaria de un proyecto de Universidad en el que se alienta a reciclar y asÃ­ ganar entradas para un concierto internacional.",
+        "disenoL4": "Banner publicitario para bolsas reciclables. DiseÃ±o fresco y colores que representan el medio ambiente.",
         "dibujo": "Dibujo",
-        "contacto": "Contácto",
-        "contactoP1": "Tienes alguna pregunta o propuesta? Te gustaría iniciar un proyecto conmigo?",
+        "contacto": "ContÃ¡cto",
+        "contactoP1": "Tienes alguna pregunta o propuesta? Te gustarÃ­a iniciar un proyecto conmigo?",
         "contactoP2": "No dudes en contactarme!",
         "nombre": "Nombre",
         "mensaje": "Mensaje",
@@ -148,8 +148,8 @@ let changeLanguage = {
         "menuProyectos": "Projects",
         "menuContacto": "Contact",
         "TituloPrincipal": "My name is Walter Fallas",
-        "desarrolladorWeb": "I am a web developer from San José, Costa Rica.",
-        "desarrolladorWeb2": "I love creating modern websites and provide good user experiences. Let´s work together",
+        "desarrolladorWeb": "I am a web developer from San JosÃ©, Costa Rica.",
+        "desarrolladorWeb2": "I love creating modern websites and provide good user experiences. LetÂ´s work together",
         "saludo": "Check my work",
         "acercaDeMi": "About me",
         "acercaIntro": "I really like everything about technology and design so I like being able to create visual arts and I am also very passionate about traditional or digital drawing.",
@@ -166,7 +166,7 @@ let changeLanguage = {
         "proyecto1": "Fullpage website of a swimsuit store with a very summery and striking color palette. Created with HTML, CSS, Javascript using Bootstrap.",
         "proyecto2": "Fullpage created with Bootstrap  which demonstrates the great power that Javascript has to turn a simple website into something very dynamic.",
         "proyecto3": "Landing page about a fictional costume party event with Story Telling style and a very magical parallax effect. Bootstrap, HTML, CSS and Javascript.",
-        "proyecto4": "One Page from a private institute which demonstrates that content and navigation can be minimized without losing quality and using a flat and modern design.",
+        "proyecto4": "One Page from a private institute which demonstrates that content and navigation can be minimized without losing quality.",
         "proyecto5": "Very colorful fullpage of a toy store with many effects and techniques that Bootstrap has and of course a lot of Javascript.",
         "proyecto6": "Website about a company of duplicationg machines and photocopy equipment with colors representing printing inks. HTML, CSS and Javascript.",
         "diseno": "Design",

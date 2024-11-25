@@ -808,6 +808,10 @@
     text-align: center;
 }
 
+.container-links{
+    margin:50px 0 0;
+}
+
 }
 
 @media  (min-width: 320px) and (max-width: 360px){
@@ -827,6 +831,25 @@
     #websites p{
         font-size: 0.8rem ;
         padding:20px 0 0;
+    }
+
+    .boton-links a {
+        width:90px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .container-links{
+        gap: 30px;
+    }
+
+}
+
+@media  (min-width: 361px) and (max-width: 411px){
+    .boton-links a {
+        width:100px;
+        height: 30px;
+        font-size: 13px;
     }
 
 }
@@ -887,10 +910,7 @@
         display: none;
     }
 
-    .estiloBoton{
-        width:80px !important;
-        padding:0 !important;
-    }
+
 
 }
 
@@ -908,10 +928,7 @@
         width:40% !important;
     }
 
-    .estiloBoton{
-        width:80px !important;
-        padding:0 !important;
-    }
+
 
     .icono img{
         width:15px;
@@ -930,6 +947,18 @@
         width:60px;
         margin:15px 10px 0 0;
     }
+
+    .container-links{
+        gap: 20px;
+    }
+
+    .boton-links a {
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+
+    }
+
     }    
 
 @media  (min-width: 1101px) and (max-width: 1280px){
@@ -943,6 +972,18 @@
 
     .icono img{
         width:15px;
+    }
+
+    .container-links{
+        gap: 30px;
+    }
+
+    .boton-links a {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+
     }
 
 }
@@ -1021,7 +1062,6 @@
     }
 
 }
-
 
 
 
