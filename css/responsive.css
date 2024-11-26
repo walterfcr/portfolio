@@ -119,6 +119,11 @@
 		padding:0 10px;
 	}
 
+    .menu .navbar ul li a{
+        padding:0 20px 0 !important;
+
+    }
+
     .lenguaje img{
         width:30px;
     }
@@ -128,7 +133,7 @@
 
     .menu .navbar ul li a{
         font-size: 0.8rem;
-        padding:0 15px !important;
+        padding:0 10px !important;
 
     }
 
