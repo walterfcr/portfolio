@@ -46,10 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setTheme(savedTheme);
 
   const toggle = document.getElementById('themeToggle');
-  const label = document.getElementById('themeLabel');
   if (toggle) {
     toggle.checked = savedTheme === 'dark';
-    if (label) label.textContent = savedTheme === 'dark' ? 'Dark' : 'Light';
   }
 });
 
@@ -58,4 +56,7 @@ function handleThemeToggle() {
   const newTheme = toggle.checked ? 'dark' : 'light';
   setTheme(newTheme);
 }
+
+
+
 

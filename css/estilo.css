@@ -10,7 +10,7 @@
 
 :root {
   --bs-primary: #f2f6ff;
-  --bs-secondary: #7CB3FE;
+  --bs-secondary: #6ea6f5;
   --bs-complementary: #aebdd1;
   --bs-warning: #f89b61;
   --bs-body-bg: #e0edff;
@@ -450,6 +450,45 @@ h4{
     height:50px;
 }
 
+#themeToggle {
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Customize the switch appearance */
+.theme-switch .form-check-input {
+  background-color: #ddd;
+  border: 2px solid #999;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-switch .form-check-input:checked {
+  background-color: #333;
+  border-color: #fff;
+}
+
+body.dark-mode #themeToggle {
+  box-shadow: 0 0 10px 3px #fafaf8;
+}
+
+
+/* Improve the label visibility */
+#themeLabel {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 10px;
+
+}
+
+.theme-label-dark {
+  color: white;
+}
+
+.theme-label-light {
+  color: #6ea6f5 !important;
+}
+
 .nav-bg {
   background-color: var(--bs-body-bg) !important;
   border-bottom: 3px solid var(--bs-warning);
@@ -712,5 +751,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 footer h5{
   font-family: 'Kanit';
+}
+
+footer i{
+  color:var(--bs-warning) !important;
 }
 
