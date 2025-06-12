@@ -3,14 +3,14 @@
     body {
     padding-top: 40px;
     }
-    .floating-img-1, .floating-img-2, .estatico-1, .estatico-2, .estatico-3, .estatico-4, .estatico-5, .mountain-image-container {
+    .background-stars, .floating-img-1, .floating-img-2, .estatico-1, .estatico-2, .estatico-3, .estatico-4, .estatico-5, .mountain-image-container {
         display:none;
     }
     #mainInicio{
     height:800px;
     }
     h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center !important;
     }
     .profile-image{
@@ -20,6 +20,11 @@
     display:block;
     margin:0 auto;
     width:55%;
+    }
+
+    .text-inicio-wrap{
+        text-align: center;
+        padding:5% 10% 0 10%;
     }
 
   .social {
