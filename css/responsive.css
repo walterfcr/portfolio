@@ -1,3 +1,69 @@
+/*inicio*/
+@media  (min-width: 320px) and (max-width: 480px){
+    body {
+    padding-top: 40px;
+    }
+    .floating-img-1, .floating-img-2, .estatico-1, .estatico-2, .estatico-3, .estatico-4, .estatico-5, .mountain-image-container {
+        display:none;
+    }
+    #mainInicio{
+    height:800px;
+    }
+    h1{
+    font-size: 2rem;
+    text-align: center !important;
+    }
+    .profile-image{
+    display:none;
+    }
+    .profile-image-movil{
+    display:block;
+    margin:0 auto;
+    width:55%;
+    }
+
+  .social {
+    padding: 15px 0 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* or use 'column-gap' instead */
+  }
+
+  .social li {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social i {
+    font-size: 2.5rem; /* adjust if needed */
+  }
+
+   .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    }
+
+}
+
+
 /*acerca*/
 @media  (min-width: 769px) and (max-width: 1000px){
     #acerca p{
@@ -352,6 +418,24 @@
         line-height: 30px;
         font-size: 13px;
 
+    }
+
+}
+
+/*Contacto*/
+
+@media (min-width: 321px) and (max-width: 767px) {
+    .contactoWrap{
+        width:100%;
+    }
+
+    .sectionForm .containerForm {
+        width: 80%;
+        padding: 0;
+    }
+
+    .colForm{
+        text-align: center;
     }
 
 }
