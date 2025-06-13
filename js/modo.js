@@ -15,7 +15,8 @@ function setTheme(mode) {
     estatico4: document.querySelector('.estatico-4'),
     estatico5: document.querySelector('.estatico-5'),
     mountain: document.querySelector('.mountain-image'),
-    flecha: document.querySelector('.flecha')
+    flecha: document.querySelector('.flecha'),
+    logo: document.querySelector('.logo')
   };
 
   if (mode === 'dark') {
@@ -28,6 +29,7 @@ function setTheme(mode) {
     if (elements.estatico5) elements.estatico5.src = 'img/estatico-10.png';
     if (elements.mountain) elements.mountain.src = 'img/city-dark.png';
     if (elements.flecha) elements.flecha.src = 'img/flecha-dark.png';
+    if (elements.logo) elements.logo.src = 'img/logo-portfolio-dark.png';
   } else {
     if (elements.floating1) elements.floating1.src = 'img/light-floating1.png';
     if (elements.floating2) elements.floating2.src = 'img/light-floating2.png';
@@ -38,6 +40,7 @@ function setTheme(mode) {
     if (elements.estatico5) elements.estatico5.src = 'img/estatico-5.png';
     if (elements.mountain) elements.mountain.src = 'img/city-light.png';
     if (elements.flecha) elements.flecha.src = 'img/flecha-light.png';
+    if (elements.logo) elements.logo.src = 'img/logo-portfolio-light.png';
   }
 }
 

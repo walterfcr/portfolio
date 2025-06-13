@@ -59,7 +59,7 @@
 
 
 /*inicio*/
-@media  (min-width: 320px) and (max-width: 480px){
+@media (max-width: 480px){
     body {
     padding-top: 40px;
     }
@@ -67,7 +67,7 @@
         display:none;
     }
     #mainInicio{
-    height:800px;
+    height:auto;
     }
     h1{
     font-size: 1.8rem;
@@ -124,6 +124,7 @@
    .btn-wrapper {
     display: flex;
     justify-content: center;
+    margin:0 0 25px;
     }
 
 }
