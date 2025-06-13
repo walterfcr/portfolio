@@ -100,6 +100,118 @@ h4{
   color:#fff;
 }
 
+.botonEfecto{
+  margin:40px 0 0 7px;
+}
+
+.botonEfecto  a{
+    border: none;
+    padding: 12px 24px;
+    background-color: var(--bs-warning);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;    
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.botonEfecto  a:before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -7px;
+    left: -7px;
+    border-top: 2px solid var(--bs-warning);
+    border-left: 2px solid var(--bs-warning);
+}
+
+.botonEfecto  a:hover:before {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.botonEfecto  a:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: -7px;
+    right: -7px;
+    border-bottom: 2px solid var(--bs-warning);
+    border-right: 2px solid var(--bs-warning);
+}
+
+.botonEfecto  a:hover:after {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.botonEfecto a:hover {
+    background-color: var(--bs-warning);
+}
+
+
+.botonEfecto input {
+    border: none;
+    padding: 12px 24px;
+    background-color: var(--bs-warning);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.botonEfecto input:before,
+.botonEfecto input:after {
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease; /* Transition for the border expansion */
+    border-color:var(--bs-warning);
+    z-index: 2;
+}
+
+.botonEfecto input:before {
+    top: -5px;
+    left: -5px;
+    width: 24px;
+    height: 24px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+
+.botonEfecto input:after {
+    bottom: -5px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+
+.botonEfecto input:hover {
+    background-color: var(--bs-warning); /* Change background on hover */
+}
+
+.botonEfecto input:hover:before {
+    transform: scale(4); /* Scale the border effect */
+    top: -12px; /* Adjust the position after scaling */
+    left: -12px;
+}
+
+.botonEfecto input:hover:after {
+    transform: scale(4); /* Scale the border effect */
+    bottom: -12px; /* Adjust the position after scaling */
+    right: -12px;
+}
+
+
 /*estrellas*/
 .background-stars {
   position: fixed;
@@ -229,7 +341,7 @@ h4{
 
 
 #acerca {
-  padding: 150px 0;
+  padding: 150px 0 50px;
   background-color: var(--bs-primary);
   text-align: center;
 }
@@ -502,7 +614,7 @@ body.dark-mode #themeToggle {
 
 
 #websites{
-    padding:100px 0 0;
+    padding:150px 0 50px;
     background: var(--bs-body-bg);
 
 }
@@ -596,7 +708,7 @@ body.dark-mode #themeToggle {
 }
 
 #contacto{
-    padding:100px 0 ;
+    padding:100px 0 50px;
 	background-color: var(--bs-primary);
     position:relative;
 }
