@@ -1,3 +1,17 @@
+/*nav*/
+@media (max-width: 768px) {
+    .navbar{
+          background-color: var(--bs-body-bg) !important;
+          border-bottom: 3px solid var(--bs-warning);
+    }
+    .custom-toggler-icon {
+        color: var(--bs-warning);       /* Custom color */
+        font-size: 1.5rem;    /* Custom size */
+    }
+ 
+}
+
+
 /*inicio*/
 @media  (min-width: 320px) and (max-width: 480px){
     body {
