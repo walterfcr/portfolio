@@ -8,6 +8,37 @@
         color: var(--bs-warning);       /* Custom color */
         font-size: 1.5rem;    /* Custom size */
     }
+    .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem; /* space between items */
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        font-size: 1.2rem;
+        color: var(--bs-text-color) !important; /* Customize color */
+        font-weight: 500;
+        border-bottom: 1px solid #ccc; 
+        padding: 0.5rem 1rem;
+        transition: background 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 0, 85, 0.1); /* subtle hover effect */
+        border-bottom-color: #ff0055;
+        border-radius: 5px;
+    }
+
+    /* Optional: add a background to the collapse menu for contrast */
+    .mainMenu {
+        background-color: var(--bs-body-bg); /* dark background */
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
  
 }
 
