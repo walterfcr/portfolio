@@ -29,7 +29,7 @@
 
     .navbar-nav .nav-link:hover {
         background-color: rgba(255, 0, 85, 0.1); /* subtle hover effect */
-        border-bottom-color: #ff0055;
+        border-bottom-color: var(--bs-warning);
         border-radius: 5px;
     }
 
@@ -38,6 +38,21 @@
         background-color: var(--bs-body-bg); /* dark background */
         padding: 1rem;
         border-radius: 0 0 10px 10px;
+    }
+
+    .boton-links a {
+    background-color: var(--bs-warning) !important;
+    }
+    .boton-links a:before {
+        border-top: 40px solid var(--bs-warning-hover);
+        border-bottom: 40px solid var(--bs-warning-hover);
+    }
+    .boton-links a:hover:before {
+        transform: translateX(0);
+    }
+    .boton-links a:after {
+        border-top: 40px solid var(--bs-warning-hover);
+        border-bottom: 40px solid var(--bs-warning-hover);
     }
  
 }

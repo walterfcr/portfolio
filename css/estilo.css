@@ -13,6 +13,7 @@
   --bs-secondary: #6ea6f5;
   --bs-complementary: #aebdd1;
   --bs-warning: #f89b61;
+  --bs-warning-hover: #df864f;
   --bs-body-bg: #e0edff;
   --bs-text-color: #1e1e1e;
   --bg-image:url('../img/fondo-light.jpg');
@@ -24,6 +25,7 @@ body.dark-mode {
   --bs-secondary: #0777bf;
   --bs-complementary: #4d93be;
   --bs-warning: #b70983;
+  --bs-warning-hover: #7c0d5b;
   --bs-body-bg: #020a13;
   --bs-text-color: #ffffff;
   --bg-image:url('../img/fondo-dark.webp');
