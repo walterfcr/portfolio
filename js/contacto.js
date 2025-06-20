@@ -1,55 +1,47 @@
-'use extrict';
+"use strict";
 
-window.addEventListener('load', init, false);
+document.addEventListener("DOMContentLoaded", () => {
+  // Elementos
+  const form      = document.getElementById("form2");
+  const nombreInp = document.getElementById("nombreTxt");
+  const emailInp  = document.getElementById("emailTxt");
+  const msgInp    = document.getElementById("mensajeTxt");
+  const alerta    = document.getElementById("mensajeAlert");
 
-function init() {
-    let nombre = document.getElementById('nombreTxt');
-    let email = document.getElementById('emailTxt');
-    let mensaje = document.getElementById('mensajeTxt');
-    let alerta = document.getElementById('mensajeAlert');
-    let btnEnviar = document.getElementById('btnSend');
-    let expressionEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  const emailReg  = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
 
+  // Inicializa EmailJS con tu clave pública
+  emailjs.init("5ZmYdav0fSxQ77Eav");
 
-    btnEnviar.onclick = function() {
-        nombre = nombreTxt.value;
-        email = emailTxt.value;
-        mensaje = mensajeTxt.value;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();               // 🔑 Evita el envío “normal”
 
-        if (nombre === '' && email === '' && mensaje === '') {
-            alerta.textContent = 'Debe llenar todos los campos';
-            alerta.classList.add('alertaRoja');
-            alerta.classList.remove('alertaVerde');
-        } else if (nombre === '') {
-            alerta.textContent = 'El campo nombre esta vacío';
-            alerta.classList.add('alertaRoja');
-            alerta.classList.remove('alertaVerde');
-        } else if (email === '') {
-            alerta.textContent = 'El campo email esta vacío';
-            alerta.classList.add('alertaRoja');
-            alerta.classList.remove('alertaVerde');
-        } else if (expressionEmail.test(email) === false) {
-            alerta.textContent = 'Email inválido';
-            alerta.classList.add('alertaRoja');
-            alerta.classList.remove('alertaVerde');
-        } else if (mensaje === '') {
-            alerta.textContent = 'El campo mensaje esta vacío';
-            alerta.classList.add('alertaRoja');
-            alerta.classList.remove('alertaVerde');
-        } else {
-            alerta.textContent = 'Mensaje enviado';
-            alerta.classList.add('alertaVerde');
-            alerta.classList.remove('alertaRoja');
-            //el id del formulario es #form2
-            emailjs.sendForm('service_f2ovo0j', 'template_iitspxm', '#form2', '5ZmYdav0fSxQ77Eav');
-            //limpia campos
-            cleanInputs();
-        }
+    // Valores
+    const nombre  = nombreInp.value.trim();
+    const email   = emailInp.value.trim();
+    const mensaje = msgInp.value.trim();
+
+    // Validaciones
+    if (!nombre || !email || !mensaje) {
+      alerta.textContent = "Debe llenar todos los campos";
+      alerta.classList.add("alertaRoja");
+      return;
+    }
+    if (!emailReg.test(email)) {
+      alerta.textContent = "Email inválido";
+      alerta.classList.add("alertaRoja");
+      return;
     }
 
-    function cleanInputs() {
-        nombreTxt.value = '';
-        emailTxt.value = '';
-        mensajeTxt.value = '';
+    try {
+      await emailjs.sendForm("service_f2ovo0j", "template_iitspxm", form);
+      alerta.textContent = "Mensaje enviado";
+      alerta.classList.replace("alertaRoja", "alertaVerde");
+      form.reset();                   // Limpia el formulario
+    } catch (err) {
+      console.error(err);
+      alerta.textContent = "Error al enviar. Intenta de nuevo.";
+      alerta.classList.replace("alertaVerde", "alertaRoja");
     }
-}
+  });
+});
