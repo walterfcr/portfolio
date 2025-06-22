@@ -584,3 +584,11 @@
     }
 
 }
+
+/*cars*/
+
+@media (max-width: 768px) {
+  .calle{
+    display: none;
+  }
+}
