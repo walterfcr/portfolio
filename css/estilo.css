@@ -1093,6 +1093,36 @@ footer i{
     padding:0 5px !important;
   }
 
+  .mockups{
+    display:none;
+  }
+
+  .design-image{
+    display:none;
+  }
+
+  .design-image-movil{
+    display:block !important;
+    margin-bottom: 50px;
+  }
+
+  .mockups-movil{
+    display:block !important;
+  }
+
+  .mockups-movil img{
+    max-width: 100%;
+    padding:10px 0;
+  }
+
+}
+
+.design-image-movil{
+    display:none;
+}
+
+.mockups-movil{
+  display:none;
 }
 
 .card{
