@@ -1,11 +1,9 @@
-/* 
-{
-  outline: 1px solid red !important;
-}
-*/
+
+
 
 * {
   box-sizing: border-box;
+  /*outline: 1px solid red !important;*/
 }
 
 html, body {
@@ -36,6 +34,10 @@ body.dark-mode {
   --bg-footer: #020a13;
 }
 
+body.modal-open {
+  padding-right: 0 !important;
+}
+
 body.dark-mode .navbar {
   background-color: #1e1e1e;
 }
@@ -62,7 +64,7 @@ header {
   background-color: var(--bs-primary);
 }
 
-h1, h2, h3{
+h1, h2, h3, h5{
 	font-family: 'Kanit';
 	color: var(--bs-secondary);
 }
@@ -790,7 +792,7 @@ body.dark-mode #themeToggle {
 
 #contacto{
     padding:100px 0 50px;
-	background-color: var(--bs-primary);
+	background-color: var(--bs-body-bg);
     position:relative;
 }
 
@@ -978,6 +980,7 @@ footer i{
   width: 200px;
   height: auto;
   bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .car1 {
@@ -1022,4 +1025,99 @@ footer i{
 @keyframes car2 {
   0% { transform: translateX(0) rotateY(180deg); }
   90%, 100% { transform: translateX(calc(-100vw - 200px)) rotateY(180deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car { animation: none !important; }
+}
+
+#graphicDesign{
+  padding:100px 0 50px;
+  background-color: var(--bs-primary);
+  text-align: center;
+}
+
+#graphicDesign h2{
+  font-size: 3rem;
+  margin:100px 0 150px;
+}
+
+.card-body{
+  background-color: var(--bs-secondary);
+}
+
+.card-body h3{
+  font-size: 1.5rem;
+  color: #fff;
+  padding:10px 0;
+}
+
+.card-body a {
+  width: 150px;
+  padding: 10px 0;
+  background-color: var(--bs-warning);
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  box-shadow: none !important;
+  outline: none !important;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-body a:hover {
+  background-color: var(--bs-warning-hover);
+  transform: scale(1.05);
+}
+
+.modal-content {
+  background-color: var(--bs-primary); /* Replace with your desired color */
+}
+
+@media (max-width:1366px){
+  .modal-content {
+  margin:50px 0 0;
+}
+}
+
+@media (max-width: 480px) {
+  .modal-dialog {
+    margin-top: 50px !important;
+    max-width: 95vw;
+  }
+
+  .modal{
+    padding:0 5px !important;
+  }
+
+}
+
+.card{
+  background-color: var(--bs-complementary);
+}
+
+.designCard img{
+  padding:15%;
+}
+
+.color-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.color-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.color-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }
