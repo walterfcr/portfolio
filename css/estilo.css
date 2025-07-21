@@ -634,9 +634,14 @@ h4{
     font-size: 0.875rem;
   }
 
+  #flechabtn img{
+    width:80%;
+}
+
+
   .goto-top{
     position:fixed;
-    bottom:30px;
+    bottom:40px;
     right:20px;
     width:75px;
     height:50px;
@@ -1115,6 +1120,19 @@ footer i{
     padding:10px 0;
   }
 
+  .boton-movil{
+  display:block !important;
+  }
+
+  .custom-close {
+  background: transparent;
+  border: none;
+  color: var(--bs-warning); /* Dynamically adapts to light/dark */
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+ }
+
 }
 
 .design-image-movil{
@@ -1150,4 +1168,30 @@ footer i{
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
+}
+
+.boton-movil{
+  display:none;
+}
+
+.my-close-btn {
+  border: none;
+  border-radius: 0;
+  width:150px;
+}
+
+.custom-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--bs-warning);
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-close:hover {
+  color: var(--bs-warning-hover);
+  transform: scale(1.2);
 }

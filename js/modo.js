@@ -22,7 +22,9 @@ function setTheme(mode) {
     logo: document.querySelector('.logo'),
     logo4: document.querySelector('.logo4'),
     logo5: document.querySelector('.logo5'),
-    logo8: document.querySelector('.logo8')
+    logo8: document.querySelector('.logo8'),
+    logo10: document.querySelector('.logo10'),
+    logo12: document.querySelector('.logo12')
   };
 
   if (mode === 'dark') {
@@ -30,9 +32,9 @@ function setTheme(mode) {
     if (elements.floating2) elements.floating2.src = 'img/dark-floating2.webp';
     if (elements.estatico1) elements.estatico1.src = 'img/estatico-6.png';
     if (elements.estatico2) elements.estatico2.src = 'img/estatico-7.webp';
-    if (elements.estatico3) elements.estatico3.src = 'img/estatico-8.png';
+    if (elements.estatico3) elements.estatico3.src = 'img/logo-010-d.webp';
     if (elements.estatico4) elements.estatico4.src = 'img/estatico-9.png';
-    if (elements.estatico5) elements.estatico5.src = 'img/estatico-10.png';
+    if (elements.estatico5) elements.estatico5.src = 'img/logo-012-d.webp';
     if (elements.mountain) elements.mountain.src = 'img/city-dark.webp';
     if (elements.flecha) elements.flecha.src = 'img/flecha-dark.png';
     if (elements.carro1On) elements.carro1On.src = 'img/car1-dark-on.webp';
@@ -43,6 +45,8 @@ function setTheme(mode) {
     if (elements.logo4) elements.logo4.src = 'img/logo-004-d.webp';
     if (elements.logo5) elements.logo5.src = 'img/logo-005-d.webp';
     if (elements.logo8) elements.logo8.src = 'img/logo-008-d.webp';
+    if (elements.logo10) elements.logo10.src = 'img/logo-010-d.webp';
+    if (elements.logo12) elements.logo12.src = 'img/logo-012-d.webp';
   } else {
     if (elements.floating1) elements.floating1.src = 'img/light-floating1.png';
     if (elements.floating2) elements.floating2.src = 'img/light-floating2.png';
@@ -61,6 +65,8 @@ function setTheme(mode) {
     if (elements.logo4) elements.logo4.src = 'img/logo-004.webp';
     if (elements.logo5) elements.logo5.src = 'img/logo-005.webp';
     if (elements.logo8) elements.logo8.src = 'img/logo-008.webp';
+    if (elements.logo10) elements.logo10.src = 'img/logo-010.webp';
+    if (elements.logo12) elements.logo12.src = 'img/logo-012.webp';
   }
 
   // Cambiar imágenes de proyectos con data-img
