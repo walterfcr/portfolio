@@ -21,7 +21,7 @@ function updateContent(translations) {
   elements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[key]) {
-      el.textContent = translations[key];
+      el.innerHTML = translations[key];
     }
   });
 }

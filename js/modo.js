@@ -30,11 +30,11 @@ function setTheme(mode) {
   if (mode === 'dark') {
     if (elements.floating1) elements.floating1.src = 'img/dark-floating1.webp';
     if (elements.floating2) elements.floating2.src = 'img/dark-floating2.webp';
-    if (elements.estatico1) elements.estatico1.src = 'img/estatico-6.png';
+    if (elements.estatico1) elements.estatico1.src = 'img/estatico-6.webp';
     if (elements.estatico2) elements.estatico2.src = 'img/estatico-7.webp';
-    if (elements.estatico3) elements.estatico3.src = 'img/logo-010-d.webp';
-    if (elements.estatico4) elements.estatico4.src = 'img/estatico-9.png';
-    if (elements.estatico5) elements.estatico5.src = 'img/logo-012-d.webp';
+    if (elements.estatico3) elements.estatico3.src = 'img/estatico-11.webp';
+    if (elements.estatico4) elements.estatico4.src = 'img/estatico-9.webp';
+    if (elements.estatico5) elements.estatico5.src = 'img/estatico-10.webp';
     if (elements.mountain) elements.mountain.src = 'img/city-dark.webp';
     if (elements.flecha) elements.flecha.src = 'img/flecha-dark.png';
     if (elements.carro1On) elements.carro1On.src = 'img/car1-dark-on.webp';
@@ -48,13 +48,13 @@ function setTheme(mode) {
     if (elements.logo10) elements.logo10.src = 'img/logo-010-d.webp';
     if (elements.logo12) elements.logo12.src = 'img/logo-012-d.webp';
   } else {
-    if (elements.floating1) elements.floating1.src = 'img/light-floating1.png';
-    if (elements.floating2) elements.floating2.src = 'img/light-floating2.png';
+    if (elements.floating1) elements.floating1.src = 'img/light-floating1.webp';
+    if (elements.floating2) elements.floating2.src = 'img/light-floating2.webp';
     if (elements.estatico1) elements.estatico1.src = 'img/estatico-1.webp';
     if (elements.estatico2) elements.estatico2.src = 'img/estatico-2.webp';
     if (elements.estatico3) elements.estatico3.src = 'img/estatico-3.webp';
     if (elements.estatico4) elements.estatico4.src = 'img/estatico-4.webp';
-    if (elements.estatico5) elements.estatico5.src = 'img/estatico-5.png';
+    if (elements.estatico5) elements.estatico5.src = 'img/estatico-5.webp';
     if (elements.mountain) elements.mountain.src = 'img/city-light.webp';
     if (elements.flecha) elements.flecha.src = 'img/flecha-light.png';
     if (elements.carro1On) elements.carro1On.src = 'img/car1-light-on.webp';
@@ -91,3 +91,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
