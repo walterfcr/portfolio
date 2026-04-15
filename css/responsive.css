@@ -465,6 +465,19 @@
         gap: 30px;
     }
 
+    #mainInicio{
+    padding:20px 0 50px;
+    height:900px;
+    }
+
+    h1{
+    font-size: 1rem;
+    }
+
+    .nombre{
+    font-size: 3rem;
+    }
+
 }
 
 @media  (min-width: 361px) and (max-width: 411px){
@@ -485,6 +498,19 @@
     #websites p{
         font-size: 0.9rem ;
         padding:20px 0 0;
+    }
+
+     #mainInicio{
+    padding:20px 0 50px;
+    height:920px;
+    }
+
+    h1{
+    font-size: 1.2rem;
+    }
+
+    .nombre{
+    font-size: 3.2rem;
     }
 }
 
@@ -583,7 +609,7 @@
 
     }    
 
-@media  (min-width: 1101px) and (max-width: 1280px){
+@media  (min-width: 1101px) and (max-width: 1370px){
     #websites p{
         font-size: 0.9rem;
     }
@@ -697,3 +723,10 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 1280px) {
+    .contenedor-botones{
+    background-color: var(--bs-secondary);
+    }
+}
+    

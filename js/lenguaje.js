@@ -1,33 +1,61 @@
 async function setLanguage(lang) {
+  // Save selected language
   localStorage.setItem('language', lang);
 
-  // Load translations
-  const response = await fetch(`lang/${lang}.json`);
-  const translations = await response.json();
-  updateContent(translations);
+  try {
+    // Load translations
+    const response = await fetch(`lang/${lang}.json`);
+    const translations = await response.json();
 
-  // Highlight the active flag
-  document.querySelectorAll('.flag').forEach(img => {
-    img.classList.remove('active');
-  });
-  const selectedFlag = document.querySelector(`#flag-${lang} img`);
-  if (selectedFlag) {
-    selectedFlag.classList.add('active');
+    // Update UI text
+    updateContent(translations);
+
+    // Highlight active flag
+    document.querySelectorAll('.flag').forEach(img => {
+      img.classList.remove('active');
+    });
+
+    const selectedFlag = document.querySelector(`#flag-${lang} img`);
+    if (selectedFlag) {
+      selectedFlag.classList.add('active');
+    }
+
+  } catch (error) {
+    console.error('Error loading language file:', error);
   }
 }
 
 function updateContent(translations) {
   const elements = document.querySelectorAll('[data-i18n]');
+
   elements.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[key]) {
-      el.innerHTML = translations[key];
+    const attr = el.getAttribute('data-i18n');
+
+    // Case 1: attribute mapping (e.g. "value:send", "placeholder:name")
+    if (attr.includes(':')) {
+      const [property, key] = attr.split(':');
+
+      if (translations[key]) {
+        el[property] = translations[key];
+      }
+    } 
+    // Case 2: default behavior
+    else {
+      const key = attr;
+
+      if (translations[key]) {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.value = translations[key]; // 👈 handles submit buttons
+        } else {
+          el.innerHTML = translations[key];
+        }
+      }
     }
   });
 }
 
+// Load saved language on page load
 document.addEventListener('DOMContentLoaded', async () => {
   const lang = localStorage.getItem('language') || 'es';
-  await setLanguage(lang); // This now handles loading + flag highlight
+  await setLanguage(lang);
 });
-

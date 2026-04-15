@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta name="google-site-verification" content="G4RL65u_4IR2YbRsZR1syqZe4yeN0wVnsdX-bD-ScxQ" />
+  <!-- Basic Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
   <title>Frontend Developer | Walter Fallas - React, Vue & JavaScript (Costa Rica)</title>
   <meta name="description" content="Frontend Developer from Costa Rica specialized in React, Vue and JavaScript. I build modern, interactive and high-performance web applications focused on user experience.">
   <link rel="canonical" href="https://walterfallascr.com/">
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="G4RL65u_4IR2YbRsZR1syqZe4yeN0wVnsdX-bD-ScxQ" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Walter Fallas - Frontend Developer">
   <meta property="og:description" content="Frontend developer specialized in React, Vue and interactive web experiences.">
   <meta property="og:image" content="https://walterfallascr.com/img/preview.png">
   <meta property="og:url" content="https://walterfallascr.com">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta property="og:type" content="website">
+
+  <!-- Performance: Preconnect (Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://kit.fontawesome.com/b6eafbf987.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo.css" type="text/css">
-  <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
+  <!-- Fonts (optimized + swap) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Kanit&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Kanit&display=swap" rel="stylesheet">
+
+  <!-- Icons (lightweight first) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS (non-blocking load) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Fallback for users with JS disabled (AOS CSS) -->
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  </noscript>
 </head>
 <body>
   <main>
@@ -60,11 +82,11 @@
       </div>
       </div>
     </header>
-  <div id="mainInicio" class="container mt-4">
+  <div id="mainInicio" class="container mt-4"> 
   <div class="row align-items-center">
   <!-- Left: Text -->
   <div class="col-lg-6 mt-5">
-    <h1 class="mb-3" data-i18n="name">Frontend Developer en Costa Rica <br/>Walter Fallas</h1>
+    <h1 class="mb-3" data-i18n="name"><span class="nombre">Walter Fallas</span><br>Frontend Developer en Costa Rica</h1>
 
       <img src="img/profile-image-light.png" alt="Walter Fallas"
       class="img-fluid rounded-circle border border-5 profile-image profile-image-movil">
@@ -74,18 +96,35 @@
     <p><strong data-i18n="letsWork">¡Trabajemos juntos y hagamos realidad tus ideas!</strong></p>
     </div>
           <div class="social">
-            <ul>
-              <li><a href="https://www.linkedin.com/in/walterfallas" target="blank">
-                  <i class="fa-brands fa-linkedin fa-3x efectoHover" aria-hidden="true"></i><span class="sr-only">Whatsapp</span></a></li>
-              <li><a href="https://www.github.com/walterfcr/" target="blank">
-                  <i class="fa-brands fa-square-github fa-3x efectoHover" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
-              <li><a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="blank">
-                <i class="fa-brands fa-square-behance fa-3x efectoHover" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
-            </ul>
+<ul class="social-icons">
+  <li>
+    <a href="https://www.linkedin.com/in/walterfallas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M20.45 20.45h-3.6v-5.4c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.93v5.47H9.27V9h3.45v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.08 2.08 0 1 1 0-4.16 2.08 2.08 0 0 1 0 4.16zM7.14 20.45H3.54V9h3.6v11.45z"/>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.github.com/walterfcr/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.44c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.74-1.34-1.74-1.1-.76.08-.75.08-.75 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.25-3.24-.13-.3-.54-1.52.12-3.17 0 0 1.02-.33 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.57 3.34-1.24 3.34-1.24.66 1.65.25 2.87.12 3.17.78.84 1.25 1.92 1.25 3.24 0 4.63-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M1.5 4.5h7.5c2.5 0 4 1.5 4 3.5 0 1.6-.9 2.6-2.1 3.1 1.6.4 2.7 1.6 2.7 3.5 0 2.5-2 4-4.8 4H1.5v-14zm4 5.5h3c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-3v2.8zm0 5h3.2c1.2 0 1.9-.6 1.9-1.6s-.7-1.6-1.9-1.6H5.5v3.2zM15 8h7v2h-7V8zm3.5 3c-2.5 0-4.5 1.8-4.5 4s2 4 4.5 4c2.1 0 3.7-1 4.3-2.5h-2.3c-.3.6-1 1-2 1-1.3 0-2.2-.8-2.3-2h6.7c.1-.3.1-.6.1-.9 0-2.2-2-3.6-4.5-3.6zm-2.2 3c.2-1.1 1.1-1.8 2.2-1.8s2 .7 2.2 1.8h-4.4z"/>
+      </svg>
+    </a>
+  </li>
+</ul>
           </div>
           <div class="botonEfecto">
             <a href="#websites" class="saludo btn rounded-0 btn-lg " data-i18n="work" role="button"
-            aria-pressed="true">Ver Trabajos</a>
+            aria-pressed="true">Descubre mis proyectos</a>
           </div>
   </div>
 
@@ -125,10 +164,12 @@
   </div>
   </div>
 </div>
-    <div class="mountain-image-container">
+
+<!--
+  <div class="mountain-image-container">
   <img src="img/city-light.webp" alt="Montaña" class="mountain-image">
   </div>
-
+-->
   <!--Acerca-->
   <section id="acerca">
   <div class="container">
@@ -246,42 +287,11 @@
       <div class="wrap">
         <h2 class="text-center">Websites</h2>
         <div class="contenedor container">
-          <article class="columnaImagenes">
-            <h3>Funko Memory Game</h3>
-            <div class="efectoImagenes">
-              <img src="img/proyecto5-light.webp" loading="lazy" alt="Sitio web Tecni Soluciones" data-img="proyecto5" class="img-fluid" data-aos="fade-right">
-              <div class="texto">
-                <div class="titulo">
-                  <div class="icono">
-                    <img src="img/logo-001.webp" loading="lazy" alt="Logo de HTML5">
-                    <img src="img/logo-002.webp" loading="lazy" alt="Logo de CSS3">
-                    <img src="img/logo-003.webp" loading="lazy" alt="Logo de Javascript">
-                    <img src="img/logo5.png" loading="lazy" alt="Logo de React">
-                  </div>
-                </div>
-                <p class="parrafo" data-i18n="web5">Divertido juego de memoria creado con React y Node JS. ¡Revela y empareja tus Funkos favoritos mientras pones a prueba tu memoria! </p>
-                <div class="titulo text-center">
 
-                </div>
-              </div>
-            </div>
-                  <div class="contenedor-botones">
-                      <div class="boton-links">
-                        <a href="https://memory-game-react-cyan.vercel.app" target="_blank"> Demo</a>
-                      </div>
-                      <div class="boton-links">
-                        <a href="https://github.com/walterfcr/MemoryGame-react" target="_blank"> Github</a>
-                      </div>
-                      <div class="boton-links">
-                      <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#proyecto5" data-i18n="boton2">Detalles</a>
-                      </div>
-                  </div>
-
-          </article>
-                    <article class="columnaImagenes">
+          <article class="columnaImagenes" data-aos="fade-right">
             <h3>Cinema Classic</h3>
             <div class="efectoImagenes">
-              <img src="img/proyecto3-light.webp" loading="lazy" alt="Sitio web Cinema Classic" data-img="proyecto3" class="img-fluid" data-aos="fade-right">
+              <img src="img/proyecto3-light.webp" loading="lazy" alt="Sitio web Cinema Classic" data-img="proyecto3" class="img-fluid">
               <div class="texto">
               <div class="titulo">
                 <div class="icono">
@@ -313,10 +323,44 @@
                          </div>
 
           </article> 
-          <article class="columnaImagenes">
+
+          <article class="columnaImagenes" data-aos="fade-left">
+            <h3>Funko Memory Game</h3>
+            <div class="efectoImagenes">
+              <img src="img/proyecto5-light.webp" loading="lazy" alt="Sitio web Tecni Soluciones" data-img="proyecto5" class="img-fluid">
+              <div class="texto">
+                <div class="titulo">
+                  <div class="icono">
+                    <img src="img/logo-001.webp" loading="lazy" alt="Logo de HTML5">
+                    <img src="img/logo-002.webp" loading="lazy" alt="Logo de CSS3">
+                    <img src="img/logo-003.webp" loading="lazy" alt="Logo de Javascript">
+                    <img src="img/logo5.png" loading="lazy" alt="Logo de React">
+                  </div>
+                </div>
+                <p class="parrafo" data-i18n="web5">Divertido juego de memoria creado con React y Node JS. ¡Revela y empareja tus Funkos favoritos mientras pones a prueba tu memoria! </p>
+                <div class="titulo text-center">
+
+                </div>
+              </div>
+            </div>
+                  <div class="contenedor-botones">
+                      <div class="boton-links">
+                        <a href="https://memory-game-react-cyan.vercel.app" target="_blank"> Demo</a>
+                      </div>
+                      <div class="boton-links">
+                        <a href="https://github.com/walterfcr/MemoryGame-react" target="_blank"> Github</a>
+                      </div>
+                      <div class="boton-links">
+                      <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#proyecto5" data-i18n="boton2">Detalles</a>
+                      </div>
+                  </div>
+
+          </article>
+          
+          <article class="columnaImagenes" data-aos="fade-right">
             <h3>Garage 94</h3>
             <div class="efectoImagenes">
-              <img src="img/proyecto1-light.webp" loading="lazy" alt="Sitio web garage94" data-img="proyecto1" class="img-fluid" data-aos="fade-right">
+              <img src="img/proyecto1-light.webp" loading="lazy" alt="Sitio web garage94" data-img="proyecto1" class="img-fluid">
               <div class="texto">
                 <div class="titulo">
                   <div class="icono">
@@ -345,10 +389,10 @@
                 </div>
           </article>
            
-           <article class="columnaImagenes">
+           <article class="columnaImagenes" data-aos="fade-left">
             <h3>Universidad-Opengate</h3>
             <div class="efectoImagenes">
-              <img src="img/proyecto2-light.webp" loading="lazy" alt="Sitio web Instituto" data-img="proyecto2" class="img-fluid" data-aos="fade-left">
+              <img src="img/proyecto2-light.webp" loading="lazy" alt="Sitio web Instituto" data-img="proyecto2" class="img-fluid">
               <div class="texto">
                 <div class="titulo">
                   <div class="icono">
@@ -378,10 +422,10 @@
           </article>
           
 
-          <article class="columnaImagenes">
+          <article class="columnaImagenes" data-aos="fade-right">
             <h3>Tecni Soluciones</h3>
             <div class="efectoImagenes">
-              <img src="img/proyecto4-light.webp" loading="lazy" alt="Sitio web Tecni Soluciones" data-img="proyecto4" class="img-fluid" data-aos="fade-left">
+              <img src="img/proyecto4-light.webp" loading="lazy" alt="Sitio web Tecni Soluciones" data-img="proyecto4" class="img-fluid" >
               <div class="texto">
                 <div class="titulo">
                   <div class="icono">
@@ -409,10 +453,10 @@
                                 </div>
           </article>
 
-          <article class="columnaImagenes">
+          <article class="columnaImagenes" data-aos="fade-left">
             <h3>Trops Swimwear</h3>
             <div class="efectoImagenes">
-              <img src="img/proyecto6-light.webp" loading="lazy" alt="Sitio web Trops Swimwear" data-img="proyecto6" class="img-fluid" data-aos="fade-left">
+              <img src="img/proyecto6-light.webp" loading="lazy" alt="Sitio web Trops Swimwear" data-img="proyecto6" class="img-fluid" >
               <div class="texto">
                 <div class="titulo">
                   <div class="icono">
@@ -1452,7 +1496,7 @@
           <div class="formP">
             <p data-i18n="contact1">¿Tienes un proyecto en mente o necesitas mejorar tu sitio web?</p>
             <p data-i18n="contact2">Estoy disponible para desarrollar soluciones modernas, rápidas y enfocadas en experiencia de usuario.</p>
-            <p data-i18n="contact3"><strong>Escríbeme y hablemos de tu proyecto.</strong></p>
+            <!--<p data-i18n="contact3"><strong>Escríbeme y hablemos de tu proyecto.</strong></p>-->
           </div>
           <form id="form2">
             <div class="formRow">
@@ -1491,12 +1535,13 @@
               <div class="colForm">
                 <p id="mensajeAlert"></p>
 
-<div class="botonEfecto">
+<div class="botonEfecto centrar">
   <div class="efecto-boton">
     <input id="btnSend" type="submit" data-i18n="send"
-      value="Enviar">
+      value="Hablemos de tu Proyecto">
       <input type="text" name="company" style="display:none">
   </div>
+
 </div>
 
               </div>
@@ -1517,8 +1562,8 @@
       <!-- Contact Info -->
       <div class="col-md-4 mb-3">
         <h5 class="text-uppercase" data-i18n="contact">Contacto</h5>
-        <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>Tel: (506) 8873-8943</p>
-        <p class="mb-0"><i class="fa-solid fa-envelope me-2"></i>Email:  <a href="#" id="emailBtn" class="text-white text-decoration-underline">Escríbeme </a></p>
+        <p class="mb-1"><i class="bi bi-telephone-fill contact-icon"></i>Tel: (506) 8873-8943</p>
+        <p class="mb-0"><i class="bi bi-envelope-fill contact-icon"></i>Email:  <a href="#" id="emailBtn" class="text-white text-decoration-underline">Escríbeme </a></p>
       </div>
 
       <!-- Info -->
@@ -1531,20 +1576,28 @@
       <!-- Social Media -->
       <div class="col-md-4 mb-3">
         <h5 class="text-uppercase" data-i18n="social">Redes Sociales</h5>
-        <ul class="list-inline mt-3">
-          <li class="list-inline-item me-3">
-            <a href="https://www.linkedin.com/in/walterfallas" target="_blank" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin fa-2x  efectoHover"></i>
+        <ul class="social-icons-footer">
+          <li>
+            <a href="https://www.linkedin.com/in/walterfallas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" class="icon-footer">
+                <path d="M20.45 20.45h-3.6v-5.4c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.93v5.47H9.27V9h3.45v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.08 2.08 0 1 1 0-4.16 2.08 2.08 0 0 1 0 4.16zM7.14 20.45H3.54V9h3.6v11.45z"/>
+              </svg>
             </a>
           </li>
-          <li class="list-inline-item me-3">
-            <a href="https://www.github.com/walterfcr/" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-square-github fa-2x efectoHover"></i>
+
+          <li>
+            <a href="https://www.github.com/walterfcr/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" class="icon-footer">
+                <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.44c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.74-1.34-1.74-1.1-.76.08-.75.08-.75 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.25-3.24-.13-.3-.54-1.52.12-3.17 0 0 1.02-.33 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.57 3.34-1.24 3.34-1.24.66 1.65.25 2.87.12 3.17.78.84 1.25 1.92 1.25 3.24 0 4.63-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
             </a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="_blank" aria-label="Behance">
-              <i class="fa-brands fa-square-behance fa-2x efectoHover"></i>
+
+          <li>
+            <a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+              <svg viewBox="0 0 24 24" class="icon-footer">
+                <path d="M1.5 4.5h7.5c2.5 0 4 1.5 4 3.5 0 1.6-.9 2.6-2.1 3.1 1.6.4 2.7 1.6 2.7 3.5 0 2.5-2 4-4.8 4H1.5v-14zm4 5.5h3c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-3v2.8zm0 5h3.2c1.2 0 1.9-.6 1.9-1.6s-.7-1.6-1.9-1.6H5.5v3.2zM15 8h7v2h-7V8zm3.5 3c-2.5 0-4.5 1.8-4.5 4s2 4 4.5 4c2.1 0 3.7-1 4.3-2.5h-2.3c-.3.6-1 1-2 1-1.3 0-2.2-.8-2.3-2h6.7c.1-.3.1-.6.1-.9 0-2.2-2-3.6-4.5-3.6zm-2.2 3c.2-1.1 1.1-1.8 2.2-1.8s2 .7 2.2 1.8h-4.4z"/>
+              </svg>
             </a>
           </li>
         </ul>
