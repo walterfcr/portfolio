@@ -302,7 +302,7 @@
                 </div>
               </div>
               
-                <p class="parrafo" data-i18n="web3">Una experiencia de navegación fluida y envolvente creada con React, transformando un Fullpage en componentes interactivos.</p>
+                <p class="parrafo" data-i18n="web3">Aplicación completa en React que simula un sistema real de reserva de cine, incluyendo autenticación, lógica de reserva de asientos, compra de entradas y emisión de boletos digitales con código QR, integrada con Firebase.</p>
               
               <div class="titulo text-center">
 
@@ -665,13 +665,14 @@
 <!-- termina modal-->
 
 <!-- inicia modal-->
+<!-- inicia modal-->
 <div class="modal fade" id="proyecto3" tabindex="-1" aria-labelledby="proyecto3Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       
       <div class="modal-header">
         <h4 class="modal-title" id="proyecto3Label">
-          Cinema Classic
+          Cinema Classic (React App)
         </h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -679,68 +680,70 @@
       <div class="modal-body">
           <div class="modal-content-container">
 
+            <!-- LEFT COLUMN -->
             <div class="modalcolumn">
               <h5 data-i18n="titulomod1">Descripción general</h5>
               <p data-i18n="web3m1">
-                Aplicación web de cine desarrollada con React que permite explorar películas, seleccionar funciones y simular la compra de tiquetes y combos mediante lógica dinámica en el frontend.
+                Aplicación web de cine desarrollada con React y Firebase que simula un sistema real de compra de entradas, incluyendo autenticación de usuarios, selección de asientos y generación de tickets digitales.
               </p>
 
               <h5 data-i18n="titulomod7">Funcionalidades Principales</h5>
               <ul>
-                <li data-i18n="web3m2">Navegación dinámica entre películas y detalles</li>
-                <li data-i18n="web3m3">Simulación de compra de tiquetes</li>
-                <li data-i18n="web3m4">Cálculo automático del precio de combos</li>
-                <li data-i18n="web3m5">Interfaz interactiva con animaciones</li>
-                <li data-i18n="web3m6">Animaciones modernas con LottieFiles</li>
-                <li data-i18n="web3m7">Experiencia tipo aplicación real (SPA)</li>
+                <li data-i18n="web3m2">Autenticación de usuarios con Firebase</li>
+                <li data-i18n="web3m3">Selección interactiva de asientos</li>
+                <li data-i18n="web3m4">Prevención de doble reservación</li>
+                <li data-i18n="web3m5">Flujo completo de compra de tiquetes</li>
+                <li data-i18n="web3m6">Generación de tickets digitales con código QR</li>
+                <li data-i18n="web3m7">Historial de tickets por usuario</li>
               </ul>
 
               <h5 data-i18n="titulomod3">Tecnologías utilizadas</h5>
               <ul>
                 <li>React</li>
-                <li>JavaScript</li>
-                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
                 <li>React Router</li>
-                <li data-i18n="web3m8">Animaciones con LottieFiles</li>
+                <li>Firebase (Auth + Firestore)</li>
+                <li>CSS3</li>
               </ul>
             </div>
 
+            <!-- RIGHT COLUMN -->
             <div class="modalcolumn">
               <h5 data-i18n="titulomod4">Lo que desarrollé</h5>
               <ul>
-                <li data-i18n="web3m9">Lógica en JavaScript para calcular precios de combos en tiempo real</li>
-                <li data-i18n="web3m10">Implementación de rutas dinámicas con React Router</li>
-                <li data-i18n="web3m11">Organización del proyecto en componentes reutilizables</li>
-                <li data-i18n="web3m12">Integración de animaciones Lottie para mejorar la experiencia de usuario</li>
-                <li data-i18n="web3m13">Manejo de estado para simular el proceso de compra</li>
+                <li data-i18n="web3m9">Sistema de autenticación de usuarios</li>
+                <li data-i18n="web3m10">Lógica de selección y disponibilidad de asientos</li>
+                <li data-i18n="web3m11">Flujo completo de compra con múltiples pasos</li>
+                <li data-i18n="web3m12">Generación y almacenamiento de tickets en Firebase</li>
+                <li data-i18n="web3m13">Estructura basada en componentes reutilizables</li>
               </ul>
 
               <h5 data-i18n="titulomod5">Retos y soluciones</h5>
               <ul>
                 <li data-i18n="web3m14">
-                  <strong>Cálculo dinámico de precios:</strong>
-                  Implementación de lógica en JavaScript para actualizar el total en tiempo real según las selecciones del usuario
+                  <strong>Control de asientos en tiempo real:</strong>
+                  Sincronización con Firestore para evitar reservaciones duplicadas
                 </li>
                 <li data-i18n="web3m15">
-                  <strong>Simulación de flujo de compra sin backend:</strong>
-                  Uso de manejo de estado para representar el proceso completo en frontend
+                  <strong>Manejo de estado complejo:</strong>
+                  Organización del flujo de compra en múltiples componentes con estado dinámico
                 </li>
                <li data-i18n="web3m16">
-                  <strong>Integración de animaciones sin afectar el rendimiento:</strong>
-                  Uso de LottieFiles optimizado para interfaces web modernas
+                  <strong>Persistencia de datos:</strong>
+                  Almacenamiento de tickets por usuario en la base de datos
                 </li>
                 <li data-i18n="web3m17">
-                  <strong>Organización del proyecto en componentes:</strong>
-                  Separación clara entre lógica, datos y presentación
+                  <strong>Experiencia tipo aplicación real:</strong>
+                  Implementación de navegación dinámica y lógica de negocio en frontend
                 </li>
               </ul>
 
               <h5 data-i18n="titulomod6">Aprendizajes clave</h5>
               <ul>
-                <li data-i18n="web3m18">Manejo de lógica dinámica en JavaScript dentro de React</li>
-                <li data-i18n="web3m19">Implementación de flujos de compra simulados</li>
-                <li data-i18n="web3m20">Uso de animaciones modernas en interfaces web</li>
-                <li data-i18n="web3m21">Mejora en experiencia de usuario (UX interactiva)</li>
+                <li data-i18n="web3m18">Manejo de estado en aplicaciones React complejas</li>
+                <li data-i18n="web3m19">Integración de Firebase en aplicaciones reales</li>
+                <li data-i18n="web3m20">Diseño de flujos de usuario tipo e-commerce</li>
+                <li data-i18n="web3m21">Construcción de interfaces dinámicas basadas en datos</li>
               </ul>
             </div>
 
@@ -756,6 +759,7 @@
     </div>
   </div>
 </div>
+<!-- termina modal-->
 <!-- termina modal-->
  <!-- inicia modal-->
 <div class="modal fade" id="proyecto4" tabindex="-1" aria-labelledby="proyecto4Label" aria-hidden="true">

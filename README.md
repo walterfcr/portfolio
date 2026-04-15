@@ -18,17 +18,28 @@ I build **interactive, high-performance web applications** using React and moder
 
 ## 🚀 Featured React Projects
 
-### 🎬 Cinema Classic
+### 🎬 Cinema Classic (React App)
 
-Interactive movie platform built with React
+Full-featured cinema booking application built with React and Firebase, simulating a real-world ticketing system.
 
-* Dynamic routing with React Router
-* Ticket & combo purchase simulation
-* Real-time price calculations
-* Component-based architecture
+Key Features:
 
-🔗 https://cinema-classic-react.vercel.app
-💻 https://github.com/walterfcr/CinemaClassic-React
+* User authentication with Firebase
+* Interactive seat selection with real-time availability
+* Prevention of double booking
+* Complete multi-step purchase flow
+* QR-based digital ticket generation
+* User-specific ticket history
+
+What I implemented:
+
+* Complex state management across booking flows
+* Seat reservation logic synchronized with Firestore
+* Persistent user data and ticket storage
+* Component-based architecture with reusable logic
+
+🔗 Demo: https://cinema-classic-react.vercel.app
+💻 Code: https://github.com/walterfcr/CinemaClassic-React
 
 ---
 
