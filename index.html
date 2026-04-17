@@ -337,7 +337,7 @@
                     <img src="img/logo5.png" loading="lazy" alt="Logo de React">
                   </div>
                 </div>
-                <p class="parrafo" data-i18n="web5">Divertido juego de memoria creado con React y Node JS. ¡Revela y empareja tus Funkos favoritos mientras pones a prueba tu memoria! </p>
+                <p class="parrafo" data-i18n="web5">Juego de memoria interactivo desarrollado con React y Firebase, con autenticación de usuarios, lógica de juego en tiempo real y un sistema global de puntuaciones.</p>
                 <div class="titulo text-center">
 
                 </div>
@@ -857,7 +857,7 @@
       
       <div class="modal-header">
         <h4 class="modal-title" id="proyecto5Label">
-          Funko Memory Game
+          Funko Memory Game (React App)
         </h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -865,54 +865,63 @@
       <div class="modal-body">
           <div class="modal-content-container">
 
+            <!-- LEFT -->
             <div class="modalcolumn">
               <h5 data-i18n="titulomod1">Descripción general</h5>
               <p data-i18n="web5m1">
-                 Aplicación web interactiva desarrollada con React que simula un juego de memoria basado en cartas tipo Funko Pop. Incluye autenticación de usuarios, efectos de sonido y personalización de la experiencia mediante selección de dificultad y categorías.
+                Juego de memoria interactivo desarrollado con React y Firebase que incluye autenticación de usuarios, múltiples niveles de dificultad, categorías dinámicas y un sistema global de puntuaciones.
               </p>
 
               <h5 data-i18n="titulomod2">¿Qué hace?</h5>
               <p data-i18n="web5m2">
-                El usuario inicia sesión y juega a encontrar pares de cartas en el menor número de movimientos posible. El juego gestiona el estado en tiempo real, reproduce efectos de sonido y permite adaptar la dificultad, ofreciendo una experiencia dinámica e inmersiva.
+                El usuario inicia sesión y debe encontrar pares de cartas en el menor número de movimientos posible. El juego gestiona el estado en tiempo real, reproduce efectos de sonido, aplica animaciones y registra los resultados en un ranking global compartido entre usuarios.
               </p>
 
               <h5 data-i18n="titulomod3">Tecnologías utilizadas</h5>
               <ul>
                 <li>React</li>
                 <li>JavaScript (ES6+)</li>
-                <li>HTML5</li>
+                <li>Firebase (Auth + Firestore)</li>
+                <li>GSAP (animaciones)</li>
                 <li>CSS3</li>
-                <li data-i18n="web5m3">Firebase (autenticación y base de datos)</li>
               </ul>
             </div>
 
+            <!-- RIGHT -->
             <div class="modalcolumn">
               <h5 data-i18n="titulomod4">Lo que desarrollé</h5>
               <ul>
-                <li data-i18n="web5m4">Implementación de lógica completa del juego de memoria</li>
-                <li data-i18n="web5m5">Sistema de login y gestión de usuarios</li>
-                <li data-i18n="web5m6">Manejo de estado en React (cartas, turnos, coincidencias)</li>
-                <li data-i18n="web5m7">Integración de efectos de sonido para mejorar la experiencia</li>
-                <li data-i18n="web5m8">Selección dinámica de dificultad y categorías</li>
-                <li data-i18n="web5m9">Persistencia de datos con Firebase</li>
-                <li data-i18n="web5m10">Renderizado condicional de componentes</li>
-
+                <li data-i18n="web5m4">Lógica completa del juego de memoria (cartas, turnos, coincidencias)</li>
+                <li data-i18n="web5m5">Sistema de autenticación de usuarios con Firebase</li>
+                <li data-i18n="web5m6">Manejo de estado dinámico en React</li>
+                <li data-i18n="web5m7">Integración de efectos de sonido y feedback interactivo</li>
+                <li data-i18n="web5m8">Sistema de niveles de dificultad y categorías</li>
+                <li data-i18n="web5m9">Persistencia de datos y puntuaciones en Firestore</li>
+                <li data-i18n="web5m10">Implementación de leaderboard global entre usuarios</li>
               </ul>
 
               <h5 data-i18n="titulomod5">Retos y soluciones</h5>
               <ul>
-                <li data-i18n="web5m11"><strong>Gestión del estado del juego en tiempo real:</strong> Uso de React para controlar cartas, turnos y validaciones</li>
-                <li data-i18n="web5m12"><strong>Integración de autenticación de usuarios:</strong> Implementación de Firebase Auth para manejo de sesiones</li>
-                <li data-i18n="web5m13"><strong>Sincronización de sonidos con acciones del usuario:</strong> Control de eventos para reproducir audio sin afectar rendimiento</li>
+                <li data-i18n="web5m11">
+                  <strong>Manejo del estado del juego:</strong>
+                  Control de cartas, turnos y validaciones en tiempo real mediante React
+                </li>
+                <li data-i18n="web5m12">
+                  <strong>Leaderboard global:</strong>
+                  Almacenamiento y consulta de puntuaciones en Firestore para mostrar ranking entre usuarios
+                </li>
+                <li data-i18n="web5m13">
+                  <strong>Experiencia de usuario:</strong>
+                  Integración de sonidos y animaciones con GSAP sin afectar el rendimiento
+                </li>
               </ul>
 
               <h5 data-i18n="titulomod6">Aprendizajes clave</h5>
               <ul>
-                <li data-i18n="web5m14">Manejo avanzado de estado en React</li>
-                <li data-i18n="web5m15">Integración de autenticación en aplicaciones frontend</li>
-                <li data-i18n="web5m16">Mejora de UX mediante feedback auditivo</li>
-                <li data-i18n="web5m17">Consumo y gestión de servicios backend (Firebase)</li>
-
+                <li data-i18n="web5m14">Manejo de estado en aplicaciones React interactivas</li>
+                <li data-i18n="web5m15">Integración de Firebase (Auth + Firestore)</li>
+                <li data-i18n="web5m16">Diseño de lógica de juego basada en eventos</li>
+                <li data-i18n="web5m17">Construcción de interfaces dinámicas con animaciones</li>
               </ul>
             </div>
 
@@ -920,6 +929,8 @@
       </div>
 
       <div class="modal-footer">
+        <a href="https://memory-game-react-cyan.vercel.app/" target="_blank" class="btn btn-primary">Live Demo</a>
+        <a href="https://github.com/walterfcr/MemoryGame-react" target="_blank" class="btn btn-dark">Code</a>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Cerrar
         </button>
