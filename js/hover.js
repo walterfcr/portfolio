@@ -1,7 +1,7 @@
 function getCurrentTheme() {
-  return document.body.classList.contains('dark-mode')
-    ? 'dark'
-    : 'light';
+  return document.body.classList.contains('light-mode')
+    ? 'light'
+    : 'dark';
 }
 
 document.querySelectorAll('.skill-icon, .skill-icon-2').forEach(icon => {

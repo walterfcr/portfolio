@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,17 +49,30 @@
 </head>
 <body>
   <main>
-  <div class="background-stars"></div> 
-    <header id="inicio" class="container-fluid bg-transparent navbar navbar-expand-lg px-3 py-2 position-fixed top-0 start-0 w-100 " style="z-index: 9999;">
-      <div class="wrapNav container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo-portfolio-light.png" alt="Logo" height="40" class="logo">
-          </a>
+    <section id="hero-section">
+
+  <!-- BACKGROUND -->
+  <div class="hero-bg">
+    <div class="stars-small"></div>
+    <div class="stars-medium"></div>
+    <div class="stars-big"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="inicio" class="container-fluid bg-transparent navbar navbar-expand-lg px-3 py-2 position-fixed top-0 start-0 w-100" style="z-index: 9999;">
+    
+    <div class="wrapNav container">
+
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-portfolio-light.png" alt="Logo" height="40" class="logo">
+      </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <i class="fas fa-bars custom-toggler-icon"></i>
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="mainMenu collapse navbar-collapse" id="mainNav">
+
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="home" data-scroll>Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#acerca" data-i18n="about" data-scroll>Acerca</a></li>
@@ -68,72 +82,112 @@
         </ul>
 
         <div class="d-flex">
-            <button class="btn btn-sm btn-toggle p-0 me-2 border-0 bg-transparent flag-button" onclick="setLanguage('en')" aria-label="English" id="flag-en">
-              <img src="img/en.webp" alt="English" class="flag">
-            </button>
-            <button class="btn btn-sm btn-toggle p-0 border-0 bg-transparent flag-button" onclick="setLanguage('es')" aria-label="Español" id="flag-es">
-              <img src="img/es.webp" alt="Español" class="flag">
-            </button>
-            <div class="form-check form-switch theme-switch ms-3">
-              <input class="form-check-input" type="checkbox" id="themeToggle" onchange="handleThemeToggle()">
-              <label class="form-check-label" for="themeToggle" id="themeLabel"></label>
-            </div>
+
+          <button class="btn btn-sm btn-toggle p-0 me-2 border-0 bg-transparent flag-button" onclick="setLanguage('en')" aria-label="English" id="flag-en">
+            <img src="img/en.webp" alt="English" class="flag">
+          </button>
+
+          <button class="btn btn-sm btn-toggle p-0 border-0 bg-transparent flag-button" onclick="setLanguage('es')" aria-label="Español" id="flag-es">
+            <img src="img/es.webp" alt="Español" class="flag">
+          </button>
+
+          <div class="form-check form-switch theme-switch ms-3">
+            <input class="form-check-input" type="checkbox" id="themeToggle" onchange="handleThemeToggle()">
+            <label class="form-check-label" for="themeToggle" id="themeLabel"></label>
+          </div>
+
         </div>
-      </div>
-      </div>
-    </header>
-  <div id="mainInicio" class="container mt-4"> 
-  <div class="row align-items-center">
-  <!-- Left: Text -->
-  <div class="col-lg-6 mt-5">
-    <h1 class="mb-3" data-i18n="name"><span class="nombre">Walter Fallas</span><br>Frontend Developer en Costa Rica</h1>
 
-      <img src="img/profile-image-light.png" alt="Walter Fallas"
-      class="img-fluid rounded-circle border border-5 profile-image profile-image-movil">
-    <div class="text-inicio-wrap">
-    <p class="lead" data-i18n="developer">Desarrollador frontend especializado en crear aplicaciones web modernas.</p>
-    <p data-i18n="create">Trabajo con tecnologías como React, Vue y JavaScript para construir experiencias interactivas y de alto rendimiento.</p>
-    <p><strong data-i18n="letsWork">¡Trabajemos juntos y hagamos realidad tus ideas!</strong></p>
+      </div>
     </div>
-          <div class="social">
-<ul class="social-icons">
-  <li>
-    <a href="https://www.linkedin.com/in/walterfallas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <svg viewBox="0 0 24 24" class="icon">
-        <path d="M20.45 20.45h-3.6v-5.4c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.93v5.47H9.27V9h3.45v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.08 2.08 0 1 1 0-4.16 2.08 2.08 0 0 1 0 4.16zM7.14 20.45H3.54V9h3.6v11.45z"/>
-      </svg>
-    </a>
-  </li>
 
-  <li>
-    <a href="https://github.com/walterfcr/portfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <svg viewBox="0 0 24 24" class="icon">
-        <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.44c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.74-1.34-1.74-1.1-.76.08-.75.08-.75 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.25-3.24-.13-.3-.54-1.52.12-3.17 0 0 1.02-.33 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.57 3.34-1.24 3.34-1.24.66 1.65.25 2.87.12 3.17.78.84 1.25 1.92 1.25 3.24 0 4.63-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-      </svg>
-    </a>
-  </li>
+  </header>
 
-  <li>
-    <a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="_blank" rel="noopener noreferrer" aria-label="Behance">
-      <svg viewBox="0 0 24 24" class="icon">
-        <path d="M1.5 4.5h7.5c2.5 0 4 1.5 4 3.5 0 1.6-.9 2.6-2.1 3.1 1.6.4 2.7 1.6 2.7 3.5 0 2.5-2 4-4.8 4H1.5v-14zm4 5.5h3c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-3v2.8zm0 5h3.2c1.2 0 1.9-.6 1.9-1.6s-.7-1.6-1.9-1.6H5.5v3.2zM15 8h7v2h-7V8zm3.5 3c-2.5 0-4.5 1.8-4.5 4s2 4 4.5 4c2.1 0 3.7-1 4.3-2.5h-2.3c-.3.6-1 1-2 1-1.3 0-2.2-.8-2.3-2h6.7c.1-.3.1-.6.1-.9 0-2.2-2-3.6-4.5-3.6zm-2.2 3c.2-1.1 1.1-1.8 2.2-1.8s2 .7 2.2 1.8h-4.4z"/>
-      </svg>
-    </a>
-  </li>
-</ul>
-          </div>
-          <div class="botonEfecto">
-            <a href="#websites" class="saludo btn rounded-0 btn-lg " data-i18n="work" role="button"
-            aria-pressed="true">Descubre mis proyectos</a>
-          </div>
-  </div>
+  <!-- HERO CONTENT -->
+  <div id="mainInicio" class="container mt-4">
 
-  <!-- Right: Image -->
-  <div class="col-lg-6 text-center mt-4 position-relative ">
-    <img src="img/profile-image-light.png" alt="Walter Fallas"
-      class="img-fluid rounded-circle border border-5 profile-image">
+    <div class="row align-items-center">
 
-    <div class="icon-wrapper estatico estatico-1">
+      <!-- LEFT -->
+      <div class="col-lg-6 mt-5">
+
+        <h1 class="mb-3" data-i18n="name">
+          <span class="nombre">Walter Fallas</span><br>
+          Frontend Developer en Costa Rica
+        </h1>
+
+        <img
+          src="img/profile-image-light.png"
+          alt="Walter Fallas"
+          class="img-fluid rounded-circle border border-5 profile-image profile-image-movil"
+        >
+
+        <div class="text-inicio-wrap">
+          <p class="lead" data-i18n="developer">
+            Desarrollador frontend especializado en crear aplicaciones web modernas.
+          </p>
+
+          <p data-i18n="create">
+            Trabajo con tecnologías como React, Vue y JavaScript para construir experiencias interactivas y de alto rendimiento.
+          </p>
+
+          <p>
+            <strong data-i18n="letsWork">
+              ¡Trabajemos juntos y hagamos realidad tus ideas!
+            </strong>
+          </p>
+        </div>
+
+        <div class="social">
+
+          <ul class="social-icons">
+
+            <li>
+              <a href="https://www.linkedin.com/in/walterfallas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" class="icon">
+                  <path d="M20.45 20.45h-3.6v-5.4c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.93v5.47H9.27V9h3.45v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.08 2.08 0 1 1 0-4.16 2.08 2.08 0 0 1 0 4.16zM7.14 20.45H3.54V9h3.6v11.45z"/>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/walterfcr/portfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" class="icon">
+                  <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.44c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.74-1.34-1.74-1.1-.76.08-.75.08-.75 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.25-3.24-.13-.3-.54-1.52.12-3.17 0 0 1.02-.33 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.57 3.34-1.24 3.34-1.24.66 1.65.25 2.87.12 3.17.78.84 1.25 1.92 1.25 3.24 0 4.63-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.behance.net/gallery/231854195/Portfolio-de-diseno-grafico-2025" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+                <svg viewBox="0 0 24 24" class="icon">
+                  <path d="M1.5 4.5h7.5c2.5 0 4 1.5 4 3.5 0 1.6-.9 2.6-2.1 3.1 1.6.4 2.7 1.6 2.7 3.5 0 2.5-2 4-4.8 4H1.5v-14zm4 5.5h3c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-3v2.8zm0 5h3.2c1.2 0 1.9-.6 1.9-1.6s-.7-1.6-1.9-1.6H5.5v3.2zM15 8h7v2h-7V8zm3.5 3c-2.5 0-4.5 1.8-4.5 4s2 4 4.5 4c2.1 0 3.7-1 4.3-2.5h-2.3c-.3.6-1 1-2 1-1.3 0-2.2-.8-2.3-2h6.7c.1-.3.1-.6.1-.9 0-2.2-2-3.6-4.5-3.6zm-2.2 3c.2-1.1 1.1-1.8 2.2-1.8s2 .7 2.2 1.8h-4.4z"/>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="botonEfecto">
+          <a href="#websites" class="saludo btn rounded-0 btn-lg" data-i18n="work" role="button" aria-pressed="true">
+            Descubre mis proyectos
+          </a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6 text-center mt-4 position-relative">
+
+        <img
+          src="img/profile-image-light.png"
+          alt="Walter Fallas"
+          class="img-fluid rounded-circle border border-5 profile-image"
+        >
+
+         <div class="icon-wrapper estatico estatico-1">
       <img src="img/estatico-1.webp" alt="estatico 5" class="skill-icon" data-light="img/estatico-1.webp" data-light-hover="img/estatico-1-hover.webp" data-dark="img/estatico-6.webp" data-dark-hover="img/estatico-6-hover.webp">
     </div>
     <div class="icon-wrapper estatico estatico-2">
@@ -161,9 +215,16 @@
     <div class="icon-wrapper floating-img-2 floating-2">
       <img src="img/light-floating2.webp" alt="estatico 5" class="skill-icon-2" data-light="img/light-floating2.webp" data-light-hover="img/light-floating2-hover.webp" data-dark="img/dark-floating2.webp" data-dark-hover="img/dark-floating2-hover.webp">
     </div>
+
+        <!-- YOUR ICONS STAY HERE -->
+
+      </div>
+
+    </div>
+
   </div>
-  </div>
-</div>
+
+</section>
 
 <!--
   <div class="mountain-image-container">
@@ -302,7 +363,7 @@
                 </div>
               </div>
               
-                <p class="parrafo" data-i18n="web3">Aplicación completa en React que simula un sistema real de reserva de cine, incluyendo autenticación, lógica de reserva de asientos, compra de entradas y emisión de boletos digitales con código QR, integrada con Firebase.</p>
+                <p class="parrafo" data-i18n="web3">Sistema de reserva de cine en tiempo real desarrollado con React y Firebase, enfocado en sincronización multiusuario, control de concurrencia y reservas temporales de asientos. Incluye autenticación, expiración automática de reservas, emisión de boletos con código QR y lógica avanzada basada en tiempo.</p>
               
               <div class="titulo text-center">
 
@@ -421,71 +482,6 @@
                   </div>
           </article>
           
-
-          <article class="columnaImagenes" data-aos="fade-right">
-            <h3>Tecni Soluciones</h3>
-            <div class="efectoImagenes">
-              <img src="img/proyecto4-light.webp" loading="lazy" alt="Sitio web Tecni Soluciones" data-img="proyecto4" class="img-fluid" >
-              <div class="texto">
-                <div class="titulo">
-                  <div class="icono">
-                    <img src="img/logo-001.webp" loading="lazy" alt="Logo de HTML5">
-                    <img src="img/logo-002.webp" loading="lazy" alt="Logo de CSS3">
-                    <img src="img/logo-003.webp" loading="lazy" alt="Logo de Javascript">
-                  </div>
-                </div>
-                <p class="parrafo" data-i18n="web4">Landing page one page para servicios tecnológicos con identidad visual basada en el logo, navegación fluida y animaciones interactivas.</p>
-                  <div class=" titulo text-center">
-
-                  </div>
-              </div>
-            </div>
-                               <div class="contenedor-botones">
-                                      <div class="boton-links">
-                                        <a href="https://walterfcr.github.io/tecnisoluciones/" target="_blank"> Demo</a>
-                                      </div>
-                                      <div class="boton-links">
-                                        <a href="https://github.com/walterfcr/tecnisoluciones" target="_blank"> Github</a>
-                                      </div>
-                                      <div class="boton-links">
-                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#proyecto4" data-i18n="boton2">Detalles</a>
-                                      </div>
-                                </div>
-          </article>
-
-          <article class="columnaImagenes" data-aos="fade-left">
-            <h3>Trops Swimwear</h3>
-            <div class="efectoImagenes">
-              <img src="img/proyecto6-light.webp" loading="lazy" alt="Sitio web Trops Swimwear" data-img="proyecto6" class="img-fluid" >
-              <div class="texto">
-                <div class="titulo">
-                  <div class="icono">
-                    <img src="img/logo-001.webp" loading="lazy" alt="Logo de HTML5">
-                    <img src="img/logo-002.webp" loading="lazy" alt="Logo de CSS3">
-                    <img src="img/logo-003.webp" loading="lazy" alt="Logo de Javascript">
-                    <img src="img/logo-006.webp" loading="lazy" alt="Logo de Bootstrap">
-                  </div>
-                </div>
-                <p class="parrafo" data-i18n="web6"> Sitio web desarrollado con tecnologías base enfocado en la práctica de estructura, diseño responsivo e interactividad con JavaScript.
-                </p>
-                <div class="titulo text-center">
-
-                </div>
-              </div>
-            </div>
-             <div class="contenedor-botones">
-                                      <div class="boton-links">
-                                        <a href="https://walterfcr.github.io/trops/" target="_blank"> Demo</a>
-                                      </div>
-                                      <div class="boton-links">
-                                        <a href="https://github.com/walterfcr/trops.git" target="_blank"> Github</a>
-                                      </div>
-                                      <div class="boton-links">
-                                        <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#proyecto6" data-i18n="boton2">Detalles</a>
-                                      </div>
-                                </div>
-
-          </article>
         </div><!--contenedor-->
       </div>  
 </section>  
@@ -682,158 +678,125 @@
 
             <!-- LEFT COLUMN -->
             <div class="modalcolumn">
+
               <h5 data-i18n="titulomod1">Descripción general</h5>
+
               <p data-i18n="web3m1">
-                Aplicación web de cine desarrollada con React y Firebase que simula un sistema real de compra de entradas, incluyendo autenticación de usuarios, selección de asientos y generación de tickets digitales.
+                Sistema de reserva de cine en tiempo real desarrollado con React y Firebase, inspirado en plataformas reales de ticketing. La aplicación implementa sincronización multiusuario, control de concurrencia y reservas temporales de asientos utilizando Firestore en tiempo real.
               </p>
 
-              <h5 data-i18n="titulomod7">Funcionalidades Principales</h5>
+              <h5 data-i18n="titulomod7">Funcionalidades principales</h5>
+
               <ul>
-                <li data-i18n="web3m2">Autenticación de usuarios con Firebase</li>
-                <li data-i18n="web3m3">Selección interactiva de asientos</li>
-                <li data-i18n="web3m4">Prevención de doble reservación</li>
-                <li data-i18n="web3m5">Flujo completo de compra de tiquetes</li>
-                <li data-i18n="web3m6">Generación de tickets digitales con código QR</li>
-                <li data-i18n="web3m7">Historial de tickets por usuario</li>
+                <li data-i18n="web3m2">
+                  Sincronización de asientos en tiempo real entre múltiples usuarios
+                </li>
+
+                <li data-i18n="web3m3">
+                  Sistema de bloqueo temporal de asientos con expiración automática
+                </li>
+
+                <li data-i18n="web3m4">
+                  Prevención de doble reservación mediante transacciones en Firestore
+                </li>
+
+                <li data-i18n="web3m5">
+                  Flujo completo de compra y confirmación de entradas
+                </li>
+
+                <li data-i18n="web3m6">
+                  Generación de tickets digitales con código QR
+                </li>
+
+                <li data-i18n="web3m7">
+                  Panel de historial de tickets clasificados por estado
+                </li>
               </ul>
 
               <h5 data-i18n="titulomod3">Tecnologías utilizadas</h5>
+
               <ul>
                 <li>React</li>
-                <li>JavaScript (ES6+)</li>
+                <li>Firebase Firestore (Real-Time)</li>
+                <li>Firebase Authentication</li>
                 <li>React Router</li>
-                <li>Firebase (Auth + Firestore)</li>
+                <li>Jest + React Testing Library</li>
                 <li>CSS3</li>
               </ul>
+
             </div>
 
             <!-- RIGHT COLUMN -->
-            <div class="modalcolumn">
+           <div class="modalcolumn">
+
               <h5 data-i18n="titulomod4">Lo que desarrollé</h5>
+
               <ul>
-                <li data-i18n="web3m9">Sistema de autenticación de usuarios</li>
-                <li data-i18n="web3m10">Lógica de selección y disponibilidad de asientos</li>
-                <li data-i18n="web3m11">Flujo completo de compra con múltiples pasos</li>
-                <li data-i18n="web3m12">Generación y almacenamiento de tickets en Firebase</li>
-                <li data-i18n="web3m13">Estructura basada en componentes reutilizables</li>
+                <li data-i18n="web3m9">
+                  Arquitectura modular basada en componentes, hooks y servicios reutilizables
+                </li>
+
+                <li data-i18n="web3m10">
+                  Sistema de reservas sincronizado con Firestore en tiempo real
+                </li>
+
+                <li data-i18n="web3m11">
+                  Lógica avanzada de tiempo para expiración y validación de funciones
+                </li>
+
+                <li data-i18n="web3m12">
+                  Generación y persistencia de tickets por usuario
+                </li>
+
+                <li data-i18n="web3m13">
+                  Testing de hooks, timers y lógica de reservación utilizando Jest
+                </li>
               </ul>
 
               <h5 data-i18n="titulomod5">Retos y soluciones</h5>
+
               <ul>
                 <li data-i18n="web3m14">
-                  <strong>Control de asientos en tiempo real:</strong>
-                  Sincronización con Firestore para evitar reservaciones duplicadas
+                  <strong>Control de concurrencia:</strong>
+                  Implementación de transacciones para evitar conflictos de reservación entre usuarios
                 </li>
+
                 <li data-i18n="web3m15">
-                  <strong>Manejo de estado complejo:</strong>
-                  Organización del flujo de compra en múltiples componentes con estado dinámico
+                  <strong>Sincronización en tiempo real:</strong>
+                  Uso de listeners de Firestore para actualizar disponibilidad de asientos instantáneamente
                 </li>
-               <li data-i18n="web3m16">
-                  <strong>Persistencia de datos:</strong>
-                  Almacenamiento de tickets por usuario en la base de datos
+
+                <li data-i18n="web3m16">
+                  <strong>Lógica temporal compleja:</strong>
+                  Manejo de expiración automática, countdown timers y validación de horarios
                 </li>
+
                 <li data-i18n="web3m17">
-                  <strong>Experiencia tipo aplicación real:</strong>
-                  Implementación de navegación dinámica y lógica de negocio en frontend
+                  <strong>Arquitectura escalable:</strong>
+                  Separación de lógica de negocio mediante hooks personalizados y servicios reutilizables
                 </li>
               </ul>
 
               <h5 data-i18n="titulomod6">Aprendizajes clave</h5>
+
               <ul>
-                <li data-i18n="web3m18">Manejo de estado en aplicaciones React complejas</li>
-                <li data-i18n="web3m19">Integración de Firebase en aplicaciones reales</li>
-                <li data-i18n="web3m20">Diseño de flujos de usuario tipo e-commerce</li>
-                <li data-i18n="web3m21">Construcción de interfaces dinámicas basadas en datos</li>
-              </ul>
-            </div>
-
-          </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<!-- termina modal-->
-<!-- termina modal-->
- <!-- inicia modal-->
-<div class="modal fade" id="proyecto4" tabindex="-1" aria-labelledby="proyecto4Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h4 class="modal-title" id="proyecto4Label">
-          Tecni Soluciones
-        </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-          <div class="modal-content-container">
-
-            <div class="modalcolumn">
-              <h5 data-i18n="titulomod1">Descripción general</h5>
-              <p data-i18n="web4m1">
-              Landing page de una empresa de servicios tecnológicos desarrollada como sitio one page, enfocada en presentar soluciones de forma clara y atractiva mediante una interfaz moderna con animaciones y una identidad visual coherente.
-              </p>
-
-              <h5 data-i18n="titulomod2">¿Qué hace?</h5>
-              <p data-i18n="web4m2">
-                Presenta información sobre servicios, beneficios y contacto en una sola página, guiando al usuario a través de una experiencia fluida con navegación por secciones y elementos visuales interactivos.
-              </p>
-
-              <h5 data-i18n="titulomod3">Tecnologías utilizadas</h5>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li data-i18n="web3m8">Animaciones con LottieFiles</li>
-              </ul>
-            </div>
-
-            <div class="modalcolumn">
-              <h5 data-i18n="titulomod4">Lo que desarrollé</h5>
-              <ul>
-                <li data-i18n="web4m3">Diseño y desarrollo de estructura one page</li>
-                <li data-i18n="web4m4">Implementación de navegación por secciones (scroll)</li>
-                <li data-i18n="web4m5">Definición de paleta de colores alineada con la identidad del logo</li>
-                <li data-i18n="web4m6">Diseño responsivo adaptable a distintos dispositivos</li>
-                <li data-i18n="web4m7">Manejo de interacciones con JavaScript</li>
-
-              </ul>
-
-              <h5 data-i18n="titulomod5">Retos y soluciones</h5>
-              <ul>
-                <li data-i18n="web4m8">
-                  <strong>Mantener coherencia visual con la identidad de marca:</strong>
-                  Uso de una paleta de colores basada en los tonos del logo (colores de tinta)
+                <li data-i18n="web3m18">
+                  Manejo de sistemas en tiempo real con Firebase
                 </li>
-                <li data-i18n="web4m9">
-                  <strong>Transmitir información clara en una sola página:</strong>
-                  Organización estratégica de secciones para guiar al usuario
+
+                <li data-i18n="web3m19">
+                  Control de estado complejo en aplicaciones React
                 </li>
-               <li data-i18n="web4m10">
-                  <strong>Evitar sobrecargar la interfaz con animaciones:</strong>
-                  Uso equilibrado de LottieFiles
+
+                <li data-i18n="web3m20">
+                  Testing de lógica asincrónica y timers con Jest
                 </li>
-                <li data-i18n="web4m11">
-                  <strong>Lograr navegación fluida entre secciones:</strong>
-                  Implementación de scroll suave
+
+                <li data-i18n="web3m21">
+                  Diseño de experiencias interactivas inspiradas en aplicaciones reales
                 </li>
               </ul>
 
-              <h5 data-i18n="titulomod6">Aprendizajes clave</h5>
-              <ul>
-                <li data-i18n="web4m12">Uso estratégico del color en diseño web</li>
-                <li data-i18n="web4m13">Diseño de landing pages orientadas a conversión</li>
-                <li data-i18n="web4m14">Integración de animaciones en interfaces modernas</li>
-
-              </ul>
             </div>
 
           </div>
@@ -940,77 +903,7 @@
   </div>
 </div>
 <!-- termina modal-->
- <!-- inicia modal-->
-<div class="modal fade" id="proyecto6" tabindex="-1" aria-labelledby="proyecto6Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h4 class="modal-title" id="proyecto6Label">
-          Trops Swimwear
-        </h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-          <div class="modal-content-container">
-
-            <div class="modalcolumn">
-              <h5 data-i18n="titulomod1">Descripción general</h5>
-              <p data-i18n="web6m1">
-              </p>
-
-              <h5 data-i18n="titulomod2">¿Qué hace?</h5>
-              <p data-i18n="web6m2">
-              </p>
-
-              <h5 data-i18n="titulomod3">Tecnologías utilizadas</h5>
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-              </ul>
-            </div>
-
-            <div class="modalcolumn">
-              <h5 data-i18n="titulomod4">Lo que desarrollé</h5>
-              <ul>
-                <li data-i18n="web6m3">Estructuración completa del sitio web</li>
-                <li data-i18n="web6m4">Implementación de diseño responsive con Bootstrap</li>
-                <li data-i18n="web6m5">Manejo de interactividad básica con JavaScript</li>
-                <li data-i18n="web6m6">Organización del contenido en secciones claras</li>
-              </ul>
-
-              <h5 data-i18n="titulomod5">Retos y soluciones</h5>
-              <ul>
-                <li data-i18n="web6m7"><strong>Estructurar el contenido de forma clara y ordenada:</strong> División en secciones bien definidas para mejorar la navegación</li>
-                <li data-i18n="web6m8"><strong>Implementar diseño responsive sin complejidad excesiva:</strong> Uso de Bootstrap para adaptación a distintos dispositivos</li>
-                <li data-i18n="web6m9"><strong>Agregar interactividad sin frameworks:</strong>Uso de JavaScript para manejar eventos básicos</li>
-              </ul>
-
-              <h5 data-i18n="titulomod6">Aprendizajes clave</h5>
-              <ul>
-                <li data-i18n="web6m10">Desarrollo de sitios web con tecnologías base</li>
-                <li data-i18n="web6m11">Uso de Bootstrap para diseño responsivo</li>
-                <li data-i18n="web6m12">Organización de contenido en interfaces simples</li>
-                <li data-i18n="web6m13">Implementación de interactividad con JavaScript</li>
-              </ul>
-            </div>
-
-          </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<!-- termina modal-->
+ 
 
 
 <section id="graphicDesign" class="py-5">
@@ -1048,28 +941,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Card 4 
-      <div class="col-lg-4 col-md-6 mb-4 designCard py-5 px-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="img/design-004.jpg" class="card-img-top" alt="Design 3">
-          <div class="card-body d-flex flex-column">
-            <h3 data-i18n="design004">Logo Tienda Música</h3>
-              <a href="#" role="button" class="saludo" data-bs-toggle="modal" data-bs-target="#modalDesign4" data-i18n="boton">Ver Detalles</a>
-          </div>
-        </div>
-      </div>
-            
-      <div class="col-lg-4 col-md-6 mb-4 designCard py-5 px-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 border-0 rounded-0">
-          <img src="img/design-005.jpg" class="card-img-top" alt="Design 3">
-          <div class="card-body d-flex flex-column">
-            <h3 data-i18n="design005">Logo Tienda Música</h3>
-              <a href="#" role="button" class="saludo" data-bs-toggle="modal" data-bs-target="#modalDesign5" data-i18n="boton">Ver Detalles</a>
-          </div>
-        </div>
-      </div>
-      -->
     </div>
     
   </div>
@@ -1328,179 +1199,6 @@
   </div>
 </div>
 
-<!-- Modal 4 -->
-<div class="modal fade" id="modalDesign4" tabindex="-1" aria-labelledby="modalDesign4Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalDesign4Label">Garage 94</h5>
-        <button type="button" class="btn custom-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="CURRENTCOLOR" viewBox="0 0 16 16">
-            <path d="M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row align-items-center">
-          <!-- Left column: text info -->
-          <div class="col-md-6">
-          <div class="col-md-6 design-image-movil">
-            <img src="img/design-004.jpg" class="img-fluid rounded" alt="">
-          </div>
-            <h6 class="mb-3" data-i18n="overview">Resumen del Proyecto</h6>
-            <p data-i18n="overviewTxt004">Diseño de logotipo inspirado en un vinilo clásico para una tienda de música ficticia llamada Garage94. El logo combina estética underground con un aire retro, usando colores negro y fucsia. Pensado para destacar en merchandising, vinilos y señalización, representa con fuerza la identidad rebelde y auténtica de Garage94.</p>
-            <p><strong data-i18n="palette">Paleta de colores sugerida:</strong></p>
-              <ul class="color-list">
-                <li><span class="color-circle" style="background-color: #000000;"></span> <span data-i18n="paletteTxt004-001">Negro (#000000) – Principal</span></li>
-                <li><span class="color-circle" style="background-color: #EC1A59;"></span> <span data-i18n="paletteTxt004-002">Magenta profundo (#EC1A59) – Secundario</span></li>
-                <li><span class="color-circle" style="background-color: #FFFFFF;"></span> <span data-i18n="paletteTxt004-003">Blanco (#FFFFFF) – Fondo del texto</span></li>
-              </ul>
-            <ul class="list-unstyled">
-              <li><strong data-i18n="type">Tipo:</strong><span data-i18n="typeTxt004"> Diseño de logotipo</span></li>
-              <li><strong data-i18n="tools3">Herramientas:</strong> Photoshop, Illustrator</li>
-              <li><strong data-i18n="theme">Tema:</strong><span data-i18n="themeTxt004"> Identidad visual para tienda de música alternativa</span></li>
-              <li><strong data-i18n="font">Fuente:</strong> Nova Square</li>
-            </ul>
-
-          <div class="mockups"> 
-          <img src="img/design-004-mk.jpg" class="img-thumbnail mt-3" loading="lazy" alt="Vista previa" style="max-width: 150px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalImageFull4">
-          <img src="img/design-004-02-mk.jpg" class="img-thumbnail mt-3" loading="lazy" alt="Vista previa" style="max-width: 150px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalImageFull4-2">
-          </div>
-
-          <div class="mockups-movil">
-          <img src="img/design-004-02-mk.jpg" loading="lazy" alt="">
-          <img src="img/design-004-mk.jpg" loading="lazy" alt="">
-          </div>  
-
-          </div> 
-          <!-- Right column: image -->
-          <div class="col-md-6 design-image">
-            <img src="img/design-004.jpg" class="img-fluid" loading="lazy" alt="Skate Cover Large">
-             <div class="text-center mt-3">
-                <button type="button" class="btn btn-outline-secondary my-close-btn" data-bs-dismiss="modal" data-i18n="close">
-                  Cerrar
-                </button>
-            </div>
-          </div>
-          <div class="text-center mt-3 boton-movil">
-            <button type="button" class="btn btn-outline-secondary my-close-btn" data-bs-dismiss="modal" data-i18n="close">
-               Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- segundo modal para imagen -->
-<div class="modal fade" id="modalImageFull4" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        <img src="img/design-004-mk.jpg" class="img-thumbnail mt-3" style="cursor:pointer;" onclick="openImageModal()" loading="lazy" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalImageFull4-2" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        <img src="img/design-004-02-mk.jpg" class="img-thumbnail mt-3" style="cursor:pointer;" onclick="openImageModal()" loading="lazy" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 5 -->
-<div class="modal fade" id="modalDesign5" tabindex="-1" aria-labelledby="modalDesign5Label" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalDesign5Label">Cinema Classic</h5>
-        <button type="button" class="btn custom-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="CURRENTCOLOR" viewBox="0 0 16 16">
-            <path d="M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row align-items-center">
-          <!-- Left column: text info -->
-          <div class="col-md-6">
-          <div class="col-md-6 design-image-movil">
-            <img src="img/design-005.jpg" class="img-fluid rounded" alt="">
-          </div>
-            <h6 class="mb-3" data-i18n="overview">Resumen del Proyecto</h6>
-            <p data-i18n="overviewTxt004">Diseño de logotipo inspirado en un vinilo clásico para una tienda de música ficticia llamada Garage94. El logo combina estética underground con un aire retro, usando colores negro y fucsia. Pensado para destacar en merchandising, vinilos y señalización, representa con fuerza la identidad rebelde y auténtica de Garage94.</p>
-            <p><strong data-i18n="palette">Paleta de colores sugerida:</strong></p>
-              <ul class="color-list">
-                <li><span class="color-circle" style="background-color: #000000;"></span> <span data-i18n="paletteTxt004-001">Negro (#000000) – Principal</span></li>
-                <li><span class="color-circle" style="background-color: #EC1A59;"></span> <span data-i18n="paletteTxt004-002">Magenta profundo (#EC1A59) – Secundario</span></li>
-                <li><span class="color-circle" style="background-color: #FFFFFF;"></span> <span data-i18n="paletteTxt004-003">Blanco (#FFFFFF) – Fondo del texto</span></li>
-              </ul>
-            <ul class="list-unstyled">
-              <li><strong data-i18n="type">Tipo:</strong><span data-i18n="typeTxt004"> Diseño de logotipo</span></li>
-              <li><strong data-i18n="tools3">Herramientas:</strong> Photoshop, Illustrator</li>
-              <li><strong data-i18n="theme">Tema:</strong><span data-i18n="themeTxt004"> Identidad visual para tienda de música alternativa</span></li>
-              <li><strong data-i18n="font">Fuente:</strong> Nova Square</li>
-            </ul>
-
-          <div class="mockups"> 
-          <img src="img/design-004-mk.jpg" loading="lazy" class="img-thumbnail mt-3" alt="Vista previa" style="max-width: 150px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalImageFull4">
-          <img src="img/design-004-02-mk.jpg" loading="lazy" class="img-thumbnail mt-3" alt="Vista previa" style="max-width: 150px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalImageFull4-2">
-          </div>
-
-          <div class="mockups-movil">
-          <img src="img/design-004-02-mk.jpg" loading="lazy" alt="">
-          <img src="img/design-004-mk.jpg" loading="lazy" alt="">
-          </div>  
-
-          </div> 
-          <!-- Right column: image -->
-          <div class="col-md-6 design-image">
-            <img src="img/design-005.jpg" class="img-fluid" loading="lazy" alt="Skate Cover Large">
-             <div class="text-center mt-3">
-                <button type="button" class="btn btn-outline-secondary my-close-btn" data-bs-dismiss="modal" data-i18n="close">
-                  Cerrar
-                </button>
-            </div>
-          </div>
-          <div class="text-center mt-3 boton-movil">
-            <button type="button" class="btn btn-outline-secondary my-close-btn" data-bs-dismiss="modal" data-i18n="close">
-               Cerrar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- segundo modal para imagen -->
-<div class="modal fade" id="modalImageFull4" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        <img src="img/design-004-mk.jpg" class="img-thumbnail mt-3" style="cursor:pointer;" onclick="openImageModal()" loading="lazy" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalImageFull4-2" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body p-0">
-        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        <img src="img/design-004-02-mk.jpg" class="img-thumbnail mt-3" style="cursor:pointer;" onclick="openImageModal()" loading="lazy" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <section id="contacto">
 
       <div class="contactoWrap sectionForm d-flex justify-content-center align-items-center py-4">
@@ -1511,7 +1209,6 @@
           <div class="formP">
             <p data-i18n="contact1">¿Tienes un proyecto en mente o necesitas mejorar tu sitio web?</p>
             <p data-i18n="contact2">Estoy disponible para desarrollar soluciones modernas, rápidas y enfocadas en experiencia de usuario.</p>
-            <!--<p data-i18n="contact3"><strong>Escríbeme y hablemos de tu proyecto.</strong></p>-->
           </div>
           <form id="form2">
             <div class="formRow">

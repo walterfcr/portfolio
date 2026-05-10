@@ -64,7 +64,7 @@
     body {
     padding-top: 40px;
     }
-    .background-stars, .floating-img-1, .floating-img-2, .estatico-1, .estatico-2, .estatico-3, .estatico-4, .estatico-5, .mountain-image-container {
+    .background-stars, .floating-img-1, .floating-img-2, .estatico-1, .estatico-2, .estatico-3, .estatico-4, .estatico-5 {
         display:none;
     }
     #mainInicio{
@@ -373,10 +373,36 @@
 
 }
 
-@media  (min-width: 376px) and (max-width: 768px){
+/*botones */
+
+@media  (min-width: 320px) and (max-width: 375px){
+   .boton-links a {
+        width:65px !important;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .contenedor-botones{
+        gap: 10px !important;
+    }
+
+ }   
+
+@media  (min-width: 376px) and (max-width: 480px){
  .contenedor-botones {
     margin: 0 0 30px;
     gap: 10px;
+    }
+
+    .boton-links a {  
+    width: 90px;
+    }
+}
+
+@media  (min-width: 481px) and (max-width: 768px){
+ .contenedor-botones {
+    margin: 0 0 30px;
+    gap: 30px;
     }
 
     .boton-links a {  
@@ -385,11 +411,12 @@
 }
 
 
+
 @media  (min-width: 995px) and (max-width:1024px){
 
 .contenedor-botones {
 
-    margin: 30px;
+    margin: 30px 0;
     gap: 20px;
     }
 
@@ -404,7 +431,7 @@
 
 .contenedor-botones {
 
-    margin: 30px;
+    margin: 30px 0;
     gap: 10px;
     }
 
@@ -415,24 +442,18 @@
     }
 }
 
-
-
-@media  (min-width: 320px) and (max-width: 375px){
-
-.contenedor-botones {
-    display: flex;
-    justify-content: center; /* centra horizontalmente */
-    flex-wrap: wrap; /* opcional para responsive */
-    margin: 0 0 30px;
-    gap: 20px;
-    }
-
-    .boton-links a {
-     width: 70px !important;
-     height: 36px;
-    font-size: 13px;
-    }
-}    
+ 
+@media  (min-width: 320px) and (max-width: 600px){
+    .social-icons-footer {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;
+  gap: 15px; /* space between icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+}
 
 @media  (min-width: 320px) and (max-width: 360px){
 
@@ -455,15 +476,6 @@
         padding:20px 0 0;
     }
 
-    .boton-links a {
-        width:90px;
-        height: 30px;
-        font-size: 13px;
-    }
-
-    .container-links{
-        gap: 30px;
-    }
 
     #mainInicio{
     padding:20px 0 50px;
@@ -480,14 +492,6 @@
 
 }
 
-@media  (min-width: 361px) and (max-width: 411px){
-    .boton-links a {
-        width:100px;
-        height: 30px;
-        font-size: 13px;
-    }
-
-}
 
 
 @media  (min-width: 361px) and (max-width: 480px){
